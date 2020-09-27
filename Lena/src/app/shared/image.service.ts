@@ -1,0 +1,124 @@
+import { Injectable } from '@angular/core';
+
+@Injectable({
+    providedIn: 'root'
+})
+export class ImageService {
+    visibleImages = [];
+    getImages() {
+        return this.visibleImages = IMAGES.slice(0);
+    }
+    getImage(_id: number) {
+        return IMAGES.slice(0).find(image => image.id === _id);
+    }
+}
+const IMAGES = [
+    {
+        id: 1,
+        category: 'person',
+        caption: 'Nisi aliqua incididunt elit ad ex culpa reprehenderit. Enim consectetur et irure fugiat sunt et proident mollit adipisicing eiusmod esse. Labore qui enim non est adipisicing anim non laborum magna velit. Excepteur occaecat id cillum dolore incididunt ad tempor. Dolore duis enim ea aute pariatur eu fugiat occaecat esse culpa. Occaecat cillum nisi sunt esse quis aliqua exercitation dolore veniam. Et ipsum aute eu irure quis incididunt est irure.',
+        url: 'assets/lena.png'
+    },
+    {
+        id: 2,
+        category: 'another',
+        caption: 'Nisi aliqua incididunt elit ad ex culpa reprehenderit. Enim consectetur et irure fugiat sunt et proident mollit adipisicing eiusmod esse. Labore qui enim non est adipisicing anim non laborum magna velit. Excepteur occaecat id cillum dolore incididunt ad tempor. Dolore duis enim ea aute pariatur eu fugiat occaecat esse culpa. Occaecat cillum nisi sunt esse quis aliqua exercitation dolore veniam. Et ipsum aute eu irure quis incididunt est irure.',
+        url: 'assets/aidiyetsizlik.jpg'
+    },
+    {
+        id: 3,
+        category: 'film',
+        caption: 'Nisi aliqua incididunt elit ad ex culpa reprehenderit. Enim consectetur et irure fugiat sunt et proident mollit adipisicing eiusmod esse. Labore qui enim non est adipisicing anim non laborum magna velit. Excepteur occaecat id cillum dolore incididunt ad tempor. Dolore duis enim ea aute pariatur eu fugiat occaecat esse culpa. Occaecat cillum nisi sunt esse quis aliqua exercitation dolore veniam. Et ipsum aute eu irure quis incididunt est irure.',
+        url: 'assets/başlanmış.jpg'
+    },
+    {
+        id: 4,
+        category: 'series',
+        caption: 'Nisi aliqua incididunt elit ad ex culpa reprehenderit. Enim consectetur et irure fugiat sunt et proident mollit adipisicing eiusmod esse. Labore qui enim non est adipisicing anim non laborum magna velit. Excepteur occaecat id cillum dolore incididunt ad tempor. Dolore duis enim ea aute pariatur eu fugiat occaecat esse culpa. Occaecat cillum nisi sunt esse quis aliqua exercitation dolore veniam. Et ipsum aute eu irure quis incididunt est irure.',
+        url: 'assets/behzat.jpg'
+    },
+    {
+        id: 5,
+        category: 'series',
+        caption: 'Nisi aliqua incididunt elit ad ex culpa reprehenderit. Enim consectetur et irure fugiat sunt et proident mollit adipisicing eiusmod esse. Labore qui enim non est adipisicing anim non laborum magna velit. Excepteur occaecat id cillum dolore incididunt ad tempor. Dolore duis enim ea aute pariatur eu fugiat occaecat esse culpa. Occaecat cillum nisi sunt esse quis aliqua exercitation dolore veniam. Et ipsum aute eu irure quis incididunt est irure.',
+        url: 'assets/behzat2.jpg'
+    },
+    {
+        id: 6,
+        category: 'series',
+        caption: 'Nisi aliqua incididunt elit ad ex culpa reprehenderit. Enim consectetur et irure fugiat sunt et proident mollit adipisicing eiusmod esse. Labore qui enim non est adipisicing anim non laborum magna velit. Excepteur occaecat id cillum dolore incididunt ad tempor. Dolore duis enim ea aute pariatur eu fugiat occaecat esse culpa. Occaecat cillum nisi sunt esse quis aliqua exercitation dolore veniam. Et ipsum aute eu irure quis incididunt est irure.',
+        url: 'assets/bihter.jpg'
+    },
+    {
+        id: 7,
+        category: 'person',
+        caption: 'Nisi aliqua incididunt elit ad ex culpa reprehenderit. Enim consectetur et irure fugiat sunt et proident mollit adipisicing eiusmod esse. Labore qui enim non est adipisicing anim non laborum magna velit. Excepteur occaecat id cillum dolore incididunt ad tempor. Dolore duis enim ea aute pariatur eu fugiat occaecat esse culpa. Occaecat cillum nisi sunt esse quis aliqua exercitation dolore veniam. Et ipsum aute eu irure quis incididunt est irure.',
+        url: 'assets/billgates1.jpg'
+    },
+    {
+        id: 8,
+        category: 'person',
+        caption: 'Nisi aliqua incididunt elit ad ex culpa reprehenderit. Enim consectetur et irure fugiat sunt et proident mollit adipisicing eiusmod esse. Labore qui enim non est adipisicing anim non laborum magna velit. Excepteur occaecat id cillum dolore incididunt ad tempor. Dolore duis enim ea aute pariatur eu fugiat occaecat esse culpa. Occaecat cillum nisi sunt esse quis aliqua exercitation dolore veniam. Et ipsum aute eu irure quis incididunt est irure.',
+        url: 'assets/billgates2.jpg'
+    },
+    {
+        id: 9,
+        category: 'person',
+        caption: 'Nisi aliqua incididunt elit ad ex culpa reprehenderit. Enim consectetur et irure fugiat sunt et proident mollit adipisicing eiusmod esse. Labore qui enim non est adipisicing anim non laborum magna velit. Excepteur occaecat id cillum dolore incididunt ad tempor. Dolore duis enim ea aute pariatur eu fugiat occaecat esse culpa. Occaecat cillum nisi sunt esse quis aliqua exercitation dolore veniam. Et ipsum aute eu irure quis incididunt est irure.',
+        url: 'assets/galileo1.png'
+    },
+    {
+        id: 10,
+        category: 'person',
+        caption: 'Nisi aliqua incididunt elit ad ex culpa reprehenderit. Enim consectetur et irure fugiat sunt et proident mollit adipisicing eiusmod esse. Labore qui enim non est adipisicing anim non laborum magna velit. Excepteur occaecat id cillum dolore incididunt ad tempor. Dolore duis enim ea aute pariatur eu fugiat occaecat esse culpa. Occaecat cillum nisi sunt esse quis aliqua exercitation dolore veniam. Et ipsum aute eu irure quis incididunt est irure.',
+        url: 'assets/gates.jpg'
+    },
+    {
+        id: 11,
+        category: 'film',
+        caption: 'Nisi aliqua incididunt elit ad ex culpa reprehenderit. Enim consectetur et irure fugiat sunt et proident mollit adipisicing eiusmod esse. Labore qui enim non est adipisicing anim non laborum magna velit. Excepteur occaecat id cillum dolore incididunt ad tempor. Dolore duis enim ea aute pariatur eu fugiat occaecat esse culpa. Occaecat cillum nisi sunt esse quis aliqua exercitation dolore veniam. Et ipsum aute eu irure quis incididunt est irure.',
+        url: 'assets/guin.jpg'
+    },
+    {
+        id: 12,
+        category: 'series',
+        caption: 'Nisi aliqua incididunt elit ad ex culpa reprehenderit. Enim consectetur et irure fugiat sunt et proident mollit adipisicing eiusmod esse. Labore qui enim non est adipisicing anim non laborum magna velit. Excepteur occaecat id cillum dolore incididunt ad tempor. Dolore duis enim ea aute pariatur eu fugiat occaecat esse culpa. Occaecat cillum nisi sunt esse quis aliqua exercitation dolore veniam. Et ipsum aute eu irure quis incididunt est irure.',
+        url: 'assets/holmes.jpg'
+    },
+    {
+        id: 13,
+        category: 'series',
+        caption: 'Nisi aliqua incididunt elit ad ex culpa reprehenderit. Enim consectetur et irure fugiat sunt et proident mollit adipisicing eiusmod esse. Labore qui enim non est adipisicing anim non laborum magna velit. Excepteur occaecat id cillum dolore incididunt ad tempor. Dolore duis enim ea aute pariatur eu fugiat occaecat esse culpa. Occaecat cillum nisi sunt esse quis aliqua exercitation dolore veniam. Et ipsum aute eu irure quis incididunt est irure.',
+        url: 'assets/holmes2.jpg'
+    },
+    {
+        id: 14,
+        category: 'series',
+        caption: 'Nisi aliqua incididunt elit ad ex culpa reprehenderit. Enim consectetur et irure fugiat sunt et proident mollit adipisicing eiusmod esse. Labore qui enim non est adipisicing anim non laborum magna velit. Excepteur occaecat id cillum dolore incididunt ad tempor. Dolore duis enim ea aute pariatur eu fugiat occaecat esse culpa. Occaecat cillum nisi sunt esse quis aliqua exercitation dolore veniam. Et ipsum aute eu irure quis incididunt est irure.',
+        url: 'assets/jhonsnow.jpg'
+    },
+    {
+        id: 15,
+        category: 'film',
+        caption: 'Nisi aliqua incididunt elit ad ex culpa reprehenderit. Enim consectetur et irure fugiat sunt et proident mollit adipisicing eiusmod esse. Labore qui enim non est adipisicing anim non laborum magna velit. Excepteur occaecat id cillum dolore incididunt ad tempor. Dolore duis enim ea aute pariatur eu fugiat occaecat esse culpa. Occaecat cillum nisi sunt esse quis aliqua exercitation dolore veniam. Et ipsum aute eu irure quis incididunt est irure.',
+        url: 'assets/keman.gif'
+    },
+    {
+        id: 16,
+        category: 'film',
+        caption: 'Nisi aliqua incididunt elit ad ex culpa reprehenderit. Enim consectetur et irure fugiat sunt et proident mollit adipisicing eiusmod esse. Labore qui enim non est adipisicing anim non laborum magna velit. Excepteur occaecat id cillum dolore incididunt ad tempor. Dolore duis enim ea aute pariatur eu fugiat occaecat esse culpa. Occaecat cillum nisi sunt esse quis aliqua exercitation dolore veniam. Et ipsum aute eu irure quis incididunt est irure.',
+        url: 'assets/pasta.jpg'
+    },
+    {
+        id: 17,
+        category: 'series',
+        caption: 'Nisi aliqua incididunt elit ad ex culpa reprehenderit. Enim consectetur et irure fugiat sunt et proident mollit adipisicing eiusmod esse. Labore qui enim non est adipisicing anim non laborum magna velit. Excepteur occaecat id cillum dolore incididunt ad tempor. Dolore duis enim ea aute pariatur eu fugiat occaecat esse culpa. Occaecat cillum nisi sunt esse quis aliqua exercitation dolore veniam. Et ipsum aute eu irure quis incididunt est irure.',
+        url: 'assets/bihter2.jpg'
+    },
+    {
+        id: 18,
+        category: 'person',
+        caption: 'Nisi aliqua incididunt elit ad ex culpa reprehenderit. Enim consectetur et irure fugiat sunt et proident mollit adipisicing eiusmod esse. Labore qui enim non est adipisicing anim non laborum magna velit. Excepteur occaecat id cillum dolore incididunt ad tempor. Dolore duis enim ea aute pariatur eu fugiat occaecat esse culpa. Occaecat cillum nisi sunt esse quis aliqua exercitation dolore veniam. Et ipsum aute eu irure quis incididunt est irure.',
+        url: 'assets/galileo2.png'
+    }
+]

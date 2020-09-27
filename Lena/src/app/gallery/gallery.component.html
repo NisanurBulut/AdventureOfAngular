@@ -1,0 +1,45 @@
+<div class="row">
+  <div class="btn-group-lg" role="group" aria-label="Basic example">
+    <button
+    class="btn btn-info"
+    [class.active]="filterBy === 'all'"
+    (click)="filterBy = 'all'"
+  >
+    Hepsi
+  </button>
+  <button
+  class="btn btn-info"
+  [class.active]="filterBy === 'another'"
+  (click)="filterBy = 'another'"
+>
+  Diğer
+</button>
+<button
+class="btn btn-info"
+[class.active]="filterBy === 'person'"
+(click)="filterBy = 'person'"
+>
+Kişi
+</button>
+  <button
+    class="btn btn-info"
+    [class.active]="filterBy === 'series'"
+    (click)="filterBy = 'series'"
+  >
+    Dizi
+  </button>
+  <button
+  class="btn btn-info"
+  [class.active]="filterBy === 'film'"
+  (click)="filterBy = 'film'"
+>
+  Film
+</button>
+  </div>
+
+  <ul id="thumbnailList">
+    <li *ngFor="let img of visibleImages | imageFilter: filterBy" style="cursor:pointer;">
+      <img src="{{ img.url }}" class="tn" width="200" height="160" [routerLink]="['/image', img.id]" />
+    </li>
+  </ul>
+</div>
