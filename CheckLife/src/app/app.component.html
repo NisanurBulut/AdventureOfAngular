@@ -1,25 +1,25 @@
-<div class="container">
-  <div class="row">
-    <div class="col-md-5">
-      <h3 class="bg-primary text-white text-center p-3">
-        {{getName()}} 'un Listesi
+
+    <div class="app-box">
+      <div class="box-content">
+      <h3 class="text-white text-center p-3">
+      List of  {{getName()}}
       </h3>
     <div class="input-group">
     <input type="text" #todoText class="form-control">
     <div class="input-group-append">
-      <button class="btn btn-primary" (click)="addItem(todoText.value); todoText.value='';" >Ekle</button>
+      <button class="btn btn-add" (click)="addItem(todoText.value); todoText.value='';" >Add</button>
     </div>
     </div>
     <div class="custom-control custom-checkbox my-3">
     <input type="checkbox" [(ngModel)]="hepsiniGoster" class="custom-control-input" id="hepsiniGoster">
-    <label class="custom-control-label" for="hepsiniGoster">Hepsini Göster</label>
+    <label class="custom-control-label" for="hepsiniGoster">Show All</label>
     </div>
     <table class="table table-striped-table-bordered">
       <thead>
         <tr>
           <th></th>
-          <th>Açıklama</th>
-          <th>Eylem</th>
+          <th>Description</th>
+          <th>Action</th>
           <th></th>
         </tr>
       </thead>
@@ -31,11 +31,9 @@
           <input type="checkbox" [(ngModel)]="item.action">
         </td>
         <td [ngSwitch]="item.action">
-          <span *ngSwitchCase="true">
-Evet
+          <span *ngSwitchCase="true"> Yes
           </span>
-          <span *ngSwitchCase="false">
-Hayır
+          <span *ngSwitchCase="false"> No
           </span>
           <span *ngSwitchDefault>
 
@@ -44,6 +42,5 @@ Hayır
         </tr>
       </tbody>
     </table>
-    </div>
   </div>
-</div>
+  </div>

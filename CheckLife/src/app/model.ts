@@ -4,10 +4,10 @@ export class Model {
     constructor() {
         this.user = 'Nisanur';
         this.items = [
-            new TodoItem("kahvaltı", false),
-            new TodoItem("kahve içmek", false),
-            new TodoItem("günlük not okumak", false),
-            new TodoItem("kodlama", false),
+            new TodoItem("Breakfast", false),
+            new TodoItem("Drink Coffee", false),
+            new TodoItem("Take Daily Notes", false),
+            new TodoItem("Coding Forever", false),
         ];
     }
 }

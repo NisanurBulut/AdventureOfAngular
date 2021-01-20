@@ -1,0 +1,22 @@
+
+.app-box{
+    background-image: linear-gradient(to left, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+    width: 600px;
+    border-radius: 5%;
+    font-weight: bold;
+}
+.btn-add{
+    background-color:#B32C5C;
+    color:white;
+}
+.box-content{
+margin: 10px;
+}
+tbody{
+    font-style: italic;
+}
