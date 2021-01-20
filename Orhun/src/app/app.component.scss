@@ -1,29 +1,89 @@
-body{
+body {
     padding: 0;
     margin: 0;
-    font-size: 16px;
     font-family: "Roboto", Arial, sans-serif;
-}
-.header{
-    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    font-size: 16px;
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+  }
+
+  header {
+    background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
     padding: 30px;
     width: 100%;
-    color:white;
+    color: white;
     text-align: center;
     font-size: 30px;
-}
-.book-list{
+  }
+
+  .book-list {
     margin: 20px auto;
     width: 40%;
-}
-.book-element{
+  }
+
+  .book-element {
     box-shadow: 1px 1px 6px #ccc;
     padding: 10px;
     margin: 10px 0;
-}
-.tooltip{
+  }
+
+  .tooltip {
     position: absolute;
     padding: 3px;
     font-size: 12px;
     background-color: #eee;
-}
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    text-align: left;
+  }
+
+  .temperature {
+    cursor: default;
+  }
+
+  .info {
+    color: rgba(95, 95, 95, 0.51);
+    font-weight: bold;
+  }
+
+
+  .weather-search {
+    margin: 20px auto;
+    width: 40%;
+    text-align: center;
+
+    label {
+      font-weight: bold;
+      margin-right: 20px;
+    }
+
+    button, input {
+      font-size: inherit;
+      font-family: inherit;
+    }
+
+    input {
+      padding: 3px 5px;
+      outline: none;
+      width: 50%;
+      margin-right: 20px;
+    }
+
+    button {
+      background-color: #2ecc71;
+      border: none;
+      padding: 4px 8px;
+      box-shadow: 1px 1px 1px #95a5a6;
+      cursor: pointer;
+      color: white;
+    }
+
+    button:hover {
+      background-color: #27ae60;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .weather-list {
+      width: 80%;
+    }
+  }

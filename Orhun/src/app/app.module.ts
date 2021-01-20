@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BookItemComponent } from './book-list/book-item/book-item.component';
 import {BookListComponent} from './book-list/book-list.component';
+
 @NgModule({
   declarations: [
     AppComponent,
