@@ -1,8 +1,4 @@
-# ToDoAPP
+# 1 CheckLife
+This application describes the use of ngSwitchCase.
 
-Angular version 8.3.6.
-
-bir todoAPP uygulamasıdır.
-
-Uygulama
-![Uygulama](https://github.com/NisanurBulut/AdventureOfAngular/blob/master/src/Trailers/Trailer.gif)
+![Uygulama](https://github.com/NisanurBulut/AdventureOfAngular/blob/master/src/Trailers/Trailer_CheckLife.gif)
