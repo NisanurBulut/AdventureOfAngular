@@ -36,7 +36,7 @@ body {
     text-align: left;
   }
 
-  .temperature {
+  .author {
     cursor: default;
   }
 
@@ -46,7 +46,7 @@ body {
   }
 
 
-  .weather-search {
+  .author-search {
     margin: 20px auto;
     width: 40%;
     text-align: center;
@@ -83,7 +83,7 @@ body {
   }
 
   @media screen and (max-width: 768px) {
-    .weather-list {
+    .book-list {
       width: 80%;
     }
   }
