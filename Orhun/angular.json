@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Kultigin": {
+    "Orhun": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/Kultigin",
+            "outputPath": "dist/Orhun",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -66,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Kultigin:build"
+            "browserTarget": "Orhun:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Kultigin:build:production"
+              "browserTarget": "Orhun:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Kultigin:build"
+            "browserTarget": "Orhun:build"
           }
         },
         "test": {
@@ -114,15 +114,19 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Kultigin:serve"
+            "devServerTarget": "Orhun:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Kultigin:serve:production"
+              "devServerTarget": "Orhun:serve:production"
             }
           }
         }
       }
-    }},
-  "defaultProject": "Kultigin"
+    }
+  },
+  "defaultProject": "Orhun",
+  "cli": {
+    "analytics": "381dbed8-f3b3-42e2-bbbd-70bda8fe7c1f"
+  }
 }
