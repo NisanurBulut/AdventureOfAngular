@@ -16,7 +16,7 @@ export class ProfileComponent implements OnInit {
   constructor(private _profileService: ProfileService, private _bookService: BookService) { }
 
   ngOnInit(): void {
-
+    this.getProfileList();
   }
   getProfileList() {
     this.profiles = this._profileService.getProfiles();
@@ -26,11 +26,13 @@ export class ProfileComponent implements OnInit {
     this._profileService.saveNewProfile(books);
     this.getProfileList();
   }
-  onDeleteProfile(event:Event, profile: Profile) {
+  onDeleteProfile(event: Event, profile: Profile) {
     event.stopPropagation();
     this._profileService.deleteProfile(profile);
-   }
+  }
   onLoadProfile(profile: Profile) {
+    const pBookItems=this._profileService.getProfile(profile.profileName);
+    console.log(pBookItems.bookItems);
     this._bookService.clearBookItems();
     this._bookService.setBookItems(profile.bookItems);
   }

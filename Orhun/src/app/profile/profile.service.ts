@@ -19,6 +19,9 @@ export class ProfileService {
     getProfiles() {
         return this.profiles;
     }
+    getProfile(id: string) {
+        return this.profiles.find(a => a.profileName === id);
+    }
     deleteProfile(profile: Profile) {
         const profileIndex = this.profiles.findIndex(a => a.profileName === profile.profileName);
         this.profiles.splice(profileIndex, 1);

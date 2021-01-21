@@ -11,7 +11,6 @@ import { Subject } from 'rxjs';
 })
 export class BookSearchComponent implements OnInit {
   volumeArrays: BookItem[] = [];
-  foundVolumesCount = 0;
   private searchStream = new Subject<string>();
   constructor(private _bookService: BookService) { }
 
@@ -19,13 +18,13 @@ export class BookSearchComponent implements OnInit {
   }
 
   onSearchBookName(bookName: string) {
+    console.log(bookName);
     this._bookService.clearBookItems();
     if (bookName) {
       const volumInfos = this._bookService.getBookItems(bookName)
         .pipe(takeUntil(this.searchStream),
           delay(300))
         .subscribe(result => {
-          this.foundVolumesCount = result.items.length;
           result.items.map((book) => {
             const title = book.volumeInfo.title;
             const description = book.volumeInfo.description;
@@ -34,6 +33,9 @@ export class BookSearchComponent implements OnInit {
             this._bookService.addBookItem(new BookItem(book.id, title, description, imageLink, authors));
           });
         });
+    }
+    else{
+      this._bookService.clearBookItems();
     }
   }
 }

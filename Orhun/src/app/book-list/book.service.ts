@@ -13,6 +13,7 @@ export class BookService {
     return BOOK_ITEMS;
   }
   setBookItems(bookItems: BookItem[]) {
+    console.log(bookItems);
     BOOK_ITEMS.push(...bookItems);
   }
   addBookItem(bookItem: BookItem) {
