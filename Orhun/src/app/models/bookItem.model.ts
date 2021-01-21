@@ -1,4 +1,8 @@
 export class BookItem {
-    constructor(public bookName: string, public description: string, public selfLink: string, public author: string) {
+    constructor(
+        public title: string,
+        public description: string,
+        public imageLink: string,
+        public authors: string) {
     }
 }

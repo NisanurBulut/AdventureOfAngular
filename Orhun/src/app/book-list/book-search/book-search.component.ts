@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, NgForm } from '@angular/forms';
+import { BookItem } from 'src/app/models/bookItem.model';
 import { BookService } from '../book.service';
-
+import { tap } from "rxjs/operators";
 @Component({
   selector: 'book-search',
   templateUrl: './book-search.component.html',
@@ -9,16 +9,22 @@ import { BookService } from '../book.service';
   providers: [BookService]
 })
 export class BookSearchComponent implements OnInit {
-
+  volumeArrays:BookItem[]=[];
   constructor(private _bookService: BookService) { }
 
   ngOnInit(): void {
   }
-  onSubmit(value: any) {
-    console.log(value);
-    var result = this._bookService.getBookItems(value.bookName)
+
+  onSearchBookName(bookName: string) {
+    const volumInfos = this._bookService.getBookItems(bookName)
       .subscribe(result => {
-        console.log(result);
+         result.items.map((book) => {
+          const title = book.volumeInfo.title;
+          const description = book.volumeInfo.description;
+          const authors = (book.volumeInfo['authors'])?book.volumeInfo.authors.join(','):'';
+          const imageLink = (book.volumeInfo['imageLinks']) ? book.volumeInfo.imageLinks.smallThumbnail : '';
+          this._bookService.addBookItem(new BookItem(title, description, imageLink, authors));
+        });
       });
   }
 }

@@ -1,8 +1,7 @@
 <section class="book-search">
     <form #f = "ngForm" (ngSubmit) = "onSubmit(f.value)">
         <label for="bookName">Book</label>
-        <input name="bookName" type="text" id="bookName" required ngModel/>
-        <button type="submit">Add Book</button>
+        <input name="bookName" (input)="onSearchBookName(input.value)" #input type="text" id="bookName" required ngModel/>
     </form>
     <div>
         <span class="info">Book Found : </span> Book Name
