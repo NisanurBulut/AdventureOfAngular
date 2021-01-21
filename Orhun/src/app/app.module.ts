@@ -5,16 +5,21 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BookItemComponent } from './book-list/book-item/book-item.component';
 import {BookListComponent} from './book-list/book-list.component';
+import { BookSearchComponent } from './book-list/book-search/book-search.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     BookItemComponent,
-    BookListComponent
+    BookListComponent,
+    BookSearchComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

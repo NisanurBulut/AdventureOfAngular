@@ -1,0 +1,10 @@
+<section class="book-search">
+    <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+        <label for="book">Book</label>
+        <input ngDefaultControl="book" type="text" id="book" required/>
+        <button type="submit">Add Book</button>
+    </form>
+    <div>
+        <span class="info">Book Found : </span> Book Name
+    </div>
+</section>
