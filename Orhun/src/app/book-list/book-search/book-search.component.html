@@ -2,7 +2,7 @@
     <form #f = "ngForm">
         <input name="bookName" (input)="onSearchBookName(input.value)" #input type="text" id="bookName" required ngModel/>
     </form>
-    <div>
-        <span class="info">Book Found : </span> Book Name
+    <div style="margin-top: 5px;">
+        <span class="info">Book Found : </span> {{foundVolumesCount}}
     </div>
 </section>
