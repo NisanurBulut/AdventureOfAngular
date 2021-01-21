@@ -7,13 +7,15 @@ import { BookItemComponent } from './book-list/book-item/book-item.component';
 import {BookListComponent} from './book-list/book-list.component';
 import { BookSearchComponent } from './book-list/book-search/book-search.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BookItemComponent,
     BookListComponent,
-    BookSearchComponent
+    BookSearchComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,

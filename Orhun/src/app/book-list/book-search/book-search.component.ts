@@ -29,7 +29,7 @@ export class BookSearchComponent implements OnInit {
           const description = book.volumeInfo.description;
           const authors = (book.volumeInfo['authors']) ? book.volumeInfo.authors.join(',') : '';
           const imageLink = (book.volumeInfo['imageLinks']) ? book.volumeInfo.imageLinks.smallThumbnail : '';
-          this._bookService.addBookItem(new BookItem(title, description, imageLink, authors));
+          this._bookService.addBookItem(new BookItem(book.id,title, description, imageLink, authors));
         });
       });
   }
