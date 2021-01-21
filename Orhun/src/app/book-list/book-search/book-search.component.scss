@@ -1,7 +1,7 @@
 
   .book-search {
     margin: 20px auto;
-    width: 40%;
+    width: 50%;
     text-align: center;
 
     label {
@@ -10,6 +10,7 @@
     }
 
     button, input {
+      border-radius: 5px;
       font-size: inherit;
       font-family: inherit;
     }

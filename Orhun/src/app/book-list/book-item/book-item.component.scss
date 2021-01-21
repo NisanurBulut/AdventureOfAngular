@@ -1,25 +1,35 @@
 .col-1 {
     display: inline-block;
-    width: 40%;
+    width: 60%;
   }
 
   .col-1 h3 {
     margin: 0 0 10px 0;
     padding: 0;
     font-size: 22px;
+    font-style: italic;
   }
 
   .col-2 {
     display: inline-block;
-    width: 50%;
+    width: 40%;
     vertical-align: top;
     text-align: right;
   }
   .book-element {
-    box-shadow: 2px 2px 8px rgb(233, 228, 228);
+    box-shadow: 3px 3px 10px #fff;
     padding: 10px;
     margin: 10px 0;
+    border-radius: 5px;
+    background-color: #61729c;
+    color:white;
+  }
+  .info {
+    color:#ECEFF4;
+    font-family: monospace;
   }
   .author {
+    font-style: italic;
     font-size: 22px;
+    margin-bottom: 5px;
   }
