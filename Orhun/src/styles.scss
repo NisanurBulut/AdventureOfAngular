@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 16px;
+    background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+}
+  .info {
+    color: rgba(95, 95, 95, 0.51);
+    font-weight: bold;
+  }
+
+  @media screen and (max-width: 768px) {
+    .book-list {
+      width: 80%;
+    }
+}
