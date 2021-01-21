@@ -1,7 +1,7 @@
 <h3>Saved Profile</h3>
 <button (click)="onSaveProfile()">Save list To Profile</button>
-<article class="profile" *ngFor="let profile of profiles">
+<article class="profile" *ngFor="let profile of profiles" (click)="onLoadProfile(profile)">
     <h4>{{profile.profileName}}</h4>
-    <p>Books : {{profile.books.join(',')}}</p>
+    <p>Books : {{profile.bookNames}}</p>
     <span (click)="onDeleteProfile($event, profile)" class="delete">X</span>
 </article>

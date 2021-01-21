@@ -9,11 +9,17 @@ import { BookItem } from "../models/bookItem.model";
 export class BookService {
 
   constructor(private _http: HttpClient) { }
-  getBookItemDatas(){
+  getBookItemDatas() {
     return BOOK_ITEMS;
+  }
+  setBookItems(bookItems: BookItem[]) {
+    BOOK_ITEMS.push(...bookItems);
   }
   addBookItem(bookItem: BookItem) {
     BOOK_ITEMS.push(bookItem);
+  }
+  clearBookItems() {
+    BOOK_ITEMS.splice(0);
   }
   getBookItems(bookName: string): Observable<any> {
     return this._http

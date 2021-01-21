@@ -18,16 +18,20 @@ export class ProfileComponent implements OnInit {
   ngOnInit(): void {
 
   }
-  getProfileList(){
+  getProfileList() {
     this.profiles = this._profileService.getProfiles();
   }
   onSaveProfile() {
-    const books = this._bookService.getBookItemDatas()
-      .map((element: BookItem) => {
-        return element.title;
-      });
-      this._profileService.saveNewProfile(books);
-      this.getProfileList();
+    const books = this._bookService.getBookItemDatas();
+    this._profileService.saveNewProfile(books);
+    this.getProfileList();
   }
-  onDeleteProfile(event, profile: Profile) { }
+  onDeleteProfile(event:Event, profile: Profile) {
+    event.stopPropagation();
+    this._profileService.deleteProfile(profile);
+   }
+  onLoadProfile(profile: Profile) {
+    this._bookService.clearBookItems();
+    this._bookService.setBookItems(profile.bookItems);
+  }
 }
