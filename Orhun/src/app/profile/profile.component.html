@@ -1,6 +1,10 @@
 <h3 *ngIf="profiles.length>0">Saved Profile</h3>
-<article #profile class="profile" *ngFor="let profile of profiles" (click)="onLoadProfile(profile)">
+<article #profile class="profile"
+*ngFor="let profile of profiles" (click)="onLoadProfile(profile)">
+<div class="profile-content">
     <h4>{{profile.bookItem.title}}</h4>
     <img src="{{profile.bookItem.imageLink}}"/>
     <span (click)="onDeleteProfile($event, profile)" class="delete">❌</span>
+</div>
+
 </article>
