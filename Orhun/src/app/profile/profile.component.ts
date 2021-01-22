@@ -19,23 +19,21 @@ export class ProfileComponent implements OnInit {
     this.getProfileList();
   }
   getProfileList() {
+    console.log(this.profiles,'silme');
     this._profileService.getProfiles()
       .subscribe(data => {
+        console.log(data);
         this.profiles = data;
       });
   }
   onSaveProfile() {
-    const books = this._bookService
-      .getBookItemDatas()
-      .subscribe(data => {
-        console.log(data);
-      });
-    // this._profileService.saveNewProfile(books);
-    // this.getProfileList();
+
   }
   onDeleteProfile(event: Event, profile: Profile) {
     event.stopPropagation();
-    this._profileService.deleteProfile(profile);
+    this._profileService.deleteProfile(profile).subscribe(data => {
+      this.getProfileList();
+    });
   }
   onLoadProfile(profile: Profile) {
     // const pBookItems = this._profileService.getProfile(profile.profileName);

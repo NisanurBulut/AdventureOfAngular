@@ -25,8 +25,7 @@ export class ProfileService {
     getProfile(id: string) {
         return this.profiles.find(a => a.profileName === id);
     }
-    deleteProfile(profile: Profile) {
-        this._http.delete(environment.apiProfileUrl + '/' + profile.id)
-            .subscribe((result) => { console.log(result); });
+    deleteProfile(profile: Profile):Observable<any> {
+       return this._http.delete(environment.apiProfileUrl + '/' + profile.id);
     }
 }
