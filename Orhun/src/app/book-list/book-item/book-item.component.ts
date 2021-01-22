@@ -12,7 +12,6 @@ export class BookItemComponent implements OnInit {
   constructor(private _profileService: ProfileService) {
   }
   addToProfile(bookItem: BookItem) {
-
     this._profileService.saveNewProfile(bookItem);
     console.log(bookItem);
   }

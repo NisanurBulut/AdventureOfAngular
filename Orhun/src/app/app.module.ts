@@ -10,7 +10,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ProfileComponent } from './profile/profile.component';
 import { ProfileService } from './profile/profile.service';
 import { BookService } from './book-list/book.service';
-
+import { StoreModule } from '@ngrx/store';
+import * as fromApp from './store/app.reducer';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,8 +25,10 @@ import { BookService } from './book-list/book.service';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    StoreModule.forRoot(fromApp.appReducer)
   ],
+
   providers: [BookService, ProfileService],
   bootstrap: [AppComponent]
 })
