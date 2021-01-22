@@ -7,11 +7,12 @@ import { BookItem } from 'src/app/models/bookItem.model';
   styleUrls: ['./book-item.component.scss']
 })
 export class BookItemComponent implements OnInit {
-  @Input ('item') bookItem: BookItem;
+  @Input('item') bookItem: BookItem;
   constructor() {
   }
-
+  addToProfile(bookItem: BookItem) {
+    console.log(bookItem);
+  }
   ngOnInit(): void {
   }
-
 }
