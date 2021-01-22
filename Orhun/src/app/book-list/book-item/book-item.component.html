@@ -1,8 +1,7 @@
 <article class="book-element" (click)="addToProfile(bookItem)">
     <div class="col-1">
         <h3>{{bookItem.title}}</h3>
-        <p
-         class="info">{{bookItem.description | slice: 0:150}}</p>
+        <p class="info">{{bookItem.description | slice: 0:150}}</p>
     </div>
     <div class="col-2">
         <div class="author">{{bookItem.authors}}</div>

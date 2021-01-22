@@ -1,13 +1,8 @@
 
   .book-search {
     margin: 20px auto;
-    width: 50%;
+    width: 100%;
     text-align: center;
-
-    label {
-      font-weight: bold;
-      margin-right: 20px;
-    }
 
     button, input {
       border-radius: 5px;
@@ -18,8 +13,7 @@
     input {
       padding: 3px 5px;
       outline: none;
-      width: 50%;
-      margin-right: 20px;
+      width: 100%;
     }
 
     button {

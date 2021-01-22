@@ -1,16 +1,33 @@
-<div class="profile-section">
-  <app-profile [profileNewItem]="NewBookItem"></app-profile>
-</div>
-<div class="book-section">
-  <book-search
-  (searchResultBookItems)="refreshBookItemResults($event)"
-></book-search>
-<section class="book-list">
-  <book-item
-    *ngFor="let bookItem of BookItems"
-    [item]="bookItem"
-    (setProfileBookItems)="setBookProfileItem($event)"
-  ></book-item>
-</section>
-
+<div class='some-page-wrapper'>
+  <div class='row'>
+    <div class='column'>
+      <div class='profile-column'>
+      </div>
+    </div>
+    <div class='column'>
+      <div class='book-column'>
+        <book-search
+        (searchResultBookItems)="refreshBookItemResults($event)"
+      ></book-search>
+      </div>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='column'>
+      <div class='profile-column'>
+       <app-profile [profileNewItem]="NewBookItem"></app-profile>
+      </div>
+    </div>
+    <div class='column'>
+      <div class='book-column'>
+      <section class="book-list">
+        <book-item
+          *ngFor="let bookItem of BookItems"
+          [item]="bookItem"
+          (setProfileBookItems)="setBookProfileItem($event)"
+        ></book-item>
+      </section>
+      </div>
+    </div>
+  </div>
 </div>

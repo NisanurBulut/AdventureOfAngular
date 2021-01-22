@@ -1,37 +1,48 @@
 {
   "profiles": [
     {
-      "profileName": "KeteAQAAQBAJ Profile",
+      "profileName": "g_NtPgAACAAJ Profile",
       "bookItem": {
-        "id": "KeteAQAAQBAJ",
-        "title": "The Politics of Harry Potter",
-        "description": "This political analysis of Harry Potter uses the beloved wizarding world to introduce readers to the equally murky and intimidating world of politics. Rowling's work provides us with entries into all of the most important political questions in history, from terrorism and human rights to the classic foundations of political thought.",
-        "imageLink": "http://books.google.com/books/content?id=KeteAQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
-        "authors": "B. Barratt"
+        "id": "g_NtPgAACAAJ",
+        "title": "Harry Potter and the Prisoner of Azkaban",
+        "description": "The third book in the Harry Potter series, this brilliant new story once again features young readers' favourite wizard and his his best friends, Ron and Hermione. Danger is afoot at Hogwarts, no one is quite who they seem, secrets and rumours abound. Along with fantastic new creatures and in the company of his loyal friends, Harry makes startling discoveries about his own mysterious past.",
+        "imageLink": "http://books.google.com/books/content?id=g_NtPgAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "authors": "J. K. Rowling"
       },
       "id": 1
     },
     {
-      "profileName": "8P8nDwAAQBAJ Profile",
+      "profileName": "iO5pApw2JycC Profile",
       "bookItem": {
-        "id": "8P8nDwAAQBAJ",
-        "title": "Literary Allusion in Harry Potter",
-        "description": "Literary Allusion in Harry Potter builds on the world-wide enthusiasm for J. K. Rowling’s series in order to introduce its readers to some of the great works of literature on which Rowling draws. Harry Potter’s narrative techniques are rooted in the western literary tradition and its allusiveness provides insight into Rowling’s fictional world. Each chapter of Literary Allusion in Harry Potter consists of an in-depth discussion of the intersection between Harry Potter and a canonical literary work, such as the plays of Shakespeare, the poetry of Homer, Ovid, the Gawain-poet, Chaucer, Milton and Tennyson, and the novels of Austen, Hardy and Dickens. This approach aims to transform the reader’s understanding of Rowling’s literary achievement as well as to encourage the discovery of works with which they may be less familiar. The aim of this book is to delight Potter fans with a new perspective on their favourite books while harnessing that enthusiasm to increase their wider appreciation of literature.",
-        "imageLink": "http://books.google.com/books/content?id=8P8nDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
-        "authors": "Beatrice Groves"
+        "id": "iO5pApw2JycC",
+        "title": "The Ivory Tower and Harry Potter",
+        "description": "Now available in paper, The Ivory Tower and Harry Potter is the first book-length analysis of J. K. Rowling's work from a broad range of perspectives within literature, folklore, psychology, sociology, and popular culture. A significant portion of the book explores the Harry Potter series' literary ancestors, including magic and fantasy works by Ursula K. LeGuin, Monica Furlong, Jill Murphy, and others, as well as previous works about the British boarding school experience. Other chapters explore the moral and ethical dimensions of Harry's world, including objections to the series raised within some religious circles. In her new epilogue, Lana A. Whited brings this volume up to date by covering Rowling's latest book, Harry Potter and the Order of the Phoenix.",
+        "imageLink": "http://books.google.com/books/content?id=iO5pApw2JycC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "authors": "Lana A. Whited"
       },
       "id": 2
     },
     {
-      "profileName": "z-y3GAAACAAJ Profile",
+      "profileName": "iO5pApw2JycC Profile",
       "bookItem": {
-        "id": "z-y3GAAACAAJ",
-        "title": "Harry Potter",
-        "description": "Harry Potter letter writing kit containing envelopes, letter sheets, postcards and stamps.",
-        "imageLink": "http://books.google.com/books/content?id=z-y3GAAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
-        "authors": "British Broadcasting Corporation Staff"
+        "id": "iO5pApw2JycC",
+        "title": "The Ivory Tower and Harry Potter",
+        "description": "Now available in paper, The Ivory Tower and Harry Potter is the first book-length analysis of J. K. Rowling's work from a broad range of perspectives within literature, folklore, psychology, sociology, and popular culture. A significant portion of the book explores the Harry Potter series' literary ancestors, including magic and fantasy works by Ursula K. LeGuin, Monica Furlong, Jill Murphy, and others, as well as previous works about the British boarding school experience. Other chapters explore the moral and ethical dimensions of Harry's world, including objections to the series raised within some religious circles. In her new epilogue, Lana A. Whited brings this volume up to date by covering Rowling's latest book, Harry Potter and the Order of the Phoenix.",
+        "imageLink": "http://books.google.com/books/content?id=iO5pApw2JycC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "authors": "Lana A. Whited"
       },
       "id": 3
+    },
+    {
+      "profileName": "-__ICQemqaEC Profile",
+      "bookItem": {
+        "id": "-__ICQemqaEC",
+        "title": "Reading Harry Potter",
+        "description": "The tropes and themes of J. K. Rowling's massively popular series are interpreted within the context of its audience.",
+        "imageLink": "http://books.google.com/books/content?id=-__ICQemqaEC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "authors": "David G. Epstein"
+      },
+      "id": 4
     }
   ]
 }

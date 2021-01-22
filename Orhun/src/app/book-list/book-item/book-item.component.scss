@@ -1,27 +1,22 @@
 .col-1 {
-  display: inline;
   width: 60%;
-}
-
-.col-1 h3 {
-  margin: 0 0 10px 0;
-  padding: 0;
-  font-size: 22px;
-  font-style: italic;
+  margin: 10px 10px 10px  10px;
 }
 
 .col-2 {
   width: 40%;
-  vertical-align: top;
-  text-align: right;
+  margin: 10px 10 10px 10px;
 }
+.col-1 h3 {
+  font-size: 22px;
+  font-style: italic;
+}
+
 .book-element {
-  width: 50%;
-  margin-left: 5%;
   display: flex;
-  justify-content: center;
+  width: 100%;
+  margin: 10px 10px 10px 10px;
   box-shadow: 3px 3px 10px #fff;
-  padding-left: 100px;
   border-radius: 5px;
   background-color: #61729c;
   color: white;
@@ -34,5 +29,6 @@
 .author {
   font-style: italic;
   font-size: 22px;
+  margin-top: 5px;
   margin-bottom: 5px;
 }
