@@ -1,5 +1,6 @@
 <section class="book-search">
     <form #f = "ngForm">
         <input name="bookName" (input)="onSearchBookName(input.value)" #input type="text" id="bookName" required ngModel/>
+        <button (click)="saveListToProfile()">Save list to profile</button>
     </form>
 </section>

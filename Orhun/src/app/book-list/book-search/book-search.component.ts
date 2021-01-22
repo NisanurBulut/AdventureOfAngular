@@ -3,23 +3,28 @@ import { BookItem } from 'src/app/models/bookItem.model';
 import { BookService } from '../book.service';
 import { tap, takeUntil, delay } from 'rxjs/operators';
 import { Subject } from 'rxjs';
+import { ProfileService } from 'src/app/profile/profile.service';
 @Component({
   selector: 'book-search',
   templateUrl: './book-search.component.html',
-  styleUrls: ['./book-search.component.scss'],
-  providers: [BookService]
+  styleUrls: ['./book-search.component.scss']
 })
 export class BookSearchComponent implements OnInit {
   volumeArrays: BookItem[] = [];
   private searchStream = new Subject<string>();
-  constructor(private _bookService: BookService) { }
+  constructor(private _bookService: BookService, private _profileService: ProfileService) { }
 
   ngOnInit(): void {
   }
+  saveListToProfile() {
 
+  }
   onSearchBookName(bookName: string) {
-    console.log(bookName);
-    this._bookService.clearBookItems();
+    const searchResult = this._bookService.getBookItemDatas();
+    console.log(searchResult);
+    if (searchResult) {
+      this._bookService.clearBookItems();
+    }
     if (bookName) {
       const volumInfos = this._bookService.getBookItems(bookName)
         .pipe(takeUntil(this.searchStream),
@@ -33,9 +38,6 @@ export class BookSearchComponent implements OnInit {
             this._bookService.addBookItem(new BookItem(book.id, title, description, imageLink, authors));
           });
         });
-    }
-    else{
-      this._bookService.clearBookItems();
     }
   }
 }

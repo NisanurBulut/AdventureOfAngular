@@ -8,6 +8,8 @@ import {BookListComponent} from './book-list/book-list.component';
 import { BookSearchComponent } from './book-list/book-search/book-search.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ProfileComponent } from './profile/profile.component';
+import { ProfileService } from './profile/profile.service';
+import { BookService } from './book-list/book.service';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,7 @@ import { ProfileComponent } from './profile/profile.component';
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [BookService, ProfileService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
