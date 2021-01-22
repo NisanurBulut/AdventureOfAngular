@@ -6,5 +6,5 @@ export const environment = {
   production: false,
   apiLibraryUrl: 'https://www.googleapis.com/books/v1/volumes?q=',
   apiProfileUrl: 'http://localhost:3000/profiles',
-  apiBookItemsUrl: 'http://localhost:3001/bookItems'
+  apiBookItemsUrl: 'http://localhost:3011/bookItems'
 };

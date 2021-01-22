@@ -1,3 +1,4 @@
+<book-search (searchResultBookItems)="refreshBookItemResults($event)"></book-search>
 <section class="book-list">
 <book-item *ngFor="let bookItem of BookItems" [item]="bookItem" ></book-item>
 </section>

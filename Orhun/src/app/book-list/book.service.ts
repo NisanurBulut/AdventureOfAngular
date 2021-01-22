@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable, throwError } from 'rxjs';
-import { catchError, map, retry } from 'rxjs/operators';
+import { Observable, pipe, throwError } from 'rxjs';
+import { catchError, delay, map, retry } from 'rxjs/operators';
 import { environment } from 'src/environments/environment';
 import { BOOK_ITEMS } from '../book.data';
 import { BookItem } from '../models/bookItem.model';
@@ -10,34 +10,31 @@ import { BookItem } from '../models/bookItem.model';
 export class BookService {
 
   constructor(private _http: HttpClient) { }
-  getBookItemDatas() {
-    return this._http.get<BookItem[]>(environment.apiBookItemsUrl)
-    .subscribe(data => {
-      console.log(data);
-    });
+  getBookItemDatas(): Observable<BookItem[]> {
+    return this._http.get<BookItem[]>(environment.apiBookItemsUrl).pipe(
+    );
   }
   setBookItems(bookItems: BookItem[]) {
-    console.log(bookItems);
-    BOOK_ITEMS.push(...bookItems);
+    bookItems.forEach((bookItem: BookItem) => {
+     this.addBookItem(bookItem);
+    });
   }
   addBookItem(bookItem: BookItem) {
     this._http.post<BookItem>
-      (environment.apiBookItemsUrl, bookItem).subscribe(data => {
+      (environment.apiBookItemsUrl, bookItem)
+      .subscribe((data: any) => {
         console.log(data);
       });
   }
   clearBookItems() {
-    // BOOK_ITEMS.splice(0);
-    this._http.delete(environment.apiBookItemsUrl + '?deleteStatus=0')
-      .subscribe({
-        next: data => {
-          console.log('Delete successful');
-        },
-        error: error => {
-          console.log('delete işlem');
-          this.handleError(error);
-        }
-      });
+
+  }
+  deleteBookItems(bookItems: BookItem[]) {
+    bookItems.forEach((bookItem: BookItem) => {
+      console.log(bookItem.id, environment.apiBookItemsUrl + '/' + bookItem.id);
+      this._http.delete(environment.apiBookItemsUrl + '/' + bookItem.id)
+      .subscribe((result) => { console.log(result)});
+    });
   }
   getBookItems(bookName: string): Observable<any> {
     return this._http

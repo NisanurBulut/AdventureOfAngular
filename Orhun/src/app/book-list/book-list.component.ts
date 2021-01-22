@@ -14,7 +14,10 @@ export class BookListComponent implements OnInit {
   constructor(private _bookService: BookService) { }
 
   ngOnInit(): void {
-    this.BookItems = this._bookService.getBookItemDatas();
-  }
 
+  }
+  refreshBookItemResults(data) {
+    this.BookItems = data;
+    console.log(this.BookItems);
+  }
 }
