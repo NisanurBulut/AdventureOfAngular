@@ -2,5 +2,5 @@
 <article #profile class="profile" *ngFor="let profile of profiles" (click)="onLoadProfile(profile)">
     <h4>{{profile.bookItem.title}}</h4>
     <img src="{{profile.bookItem.imageLink}}"/>
-    <span (click)="onDeleteProfile($event, profile)" class="delete">X</span>
+    <span (click)="onDeleteProfile($event, profile)" class="delete">❌</span>
 </article>

@@ -1,5 +1,8 @@
-<app-profile [profileNewItem]="NewBookItem"></app-profile>
-<book-search
+<div class="profile-section">
+  <app-profile [profileNewItem]="NewBookItem"></app-profile>
+</div>
+<div class="book-section">
+  <book-search
   (searchResultBookItems)="refreshBookItemResults($event)"
 ></book-search>
 <section class="book-list">
@@ -9,3 +12,5 @@
     (setProfileBookItems)="setBookProfileItem($event)"
   ></book-item>
 </section>
+
+</div>

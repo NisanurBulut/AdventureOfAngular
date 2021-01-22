@@ -1,9 +1,9 @@
-:host {
-    float: left;
-    margin-top: 10px;
-    width: 25%;
-    padding: 10px;
-  }
+// :host {
+//     float: left;
+//     // margin-top: 10px;
+//     // width: 25%;
+//     // padding-left: 25px;
+//   }
 
   h3 {
     margin: 0 0 10px 0;
@@ -22,9 +22,7 @@
     color: white;
   }
 
-  button:hover {
-    background-color: #2980b9;
-  }
+
   img {
     width: 50px;
     height: 50px;
@@ -39,7 +37,8 @@
 
     h4 {
       margin: 0;
-      padding: 0;
+      padding: 5px 0 5px;
+      font-style: italic;
     }
 
     p {
@@ -52,7 +51,7 @@
       top: 2px;
       right: 5px;
       font-size: 14px;
-      color: #7f8c8d;
+      font-style: bold;
     }
 
     .delete:hover {
@@ -61,6 +60,6 @@
   }
 
   .profile:hover {
-    background-color:#90a7e0;
-    color:rgb(110, 110, 110);
+    background-color:#1E6566;
+    color:rgb(245, 239, 239);
   }
