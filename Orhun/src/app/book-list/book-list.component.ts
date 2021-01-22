@@ -11,6 +11,7 @@ import { BookService } from './book.service';
 })
 export class BookListComponent implements OnInit {
   BookItems: BookItem[];
+  NewBookItem: BookItem;
   constructor(private _bookService: BookService) { }
 
   ngOnInit(): void {
@@ -18,6 +19,8 @@ export class BookListComponent implements OnInit {
   }
   refreshBookItemResults(data) {
     this.BookItems = data;
-    console.log(this.BookItems);
+  }
+  setBookProfileItem(data) {
+    this.NewBookItem = data;
   }
 }

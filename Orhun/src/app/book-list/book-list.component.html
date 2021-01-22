@@ -1,4 +1,11 @@
-<book-search (searchResultBookItems)="refreshBookItemResults($event)"></book-search>
+<app-profile [profileNewItem]="NewBookItem"></app-profile>
+<book-search
+  (searchResultBookItems)="refreshBookItemResults($event)"
+></book-search>
 <section class="book-list">
-<book-item *ngFor="let bookItem of BookItems" [item]="bookItem" ></book-item>
+  <book-item
+    *ngFor="let bookItem of BookItems"
+    [item]="bookItem"
+    (setProfileBookItems)="setBookProfileItem($event)"
+  ></book-item>
 </section>

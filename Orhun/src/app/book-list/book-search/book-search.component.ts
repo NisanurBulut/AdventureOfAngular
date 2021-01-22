@@ -15,7 +15,7 @@ export class BookSearchComponent implements OnInit {
   @Output() searchResultBookItems: EventEmitter<BookItem[]> = new EventEmitter();
 
   private searchStream = new Subject<string>();
-  constructor(private _bookService: BookService, private _profileService: ProfileService) { }
+  constructor(private _bookService: BookService) { }
   ngOnInit(): void {
   }
 

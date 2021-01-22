@@ -11,7 +11,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { ProfileService } from './profile/profile.service';
 import { BookService } from './book-list/book.service';
 import { StoreModule } from '@ngrx/store';
-import * as fromApp from './store/app.reducer';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,8 +25,7 @@ import * as fromApp from './store/app.reducer';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule,
-    StoreModule.forRoot(fromApp.appReducer)
+    HttpClientModule
   ],
 
   providers: [BookService, ProfileService],

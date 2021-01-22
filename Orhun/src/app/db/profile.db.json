@@ -1,17 +1,6 @@
 {
   "profiles": [
     {
-      "profileName": "g_NtPgAACAAJ Profile",
-      "bookItem": {
-        "id": "g_NtPgAACAAJ",
-        "title": "Harry Potter and the Prisoner of Azkaban",
-        "description": "The third book in the Harry Potter series, this brilliant new story once again features young readers' favourite wizard and his his best friends, Ron and Hermione. Danger is afoot at Hogwarts, no one is quite who they seem, secrets and rumours abound. Along with fantastic new creatures and in the company of his loyal friends, Harry makes startling discoveries about his own mysterious past.",
-        "imageLink": "http://books.google.com/books/content?id=g_NtPgAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
-        "authors": "J. K. Rowling"
-      },
-      "id": 1
-    },
-    {
       "profileName": "KeteAQAAQBAJ Profile",
       "bookItem": {
         "id": "KeteAQAAQBAJ",
@@ -20,7 +9,7 @@
         "imageLink": "http://books.google.com/books/content?id=KeteAQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
         "authors": "B. Barratt"
       },
-      "id": 2
+      "id": 1
     },
     {
       "profileName": "8P8nDwAAQBAJ Profile",
@@ -30,6 +19,17 @@
         "description": "Literary Allusion in Harry Potter builds on the world-wide enthusiasm for J. K. Rowling’s series in order to introduce its readers to some of the great works of literature on which Rowling draws. Harry Potter’s narrative techniques are rooted in the western literary tradition and its allusiveness provides insight into Rowling’s fictional world. Each chapter of Literary Allusion in Harry Potter consists of an in-depth discussion of the intersection between Harry Potter and a canonical literary work, such as the plays of Shakespeare, the poetry of Homer, Ovid, the Gawain-poet, Chaucer, Milton and Tennyson, and the novels of Austen, Hardy and Dickens. This approach aims to transform the reader’s understanding of Rowling’s literary achievement as well as to encourage the discovery of works with which they may be less familiar. The aim of this book is to delight Potter fans with a new perspective on their favourite books while harnessing that enthusiasm to increase their wider appreciation of literature.",
         "imageLink": "http://books.google.com/books/content?id=8P8nDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
         "authors": "Beatrice Groves"
+      },
+      "id": 2
+    },
+    {
+      "profileName": "z-y3GAAACAAJ Profile",
+      "bookItem": {
+        "id": "z-y3GAAACAAJ",
+        "title": "Harry Potter",
+        "description": "Harry Potter letter writing kit containing envelopes, letter sheets, postcards and stamps.",
+        "imageLink": "http://books.google.com/books/content?id=z-y3GAAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "authors": "British Broadcasting Corporation Staff"
       },
       "id": 3
     }

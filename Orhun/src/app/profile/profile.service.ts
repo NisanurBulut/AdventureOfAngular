@@ -10,14 +10,11 @@ export class ProfileService {
     private profiles: Profile[] = [];
     constructor(private _http: HttpClient) { }
 
-    saveNewProfile(book: BookItem) {
+    saveNewProfile(book: BookItem): Observable<Profile> {
         const profileName = book.id + ' Profile';
         const profile = new Profile(profileName, book);
-        this._http.post<BookItem>
-            (environment.apiProfileUrl, profile)
-            .subscribe((data: any) => {
-                console.log(data);
-            });
+        return this._http.post<Profile>
+            (environment.apiProfileUrl, profile);
     }
     getProfiles(): Observable<Profile[]> {
         return this._http.get<Profile[]>(environment.apiProfileUrl);
@@ -25,7 +22,7 @@ export class ProfileService {
     getProfile(id: string) {
         return this.profiles.find(a => a.profileName === id);
     }
-    deleteProfile(profile: Profile):Observable<any> {
-       return this._http.delete(environment.apiProfileUrl + '/' + profile.id);
+    deleteProfile(profile: Profile): Observable<any> {
+        return this._http.delete(environment.apiProfileUrl + '/' + profile.id);
     }
 }

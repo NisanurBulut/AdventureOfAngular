@@ -1,25 +1,29 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectorRef, Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { BookService } from '../book-list/book.service';
-import { BookItem } from '../models/bookItem.model';
 import { Profile } from '../models/profile.model';
 import { ProfileService } from './profile.service';
-import { map } from 'rxjs/operators';
+
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.component.html',
   styleUrls: ['./profile.component.scss'],
   providers: [ProfileService, BookService]
 })
-export class ProfileComponent implements OnInit {
+export class ProfileComponent implements OnInit , OnChanges{
 
   profiles: Profile[] = [];
-  constructor(private _profileService: ProfileService, private _bookService: BookService) { }
+  @Input() profileNewItem: Profile;
+  constructor(private _profileService: ProfileService, private cd: ChangeDetectorRef) { }
+  ngOnChanges(changes: SimpleChanges): void {
+    this.getProfileList();
+    this.cd.markForCheck();
+  }
 
   ngOnInit(): void {
     this.getProfileList();
   }
   getProfileList() {
-    console.log(this.profiles,'silme');
+    this.cd.detectChanges();
     this._profileService.getProfiles()
       .subscribe(data => {
         console.log(data);
