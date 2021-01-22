@@ -1,87 +1,79 @@
 {
   "profiles": [
     {
-      "profileName": "G4bhDwAAQBAJ Profile",
+      "profileName": "KeteAQAAQBAJ Profile",
       "bookItem": {
-        "id": "G4bhDwAAQBAJ",
-        "title": "Acımak",
-        "description": "Acımak",
-        "imageLink": "http://books.google.com/books/content?id=G4bhDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
-        "authors": "Acımak"
+        "id": "KeteAQAAQBAJ",
+        "title": "The Politics of Harry Potter",
+        "description": "This political analysis of Harry Potter uses the beloved wizarding world to introduce readers to the equally murky and intimidating world of politics. Rowling's work provides us with entries into all of the most important political questions in history, from terrorism and human rights to the classic foundations of political thought.",
+        "imageLink": "http://books.google.com/books/content?id=KeteAQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "authors": "B. Barratt",
+        "infoLink": "https://play.google.com/store/books/details?id=KeteAQAAQBAJ&source=gbs_api",
+        "publisher": "Springer"
+      },
+      "id": 1
+    },
+    {
+      "profileName": "8P8nDwAAQBAJ Profile",
+      "bookItem": {
+        "id": "8P8nDwAAQBAJ",
+        "title": "Literary Allusion in Harry Potter",
+        "description": "Literary Allusion in Harry Potter builds on the world-wide enthusiasm for J. K. Rowling’s series in order to introduce its readers to some of the great works of literature on which Rowling draws. Harry Potter’s narrative techniques are rooted in the western literary tradition and its allusiveness provides insight into Rowling’s fictional world. Each chapter of Literary Allusion in Harry Potter consists of an in-depth discussion of the intersection between Harry Potter and a canonical literary work, such as the plays of Shakespeare, the poetry of Homer, Ovid, the Gawain-poet, Chaucer, Milton and Tennyson, and the novels of Austen, Hardy and Dickens. This approach aims to transform the reader’s understanding of Rowling’s literary achievement as well as to encourage the discovery of works with which they may be less familiar. The aim of this book is to delight Potter fans with a new perspective on their favourite books while harnessing that enthusiasm to increase their wider appreciation of literature.",
+        "imageLink": "http://books.google.com/books/content?id=8P8nDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "authors": "Beatrice Groves",
+        "infoLink": "http://books.google.com.tr/books?id=8P8nDwAAQBAJ&dq=harrypotter&hl=&source=gbs_api",
+        "publisher": "Taylor & Francis"
+      },
+      "id": 2
+    },
+    {
+      "profileName": "z-y3GAAACAAJ Profile",
+      "bookItem": {
+        "id": "z-y3GAAACAAJ",
+        "title": "Harry Potter",
+        "description": "Harry Potter letter writing kit containing envelopes, letter sheets, postcards and stamps.",
+        "imageLink": "http://books.google.com/books/content?id=z-y3GAAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "authors": "British Broadcasting Corporation Staff",
+        "infoLink": "http://books.google.com.tr/books?id=z-y3GAAACAAJ&dq=harrypotter&hl=&source=gbs_api"
+      },
+      "id": 3
+    },
+    {
+      "profileName": "iO5pApw2JycC Profile",
+      "bookItem": {
+        "id": "iO5pApw2JycC",
+        "title": "The Ivory Tower and Harry Potter",
+        "description": "Now available in paper, The Ivory Tower and Harry Potter is the first book-length analysis of J. K. Rowling's work from a broad range of perspectives within literature, folklore, psychology, sociology, and popular culture. A significant portion of the book explores the Harry Potter series' literary ancestors, including magic and fantasy works by Ursula K. LeGuin, Monica Furlong, Jill Murphy, and others, as well as previous works about the British boarding school experience. Other chapters explore the moral and ethical dimensions of Harry's world, including objections to the series raised within some religious circles. In her new epilogue, Lana A. Whited brings this volume up to date by covering Rowling's latest book, Harry Potter and the Order of the Phoenix.",
+        "imageLink": "http://books.google.com/books/content?id=iO5pApw2JycC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "authors": "Lana A. Whited",
+        "infoLink": "http://books.google.com.tr/books?id=iO5pApw2JycC&dq=harrypotter&hl=&source=gbs_api",
+        "publisher": "University of Missouri Press"
+      },
+      "id": 4
+    },
+    {
+      "profileName": "NR_NAQAACAAJ Profile",
+      "bookItem": {
+        "id": "NR_NAQAACAAJ",
+        "title": "Dünün Dünyasi",
+        "imageLink": "http://books.google.com/books/content?id=NR_NAQAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "authors": "Stefan Zweig",
+        "infoLink": "http://books.google.com.tr/books?id=NR_NAQAACAAJ&dq=stefan+zweig&hl=&source=gbs_api"
       },
       "id": 6
     },
     {
-      "profileName": "od88ngEACAAJ Profile",
+      "profileName": "FZrsDwAAQBAJ Profile",
       "bookItem": {
-        "id": "od88ngEACAAJ",
-        "title": "Acimak",
-        "imageLink": "http://books.google.com/books/content?id=od88ngEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
-        "authors": "Stefan Zweig"
+        "id": "FZrsDwAAQBAJ",
+        "title": "Satranç - Stefan Zweig",
+        "description": "Bir kez daha hayretler içinde kaldık. Onun hesaplamalarındaki doğruluk ve hızda bizi afallatan bir şey vardı; sanki hamleleri bir kitap okuyup söylüyor gibiydi. Her halükarda onun oyuna müdahele etmesi ve bir dünya şampiyonuyla berabere kalmanın beklenmedik fırsatı büyülü bir etki yaratmıştı. Tahtayı daha iyi görmesi için kenara çekildik. McConnor. Şahı g8den h7ye ilerletiyorum, değil mi? diye sordu yeniden.20. yüzyılı en iyi anlayıp yorumlayan yazarlardan bir tanesidir Stefan Zweig. 1. Dünya Savaşının yıkımı, ardından Nazizmin yükselişiyle başlayan 2. Dünya Savaşının getirdiği alt üst oluşu bütün açıklığıyla okurun önüne serer.Kısa aralıklarla yaşanan iki büyük savaşın insan bilicinde meydana getirdiği tahribatı sıradan insanları modelleyerek anlatir. Karamsarlık, kötümserlik, ümitsizlik Zweigın metinlerini siyah birtül gibi örter.Stefan Zweig akıcı anlatımı, keskin üslubu. karakter oluşturmasındaki ustalığın yanında çağına yaptığı doğru tanıklıkla klasik yazarlar arasına ismini yazdırmıştır.",
+        "imageLink": "http://books.google.com/books/content?id=FZrsDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "authors": "Stefan Zweig",
+        "infoLink": "https://play.google.com/store/books/details?id=FZrsDwAAQBAJ&source=gbs_api",
+        "publisher": "Aperatif Kitap Yayınları"
       },
       "id": 7
-    },
-    {
-      "profileName": "fNQJAQAAIAAJ Profile",
-      "bookItem": {
-        "id": "fNQJAQAAIAAJ",
-        "title": "Peyami Safa ile 25 yıl",
-        "imageLink": "http://books.google.com/books/content?id=fNQJAQAAIAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
-        "authors": "Vecdi Bürün"
-      },
-      "id": 8
-    },
-    {
-      "profileName": "zy0rAAAAIAAJ Profile",
-      "bookItem": {
-        "id": "zy0rAAAAIAAJ",
-        "title": "Sevenlerin kalemiyle Peyami Safa",
-        "imageLink": "http://books.google.com/books/content?id=zy0rAAAAIAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
-        "authors": ""
-      },
-      "id": 9
-    },
-    {
-      "profileName": "wepwDwAAQBAJ Profile",
-      "bookItem": {
-        "id": "wepwDwAAQBAJ",
-        "title": "Notos Öykü 40 - İslamcılık, Muhafazakârlık, Modernizm",
-        "description": "İslamcılık, Muhafazakârlık, Modernizm Yazarlar nasıl geçiniyor? Müge İplikçi: “Yazı pusulamdaki ‘kuzey’: İstanbul.” Firat Cewerî: “Avluda biten ot acıdır.” Edebiyatımızın önde gelen dergilerinden Notos’un Haziran-Temmuz, 40. sayısının kapak konusu, İslamcılık, Muhafazakârlık, Modernizm başlığını taşıyor. Kültürün toplumu bölen bir bütün dünya oluşunun anlaşılmayı gerektirdiği bir gerçek. Burada hem bir bütünden söz ediyoruz hem de onu bir araya gelerek oluşturan parçalardan. Ayrı ayrı yaşanan bu parçalar, hiç kuşku yok ki içinde yaşadığımız atmosferi oluşturuyor. Notos bu kez, İslamcı, Muhafazakâr, Modernist anlayışlar arasında kalan edebiyat kültürünü tartışıyor. Notos’un bu sayısı, birbirini anlamakta güçlük çeken dünyalara, özellikle bir yakadakine ışık tutmayı amaçlıyor. Dosyanın yazarları Hasan Bülent Kahraman, Sadık Yalsızuçanlar, Necip Tosun, Ömer Lekesiz, Ayşe Çavdar, Besim F. Dellaloğlu, İrvin Cemil Schick. Notos’un bu sayısında Müge İplikçi ve Firat Cewerî ile yapılmış iki söyleşi yer alıyor. İlk kitabından bu yana hem kendi dilini hemen oluşturmaya çalışan, hem de kendine özgü bir anlatı dünyası arayışını sürdüren Müge İplikçi Tezcanlı Hayalet Avcıları ileöykü dilini ve dünyasını yeni bir düzeye çıkarıyor. Kürt edebiyatının üstünde önemle durulması gereken yazarlarından Firat Cewerî, Kürtçenin bir edebiyat dili olarak yaşatılmasıyla yetinmeyip zenginleştirilmesini daha baştan önüne koymuş. Notos için yapılmış bu konuşma, Firat Cewerî’nin daha geniş bir okur çevresinde tanınıp anlaşılmasını da amaçlıyor. Günlerin Getirdiği bölümünde “Yazarlar nasıl geçiniyor?” sorusu irdeleniyor. Geçim, yazarlar için de bir dert kuşkusuz. Hazırda gelirleri yoksa, çoğu zorunluluktan, yazının yanına başka işler koyuyor. Bunu seçmeyip bütünüyle yazmaya ve okumaya odaklı bir yaşam kurabilmek ilk anda kulağa hoş gelse de, bu ne ölçüde olanaklı ya da verimlidir? Yazıyla doğrudan ilgili olmayan mesleklerin, yaratıcılığı beslediği düşünülebilir mi? Akif Kurtuluş, Ayşegül Çelik, Cem Akaş, Cemil Kavukçu, Hikmet Hükümenoğlu, Birgül Oğuz, Ahmet Büke, Elif Köksal, Onur Caymaz yanıtlıyor.",
-        "imageLink": "http://books.google.com/books/content?id=wepwDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
-        "authors": "Kolektif"
-      },
-      "id": 10
-    },
-    {
-      "profileName": "fNQJAQAAIAAJ Profile",
-      "bookItem": {
-        "id": "fNQJAQAAIAAJ",
-        "title": "Peyami Safa ile 25 yıl",
-        "imageLink": "http://books.google.com/books/content?id=fNQJAQAAIAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
-        "authors": "Vecdi Bürün"
-      },
-      "id": 11
-    },
-    {
-      "profileName": "PL5KAQAAIAAJ Profile",
-      "bookItem": {
-        "id": "PL5KAQAAIAAJ",
-        "title": "Peyami Safa, Nazım Hikmet kavgası",
-        "imageLink": "http://books.google.com/books/content?id=PL5KAQAAIAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
-        "authors": "Ergun Göze"
-      },
-      "id": 12
-    },
-    {
-      "profileName": "zShkAAAAMAAJ Profile",
-      "bookItem": {
-        "id": "zShkAAAAMAAJ",
-        "title": "Peyami Safa'nın eserlerinde Doğu-Batı meselesi",
-        "description": "Turkey; western; influences.",
-        "imageLink": "http://books.google.com/books/content?id=zShkAAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
-        "authors": "Nan A. Lee"
-      },
-      "id": 13
     }
   ]
 }

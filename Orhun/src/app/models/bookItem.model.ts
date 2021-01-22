@@ -4,6 +4,8 @@ export class BookItem {
         public title: string,
         public description: string,
         public imageLink: string,
-        public authors: string) {
+        public authors: string,
+        public infoLink: string,
+        public publisher: string) {
     }
 }
