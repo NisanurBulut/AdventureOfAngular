@@ -1,25 +1,24 @@
 
   .book-search {
     margin: 20px auto;
-    width: 100%;
-    text-align: center;
-
+    display: flex;
+  width: max-content;
+    color: white;
+    cursor: pointer;
     button, input {
-      border-radius: 5px;
+      text-align: center;
+      border-radius: 5px 0 0 5px;
       font-size: inherit;
       font-family: inherit;
+      outline: none;
     }
 
-    input {
-      padding: 3px 5px;
-      outline: none;
-      width: 100%;
-    }
+
 
     button {
       background-color: #2ecc71;
       border: none;
-      padding: 4px 8px;
+      border-radius: 0 5px 5px 0;
       box-shadow: 1px 1px 1px #95a5a6;
       cursor: pointer;
       color: white;
@@ -28,4 +27,4 @@
     button:hover {
       background-color: #27ae60;
     }
-  }
+   }

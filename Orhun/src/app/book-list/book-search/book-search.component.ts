@@ -1,9 +1,9 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { BookItem } from 'src/app/models/bookItem.model';
 import { BookService } from '../book.service';
-import { tap, takeUntil, delay } from 'rxjs/operators';
+import { takeUntil, delay } from 'rxjs/operators';
 import { Subject } from 'rxjs';
-import { ProfileService } from 'src/app/profile/profile.service';
+import { FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'book-search',
@@ -20,9 +20,10 @@ export class BookSearchComponent implements OnInit {
   }
 
   clearBookItems(): void {
-   this.volumeArrays.splice(0);
+    this.volumeArrays.splice(0);
   }
   onSearchBookName(bookName: string) {
+
     if (bookName.length > 1) {
       const volumInfos = this._bookService.getBookItems(bookName)
         .pipe(takeUntil(this.searchStream),
@@ -37,7 +38,7 @@ export class BookSearchComponent implements OnInit {
             this.volumeArrays.push(new BookItem(book.id, title, description, imageLink, authors));
           });
         });
-        this.searchResultBookItems.emit(this.volumeArrays);
+      this.searchResultBookItems.emit(this.volumeArrays);
     }
   }
 }
