@@ -19,7 +19,10 @@ export class ProfileComponent implements OnInit {
     this.getProfileList();
   }
   getProfileList() {
-    this.profiles = this._profileService.getProfiles();
+    this._profileService.getProfiles()
+      .subscribe(data => {
+        this.profiles = data;
+      });
   }
   onSaveProfile() {
     const books = this._bookService
@@ -35,9 +38,9 @@ export class ProfileComponent implements OnInit {
     this._profileService.deleteProfile(profile);
   }
   onLoadProfile(profile: Profile) {
-    const pBookItems = this._profileService.getProfile(profile.profileName);
-    console.log(pBookItems.bookItems);
-    this._bookService.clearBookItems();
-    this._bookService.setBookItems(profile.bookItems);
+    // const pBookItems = this._profileService.getProfile(profile.profileName);
+    // console.log(pBookItems.bookItems);
+    // this._bookService.clearBookItems();
+    // this._bookService.setBookItems(profile.bookItems);
   }
 }

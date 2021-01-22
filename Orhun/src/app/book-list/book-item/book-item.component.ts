@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { BookItem } from 'src/app/models/bookItem.model';
+import { ProfileService } from 'src/app/profile/profile.service';
 
 @Component({
   selector: 'book-item',
@@ -8,9 +9,11 @@ import { BookItem } from 'src/app/models/bookItem.model';
 })
 export class BookItemComponent implements OnInit {
   @Input('item') bookItem: BookItem;
-  constructor() {
+  constructor(private _profileService: ProfileService) {
   }
   addToProfile(bookItem: BookItem) {
+
+    this._profileService.saveNewProfile(bookItem);
     console.log(bookItem);
   }
   ngOnInit(): void {

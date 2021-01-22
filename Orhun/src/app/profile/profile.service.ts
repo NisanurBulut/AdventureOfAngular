@@ -1,29 +1,32 @@
-import { Injectable } from "@angular/core";
-import { BookItemComponent } from "../book-list/book-item/book-item.component";
-import { BookItem } from "../models/bookItem.model";
+import { HttpClient } from '@angular/common/http';
+import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
+import { environment } from 'src/environments/environment';
+import { BookItem } from '../models/bookItem.model';
 import { Profile } from '../models/profile.model';
 
 @Injectable()
 export class ProfileService {
     private profiles: Profile[] = [];
-    constructor() { }
-    saveNewProfile(books: BookItem[]) {
-        console.log(books);
-        const profileName = books[0].id + ' Profile';
-        const bookNames = books.map((element: BookItem) => {
-            return element.title;
-        }).join(',');
-        const profile = new Profile(profileName, bookNames, books);
-        this.profiles.push(profile);
+    constructor(private _http: HttpClient) { }
+
+    saveNewProfile(book: BookItem) {
+        const profileName = book.id + ' Profile';
+        const profile = new Profile(profileName, book);
+        this._http.post<BookItem>
+            (environment.apiProfileUrl, profile)
+            .subscribe((data: any) => {
+                console.log(data);
+            });
     }
-    getProfiles() {
-        return this.profiles;
+    getProfiles(): Observable<Profile[]> {
+        return this._http.get<Profile[]>(environment.apiProfileUrl);
     }
     getProfile(id: string) {
         return this.profiles.find(a => a.profileName === id);
     }
     deleteProfile(profile: Profile) {
-        const profileIndex = this.profiles.findIndex(a => a.profileName === profile.profileName);
-        this.profiles.splice(profileIndex, 1);
+        this._http.delete(environment.apiProfileUrl + '/' + profile.id)
+            .subscribe((result) => { console.log(result); });
     }
 }

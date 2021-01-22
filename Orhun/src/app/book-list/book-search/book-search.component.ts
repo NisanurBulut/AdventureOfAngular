@@ -16,16 +16,11 @@ export class BookSearchComponent implements OnInit {
 
   private searchStream = new Subject<string>();
   constructor(private _bookService: BookService, private _profileService: ProfileService) { }
-  saveListToProfile(){}
   ngOnInit(): void {
   }
+
   clearBookItems(): void {
-    const bookItems = this._bookService.getBookItemDatas()
-      .pipe(takeUntil(this.searchStream),
-        delay(300))
-      .subscribe(data => {
-        this._bookService.deleteBookItems(data);
-      });
+   this.volumeArrays.splice(0);
   }
   onSearchBookName(bookName: string) {
     if (bookName.length > 1) {
