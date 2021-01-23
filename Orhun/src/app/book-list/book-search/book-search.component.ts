@@ -11,8 +11,6 @@ import * as bookListActions from '../../store/book-list.actions';
   styleUrls: ['./book-search.component.scss']
 })
 export class BookSearchComponent implements OnInit {
-  volumeArrays: BookItem[] = [];
-  @Output() searchResultBookItems: EventEmitter<BookItem[]> = new EventEmitter();
   bookList$: Observable<BookItem[]>;
   private searchStream = new Subject<string>();
   constructor(private _bookService: BookService, private store: Store<{ bookList: BookItem[] }>) {
@@ -38,9 +36,8 @@ export class BookSearchComponent implements OnInit {
             const description = book.volumeInfo.description;
             const authors = (book.volumeInfo['authors']) ? book.volumeInfo.authors.join(',') : '';
             const imageLink = (book.volumeInfo['imageLinks']) ? book.volumeInfo.imageLinks.smallThumbnail : '';
-            // tslint:disable-next-line: max-line-length
-            this.store.dispatch(new bookListActions.AddBookItem(new BookItem(book.id, title, description, imageLink, authors, infoLink, publisher)));
-            // this.volumeArrays.push(new BookItem(book.id, title, description, imageLink, authors, infoLink, publisher));
+            this.store.dispatch(
+              new bookListActions.AddBookItem(new BookItem(book.id, title, description, imageLink, authors, infoLink, publisher)));
           });
         });
     }

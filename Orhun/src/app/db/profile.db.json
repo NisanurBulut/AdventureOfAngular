@@ -23,6 +23,52 @@
         "publisher": "Aperatif Kitap Yayınları"
       },
       "id": 7
+    },
+    {
+      "profileName": "9cWeygAACAAJ Profile",
+      "bookItem": {
+        "id": "9cWeygAACAAJ",
+        "title": "Ask",
+        "imageLink": "http://books.google.com/books/content?id=9cWeygAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "authors": "Elif Şafak",
+        "infoLink": "http://books.google.com.tr/books?id=9cWeygAACAAJ&dq=elif+%C5%9Fafak&hl=&source=gbs_api"
+      },
+      "id": 8
+    },
+    {
+      "profileName": "srZpAAAAMAAJ Profile",
+      "bookItem": {
+        "id": "srZpAAAAMAAJ",
+        "title": "Mahrem",
+        "imageLink": "http://books.google.com/books/content?id=srZpAAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "authors": "Elif Shafak",
+        "infoLink": "http://books.google.com.tr/books?id=srZpAAAAMAAJ&dq=elif+%C5%9Fafak&hl=&source=gbs_api"
+      },
+      "id": 9
+    },
+    {
+      "profileName": "DSpkAAAAMAAJ Profile",
+      "bookItem": {
+        "id": "DSpkAAAAMAAJ",
+        "title": "Pinhan",
+        "imageLink": "http://books.google.com/books/content?id=DSpkAAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "authors": "Elif Shafak",
+        "infoLink": "http://books.google.com.tr/books?id=DSpkAAAAMAAJ&dq=elif+%C5%9Fafak&hl=&source=gbs_api"
+      },
+      "id": 10
+    },
+    {
+      "profileName": "0XJPCQAAQBAJ Profile",
+      "bookItem": {
+        "id": "0XJPCQAAQBAJ",
+        "title": "İskender",
+        "description": "'Şu hayatta insan en çok sevdiklerini acıtır' En derin yaralar ailede açılır, kabuk tutsa bile kanar hikâye, içten içe... Aşkı aramadan evvel, düşün bir, ya benden nasıl bir âşık olur? İnsanın sevdası karakterinin yansımasıdır. Sen kavgacı isen, ha bire öfkeli, aşkı da bir cenk gibi yaşarsın. Gönlü pak olanın sevgisi de saf olur. Şu hayatta insan en çok sevdiklerini acıtır. En derin yaralar ailede açılır, kabuk tutsa bile kanar hikâye, içten içe... Attığımız her adım, yaptığımız her işte kendimizi yansıtırız. Budur çözülmesi gereken bilmece",
+        "imageLink": "http://books.google.com/books/content?id=0XJPCQAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "authors": "Elif Şafak",
+        "infoLink": "http://books.google.com.tr/books?id=0XJPCQAAQBAJ&dq=elif+%C5%9Fafak&hl=&source=gbs_api",
+        "publisher": "eronus books"
+      },
+      "id": 11
     }
   ]
 }
