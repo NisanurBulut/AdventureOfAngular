@@ -1,17 +1,3 @@
 {
-  "profiles": [
-    {
-      "profileName": "KeteAQAAQBAJ",
-      "bookItem": {
-        "id": "KeteAQAAQBAJ",
-        "title": "The Politics of Harry Potter",
-        "description": "This political analysis of Harry Potter uses the beloved wizarding world to introduce readers to the equally murky and intimidating world of politics. Rowling's work provides us with entries into all of the most important political questions in history, from terrorism and human rights to the classic foundations of political thought.",
-        "imageLink": "http://books.google.com/books/content?id=KeteAQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
-        "authors": "B. Barratt",
-        "infoLink": "https://play.google.com/store/books/details?id=KeteAQAAQBAJ&source=gbs_api",
-        "publisher": "Springer"
-      },
-      "id": 1
-    }
-  ]
+  "profiles": []
 }
