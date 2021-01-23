@@ -3,13 +3,9 @@ import * as profileListActions from '../store/profile-list.actions';
 
 export interface State {
     profileList: Profile[];
-    editedProfile: Profile;
-    editedProfileIndex: number;
 }
 const initialState: State = {
-    profileList: [],
-    editedProfile: null,
-    editedProfileIndex: -1
+    profileList: []
 };
 
 // buradaki actiona aslında bir interface
@@ -31,8 +27,8 @@ export function profileListReducer(
         case profileListActions.DELETE_PROFILE:
             return {
                 ...state,
-                bookList: state.profileList.filter((pr, prIndex) => {
-                    return prIndex !== state.editedProfileIndex;
+                profileList: state.profileList.filter((pr, prIndex) => {
+                    return pr.id !== action.payload.id;
                 })
             };
         default:

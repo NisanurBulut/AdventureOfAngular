@@ -12,13 +12,10 @@ import { Store } from '@ngrx/store';
 })
 export class BookListComponent implements OnInit {
   bookList: Observable<{ bookList: BookItem[] }>;
-  NewBookItem: BookItem;
+
   constructor(private store: Store<fromApp.AppState>) { }
 
   ngOnInit(): void {
     this.bookList = this.store.select('bookList');
-  }
-  setBookProfileItem(data) {
-    this.NewBookItem = data;
   }
 }
