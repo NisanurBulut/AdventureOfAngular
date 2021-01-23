@@ -18,12 +18,10 @@ export class BookSearchComponent implements OnInit {
   constructor(private _bookService: BookService, private store: Store<{ bookList: BookItem[] }>) {
     this.bookList$ = store.select('bookList');
   }
-  ngOnInit(): void {
-    console.log('observable', this.bookList$);
-  }
+  ngOnInit(): void { }
 
   clearBookItems(): void {
-    this.volumeArrays.splice(0);
+    this.store.dispatch(new bookListActions.DeleteBookList());
   }
   onSearchBookName(bookName: string) {
 
@@ -32,9 +30,8 @@ export class BookSearchComponent implements OnInit {
         .pipe(takeUntil(this.searchStream),
           delay(300))
         .subscribe(result => {
-          this.volumeArrays.splice(0);
+          this.clearBookItems();
           result.items.map((book) => {
-
             const publisher = book.volumeInfo.publisher;
             const infoLink = book.volumeInfo.infoLink;
             const title = book.volumeInfo.title;
@@ -43,11 +40,9 @@ export class BookSearchComponent implements OnInit {
             const imageLink = (book.volumeInfo['imageLinks']) ? book.volumeInfo.imageLinks.smallThumbnail : '';
             // tslint:disable-next-line: max-line-length
             this.store.dispatch(new bookListActions.AddBookItem(new BookItem(book.id, title, description, imageLink, authors, infoLink, publisher)));
-           // this.volumeArrays.push(new BookItem(book.id, title, description, imageLink, authors, infoLink, publisher));
+            // this.volumeArrays.push(new BookItem(book.id, title, description, imageLink, authors, infoLink, publisher));
           });
         });
-
-      this.searchResultBookItems.emit(this.volumeArrays);
     }
   }
 }

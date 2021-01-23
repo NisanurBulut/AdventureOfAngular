@@ -18,6 +18,11 @@ export function bookListReducer(
                 ...state,
                 bookList: [...state.bookList, action.payload]
             };
+        case bookListActions.DELETE_BOOKLIST:
+        return {
+            ...state,
+            bookList: []
+        };
         case bookListActions.ADD_BOOKLIST:
             return {
                 ...state,
