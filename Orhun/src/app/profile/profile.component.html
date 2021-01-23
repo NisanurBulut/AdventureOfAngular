@@ -1,8 +1,9 @@
 <h3 *ngIf="profiles.length > 0">Saved Profile</h3>
+<!--  -->
 <article
   #profile
   class="profile"
-  *ngFor="let profile of profiles"
+  *ngFor="let profile of (profileList | async).profileList; let i=index"
   (click)="onLoadProfile(profile)"
 >
   <h4>{{ profile.bookItem.title }}</h4>

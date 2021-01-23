@@ -1,74 +1,15 @@
 {
   "profiles": [
     {
-      "profileName": "NR_NAQAACAAJ Profile",
+      "profileName": "od88ngEACAAJ Profile",
       "bookItem": {
-        "id": "NR_NAQAACAAJ",
-        "title": "Dünün Dünyasi",
-        "imageLink": "http://books.google.com/books/content?id=NR_NAQAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "id": "od88ngEACAAJ",
+        "title": "Acimak",
+        "imageLink": "http://books.google.com/books/content?id=od88ngEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
         "authors": "Stefan Zweig",
-        "infoLink": "http://books.google.com.tr/books?id=NR_NAQAACAAJ&dq=stefan+zweig&hl=&source=gbs_api"
+        "infoLink": "http://books.google.com.tr/books?id=od88ngEACAAJ&dq=acimak&hl=&source=gbs_api"
       },
-      "id": 6
-    },
-    {
-      "profileName": "FZrsDwAAQBAJ Profile",
-      "bookItem": {
-        "id": "FZrsDwAAQBAJ",
-        "title": "Satranç - Stefan Zweig",
-        "description": "Bir kez daha hayretler içinde kaldık. Onun hesaplamalarındaki doğruluk ve hızda bizi afallatan bir şey vardı; sanki hamleleri bir kitap okuyup söylüyor gibiydi. Her halükarda onun oyuna müdahele etmesi ve bir dünya şampiyonuyla berabere kalmanın beklenmedik fırsatı büyülü bir etki yaratmıştı. Tahtayı daha iyi görmesi için kenara çekildik. McConnor. Şahı g8den h7ye ilerletiyorum, değil mi? diye sordu yeniden.20. yüzyılı en iyi anlayıp yorumlayan yazarlardan bir tanesidir Stefan Zweig. 1. Dünya Savaşının yıkımı, ardından Nazizmin yükselişiyle başlayan 2. Dünya Savaşının getirdiği alt üst oluşu bütün açıklığıyla okurun önüne serer.Kısa aralıklarla yaşanan iki büyük savaşın insan bilicinde meydana getirdiği tahribatı sıradan insanları modelleyerek anlatir. Karamsarlık, kötümserlik, ümitsizlik Zweigın metinlerini siyah birtül gibi örter.Stefan Zweig akıcı anlatımı, keskin üslubu. karakter oluşturmasındaki ustalığın yanında çağına yaptığı doğru tanıklıkla klasik yazarlar arasına ismini yazdırmıştır.",
-        "imageLink": "http://books.google.com/books/content?id=FZrsDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
-        "authors": "Stefan Zweig",
-        "infoLink": "https://play.google.com/store/books/details?id=FZrsDwAAQBAJ&source=gbs_api",
-        "publisher": "Aperatif Kitap Yayınları"
-      },
-      "id": 7
-    },
-    {
-      "profileName": "9cWeygAACAAJ Profile",
-      "bookItem": {
-        "id": "9cWeygAACAAJ",
-        "title": "Ask",
-        "imageLink": "http://books.google.com/books/content?id=9cWeygAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
-        "authors": "Elif Şafak",
-        "infoLink": "http://books.google.com.tr/books?id=9cWeygAACAAJ&dq=elif+%C5%9Fafak&hl=&source=gbs_api"
-      },
-      "id": 8
-    },
-    {
-      "profileName": "srZpAAAAMAAJ Profile",
-      "bookItem": {
-        "id": "srZpAAAAMAAJ",
-        "title": "Mahrem",
-        "imageLink": "http://books.google.com/books/content?id=srZpAAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
-        "authors": "Elif Shafak",
-        "infoLink": "http://books.google.com.tr/books?id=srZpAAAAMAAJ&dq=elif+%C5%9Fafak&hl=&source=gbs_api"
-      },
-      "id": 9
-    },
-    {
-      "profileName": "DSpkAAAAMAAJ Profile",
-      "bookItem": {
-        "id": "DSpkAAAAMAAJ",
-        "title": "Pinhan",
-        "imageLink": "http://books.google.com/books/content?id=DSpkAAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
-        "authors": "Elif Shafak",
-        "infoLink": "http://books.google.com.tr/books?id=DSpkAAAAMAAJ&dq=elif+%C5%9Fafak&hl=&source=gbs_api"
-      },
-      "id": 10
-    },
-    {
-      "profileName": "0XJPCQAAQBAJ Profile",
-      "bookItem": {
-        "id": "0XJPCQAAQBAJ",
-        "title": "İskender",
-        "description": "'Şu hayatta insan en çok sevdiklerini acıtır' En derin yaralar ailede açılır, kabuk tutsa bile kanar hikâye, içten içe... Aşkı aramadan evvel, düşün bir, ya benden nasıl bir âşık olur? İnsanın sevdası karakterinin yansımasıdır. Sen kavgacı isen, ha bire öfkeli, aşkı da bir cenk gibi yaşarsın. Gönlü pak olanın sevgisi de saf olur. Şu hayatta insan en çok sevdiklerini acıtır. En derin yaralar ailede açılır, kabuk tutsa bile kanar hikâye, içten içe... Attığımız her adım, yaptığımız her işte kendimizi yansıtırız. Budur çözülmesi gereken bilmece",
-        "imageLink": "http://books.google.com/books/content?id=0XJPCQAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
-        "authors": "Elif Şafak",
-        "infoLink": "http://books.google.com.tr/books?id=0XJPCQAAQBAJ&dq=elif+%C5%9Fafak&hl=&source=gbs_api",
-        "publisher": "eronus books"
-      },
-      "id": 11
+      "id": 12
     }
   ]
 }

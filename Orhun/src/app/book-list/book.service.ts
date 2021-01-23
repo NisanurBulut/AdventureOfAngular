@@ -1,9 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable, pipe, throwError } from 'rxjs';
-import { catchError, delay, map, retry } from 'rxjs/operators';
+import { Observable, throwError } from 'rxjs';
+import { catchError, retry } from 'rxjs/operators';
 import { environment } from 'src/environments/environment';
-import { BOOK_ITEMS } from '../book.data';
 import { BookItem } from '../models/bookItem.model';
 
 @Injectable()

@@ -1,8 +1,8 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { BookItem } from 'src/app/models/bookItem.model';
 import { BookService } from '../book.service';
 import { takeUntil, delay } from 'rxjs/operators';
-import { Observable, Subject } from 'rxjs';
+import { Subject } from 'rxjs';
 import { Store } from '@ngrx/store';
 import * as bookListActions from '../../store/book-list.actions';
 @Component({
@@ -11,10 +11,9 @@ import * as bookListActions from '../../store/book-list.actions';
   styleUrls: ['./book-search.component.scss']
 })
 export class BookSearchComponent implements OnInit {
-  bookList$: Observable<BookItem[]>;
+
   private searchStream = new Subject<string>();
   constructor(private _bookService: BookService, private store: Store<{ bookList: BookItem[] }>) {
-    this.bookList$ = store.select('bookList');
   }
   ngOnInit(): void { }
 

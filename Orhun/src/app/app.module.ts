@@ -4,7 +4,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BookItemComponent } from './book-list/book-item/book-item.component';
-import {BookListComponent} from './book-list/book-list.component';
+import { BookListComponent } from './book-list/book-list.component';
 import { BookSearchComponent } from './book-list/book-search/book-search.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ProfileComponent } from './profile/profile.component';
@@ -12,6 +12,7 @@ import { ProfileService } from './profile/profile.service';
 import { BookService } from './book-list/book.service';
 import { StoreModule } from '@ngrx/store';
 import { bookListReducer } from './store/book-list.reducer';
+import { profileListReducer } from './store/profile-list.reducer';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,7 @@ import { bookListReducer } from './store/book-list.reducer';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    StoreModule.forRoot({ bookList: bookListReducer })
+    StoreModule.forRoot({ bookList: bookListReducer, profileList: profileListReducer })
   ],
 
   providers: [BookService, ProfileService],
