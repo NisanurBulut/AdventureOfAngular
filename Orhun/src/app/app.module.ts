@@ -11,6 +11,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { ProfileService } from './profile/profile.service';
 import { BookService } from './book-list/book.service';
 import { StoreModule } from '@ngrx/store';
+import { bookListReducer } from './store/book-list.reducer';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { StoreModule } from '@ngrx/store';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    StoreModule.forRoot({ bookList: bookListReducer })
   ],
 
   providers: [BookService, ProfileService],

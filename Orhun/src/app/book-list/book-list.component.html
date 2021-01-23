@@ -6,9 +6,7 @@
     </div>
     <div class='column'>
       <div class='book-column'>
-        <book-search
-        (searchResultBookItems)="refreshBookItemResults($event)"
-      ></book-search>
+        <book-search></book-search>
       </div>
     </div>
   </div>
@@ -22,9 +20,8 @@
       <div class='book-column'>
       <section class="book-list">
         <book-item
-          *ngFor="let bookItem of BookItems"
+          *ngFor="let bookItem of (bookList | async).bookList; let i=index"
           [item]="bookItem"
-          (setProfileBookItems)="setBookProfileItem($event)"
         ></book-item>
       </section>
       </div>

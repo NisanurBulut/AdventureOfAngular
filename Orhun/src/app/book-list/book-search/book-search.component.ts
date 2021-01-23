@@ -2,7 +2,9 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { BookItem } from 'src/app/models/bookItem.model';
 import { BookService } from '../book.service';
 import { takeUntil, delay } from 'rxjs/operators';
-import { Subject } from 'rxjs';
+import { Observable, Subject } from 'rxjs';
+import { Store } from '@ngrx/store';
+import * as bookListActions from '../../store/book-list.actions';
 @Component({
   selector: 'book-search',
   templateUrl: './book-search.component.html',
@@ -11,10 +13,13 @@ import { Subject } from 'rxjs';
 export class BookSearchComponent implements OnInit {
   volumeArrays: BookItem[] = [];
   @Output() searchResultBookItems: EventEmitter<BookItem[]> = new EventEmitter();
-
+  bookList$: Observable<BookItem[]>;
   private searchStream = new Subject<string>();
-  constructor(private _bookService: BookService) { }
+  constructor(private _bookService: BookService, private store: Store<{ bookList: BookItem[] }>) {
+    this.bookList$ = store.select('bookList');
+  }
   ngOnInit(): void {
+    console.log('observable', this.bookList$);
   }
 
   clearBookItems(): void {
@@ -36,9 +41,12 @@ export class BookSearchComponent implements OnInit {
             const description = book.volumeInfo.description;
             const authors = (book.volumeInfo['authors']) ? book.volumeInfo.authors.join(',') : '';
             const imageLink = (book.volumeInfo['imageLinks']) ? book.volumeInfo.imageLinks.smallThumbnail : '';
-            this.volumeArrays.push(new BookItem(book.id, title, description, imageLink, authors, infoLink, publisher));
+            // tslint:disable-next-line: max-line-length
+            this.store.dispatch(new bookListActions.AddBookItem(new BookItem(book.id, title, description, imageLink, authors, infoLink, publisher)));
+           // this.volumeArrays.push(new BookItem(book.id, title, description, imageLink, authors, infoLink, publisher));
           });
         });
+
       this.searchResultBookItems.emit(this.volumeArrays);
     }
   }

@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { BOOK_ITEMS } from '../book.data';
+import { Observable } from 'rxjs';
 import { BookItem } from '../models/bookItem.model';
 import { BookService } from './book.service';
-
+import * as fromApp from '../store/app.reducer';
+import { Store } from '@ngrx/store';
 @Component({
   selector: 'book-list',
   templateUrl: './book-list.component.html',
@@ -10,15 +11,12 @@ import { BookService } from './book.service';
   providers: [BookService]
 })
 export class BookListComponent implements OnInit {
-  BookItems: BookItem[];
+  bookList: Observable<{ bookList: BookItem[] }>;
   NewBookItem: BookItem;
-  constructor(private _bookService: BookService) { }
+  constructor(private store: Store<fromApp.AppState>) { }
 
   ngOnInit(): void {
-
-  }
-  refreshBookItemResults(data) {
-    this.BookItems = data;
+    this.bookList = this.store.select('bookList');
   }
   setBookProfileItem(data) {
     this.NewBookItem = data;
