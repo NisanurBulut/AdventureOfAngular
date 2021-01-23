@@ -30,7 +30,6 @@ export class ProfileComponent implements OnInit {
     this._profileService.deleteProfile(profile)
     .subscribe(data => {
       this.store.dispatch(new profileListActions.DeleteProfile(profile));
-      this.getProfiles();
     });
   }
   onLoadProfile(profile: Profile) {

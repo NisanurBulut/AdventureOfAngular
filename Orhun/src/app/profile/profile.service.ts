@@ -10,8 +10,11 @@ export class ProfileService {
     private profiles: Profile[] = [];
     constructor(private _http: HttpClient) { }
 
+    checkProfileExistence(book: BookItem): Observable<Profile> {
+        return this._http.get<Profile>(environment.apiProfileUrl + '?profileName=' + book.id);
+    }
     saveNewProfile(book: BookItem): Observable<Profile> {
-        const profileName = book.id + ' Profile';
+        const profileName = book.id;
         const profile = new Profile(profileName, book);
         return this._http.post<Profile>
             (environment.apiProfileUrl, profile);

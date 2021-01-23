@@ -1,27 +1,17 @@
 {
   "profiles": [
     {
-      "profileName": "_oKnzQEACAAJ Profile",
+      "profileName": "KeteAQAAQBAJ",
       "bookItem": {
-        "id": "_oKnzQEACAAJ",
-        "title": "HARRY POTTER",
-        "imageLink": "",
-        "authors": "",
-        "infoLink": "http://books.google.com.tr/books?id=_oKnzQEACAAJ&dq=harrypotter&hl=&source=gbs_api"
+        "id": "KeteAQAAQBAJ",
+        "title": "The Politics of Harry Potter",
+        "description": "This political analysis of Harry Potter uses the beloved wizarding world to introduce readers to the equally murky and intimidating world of politics. Rowling's work provides us with entries into all of the most important political questions in history, from terrorism and human rights to the classic foundations of political thought.",
+        "imageLink": "http://books.google.com/books/content?id=KeteAQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "authors": "B. Barratt",
+        "infoLink": "https://play.google.com/store/books/details?id=KeteAQAAQBAJ&source=gbs_api",
+        "publisher": "Springer"
       },
-      "id": 6
-    },
-    {
-      "profileName": "1PwUEAAAQBAJ Profile",
-      "bookItem": {
-        "id": "1PwUEAAAQBAJ",
-        "title": "Harry Potter 6. Harry Potter ve Melez Prens",
-        "imageLink": "http://books.google.com/books/content?id=1PwUEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
-        "authors": "J.K Rowling",
-        "infoLink": "https://play.google.com/store/books/details?id=1PwUEAAAQBAJ&source=gbs_api",
-        "publisher": " almohreraladbi"
-      },
-      "id": 7
+      "id": 1
     }
   ]
 }
