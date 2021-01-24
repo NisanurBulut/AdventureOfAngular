@@ -4,7 +4,8 @@
         <h2>Pi List</h2>
         <ul>
           <li *ngFor="let piItem of piItems$ | async" (click)="deletePiItem(piItem)">
-            {{ piItem.value }}
+           <p> {{ piItem.value }}</p>
+           <p>{{piItem.runTime}}</p>
           </li>
         </ul>
       </div>

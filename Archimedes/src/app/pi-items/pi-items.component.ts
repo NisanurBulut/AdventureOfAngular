@@ -205,7 +205,7 @@ export class PiItemsComponent implements OnInit {
     ans += 'Win PI=<br>3.1415926535897932384626433832795<br>';
     let t2 = new Date();
     let timeTaken = (t2.getTime() - t1.getTime()) / 1000;
-    this.newPiItem.runTime = 'It took: ' + timeTaken + ' seconds';
+    this.newPiItem.runTime = 'Run time is: ' + timeTaken + ' seconds';
     console.log(ans);
   }
   arctan(iAng, n, aX) {
