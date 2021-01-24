@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 import { v4 as uuid } from 'uuid';
 import { AppState } from 'src/store/models/app-model';
 import { PiItem } from 'src/store/models/pi-item.model';
-import { AddItemAction } from 'src/store/actions/piCaltulator.actions';
+import { AddItemAction, DeleteItemAction } from 'src/store/actions/piCaltulator.actions';
 
 @Component({
   selector: 'app-root',
@@ -240,5 +240,8 @@ export class AppComponent implements OnInit {
     this.calcPI(this.newPiItem.digit)
     this.store.dispatch(new AddItemAction(this.newPiItem));
     this.newPiItem = { id: '', value: '', digit: 0, runTime: '' };
+  }
+  deletePiItem(piItem:PiItem){
+    this.store.dispatch(new DeleteItemAction(piItem));
   }
 }
