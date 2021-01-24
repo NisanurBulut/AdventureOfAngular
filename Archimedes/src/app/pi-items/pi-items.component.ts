@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 import { v4 as uuid } from 'uuid';
 import { AppState } from 'src/store/models/app-model';
 import { PiItem } from 'src/store/models/pi-item.model';
-import { AddItemAction, DeleteItemAction } from 'src/store/actions/piCaltulator.actions';
+import { AddItemAction, DeleteItemAction, LoadPiItemsAction } from 'src/store/actions/piCaltulator.actions';
 
 @Component({
   selector: 'app-pi-items',
@@ -12,8 +12,9 @@ import { AddItemAction, DeleteItemAction } from 'src/store/actions/piCaltulator.
   styleUrls: ['./pi-items.component.scss']
 })
 export class PiItemsComponent implements OnInit {
-
-  piItems$: Observable<Array<PiItem>>;
+  loading$: Observable<Boolean>;
+  error$: Observable<Error>;
+  piItems: Observable<Array<PiItem>>;
   newPiItem: PiItem = {
     id: '',
     value: '',
@@ -32,7 +33,10 @@ export class PiItemsComponent implements OnInit {
   constructor(private store: Store<AppState>) { }
 
   ngOnInit(): void {
-    this.piItems$ = this.store.select(s => s.piItems);
+    this.piItems = this.store.select(s => s.piItems.list);
+    this.loading$ = this.store.select(s => s.piItems.loading);
+    this.error$ = this.store.select(s => s.piItems.error);
+    this.store.dispatch(new LoadPiItemsAction());
   }
   makeArray(n, aX, Integer) {
     let i = 0;
@@ -94,16 +98,13 @@ export class PiItemsComponent implements OnInit {
     let carry = 0;
 
     for (let i = 0; i < n; i++) {
-      //add any previous carry
+      //  add any previous carry
       const currVal = Number(aX[i]) + Number(carry * this.Base);
-
-      //divide
+      //  divide
       const theDiv = Math.floor(currVal / iDiv);
-
-      //find next carry
+      //  find next carry
       carry = currVal - theDiv * iDiv;
-
-      //put the result of division in the current slot
+      // put the result of division in the current slot
       aY[i] = theDiv;
     }
   }
@@ -121,21 +122,14 @@ export class PiItemsComponent implements OnInit {
     this.aAngle = new Array(arrayLength);
     this.aDivK = new Array(arrayLength);
 
-    //Pi/4 = 4*arctan(1/5)-arctan(1/239)
-    //coeff is an array of the coefficients
-    //the last item is 0!
-
     coeff[0] = 4;
     coeff[1] = -1;
     coeff[2] = 0;
-
-    //iAng holds the angles, 5 for 1/5, etc
 
     iAng[0] = 5;
     iAng[1] = 239;
     iAng[2] = 0;
 
-    //Machin: Pi/4 = 4*arctan(1/5)-arctan(1/239)
     this.makeArray(arrayLength, this.aPI, 0);
     this.makeArray(arrayLength, this.aAngle, 0);
     this.makeArray(arrayLength, this.aDivK, 0);
@@ -143,35 +137,35 @@ export class PiItemsComponent implements OnInit {
     for (var i = 0; coeff[i] != 0; i++) {
       this.arctan(iAng[i], arrayLength, this.aArctan);
 
-      //multiply by coefficients of arctan
+      // multiply by coefficients of arctan
       this.Mul(arrayLength, this.aArctan, Math.abs(coeff[i]));
 
-      //mess+="mi="+coeff[i]+"<br>";
+      // mess+="mi="+coeff[i]+"<br>";
 
       if (coeff[i] > 0)
         this.Add(arrayLength, this.aPI, this.aArctan);
       else
         this.Sub(arrayLength, this.aPI, this.aArctan);
 
-      //mess+="api="+aPI+"<br>";
+      // mess+="api="+aPI+"<br>";
     }
-    //we have calculated pi/4, so need to finally multiply
+    // we have calculated pi/4, so need to finally multiply
 
     this.Mul(arrayLength, this.aPI, 4);
 
-    //we have now calculated PI, and need to format the answer
+    // we have now calculated PI, and need to format the answer
 
-    //to print it out
+    // to print it out
     let sPI = '';
     let tempPI = '';
-    //put the figures in the array into the string tempPI
+    // put the figures in the array into the string tempPI
 
     for (i = 0; i < this.aPI.length; i++) {
       this.aPI[i] = String(this.aPI[i]);
 
-      //ensure there are enough digits in each cell
+      // ensure there are enough digits in each cell
 
-      //if not, pad with leading zeros
+      // if not, pad with leading zeros
 
       if (this.aPI[i].length < this.cellSize && i != 0) {
         while (this.aPI[i].length < this.cellSize) this.aPI[i] = '0' + this.aPI[i];
@@ -181,11 +175,11 @@ export class PiItemsComponent implements OnInit {
     }
     let addcount = '', thespace = '';
     for (i = 0; i <= numDec; i++) {
-      //put the 3 on a different line, and add a decimal point
+      // put the 3 on a different line, and add a decimal point
 
       if (i == 0) sPI += tempPI.charAt(i) + '.';
       else {
-        //split the long line up into manageable rows
+        // split the long line up into manageable rows
 
         addcount = ' (' + i + ')';
         thespace = ' ';
@@ -194,14 +188,14 @@ export class PiItemsComponent implements OnInit {
           sPI += tempPI.charAt(i) + addcount;
         else if (i % 5 == 0) sPI += tempPI.charAt(i) + thespace;
         else sPI += tempPI.charAt(i);
-      } //i not zero
+      } // i not zero
     }
 
-    //now put the print-out together
+    // now put the print-out together
 
-    //print our pi
+    // print our pi
     this.newPiItem.value = 'PI (' + numDec + ')=' + sPI;
-    //Window's calculator Pi (for confirmation);
+    // Window's calculator Pi (for confirmation);
     ans += 'Win PI=<br>3.1415926535897932384626433832795<br>';
     let t2 = new Date();
     let timeTaken = (t2.getTime() - t1.getTime()) / 1000;
@@ -210,21 +204,21 @@ export class PiItemsComponent implements OnInit {
   }
   arctan(iAng, n, aX) {
     let iAng_squared = iAng * iAng;
-    let k = 3; //k is the coefficient in the series 2n-1, 3,5..
+    let k = 3; // k is the coefficient in the series 2n-1, 3,5..
     let sign = 0;
 
-    this.makeArray(n, aX, 0); //aX is aArctan
+    this.makeArray(n, aX, 0); // aX is aArctan
 
     this.makeArray(n, this.aAngle, 1);
 
-    this.Div(n, this.aAngle, iAng, this.aAngle); //aAngle = 1/iAng, eg 1/5
+    this.Div(n, this.aAngle, iAng, this.aAngle); // aAngle = 1/iAng, eg 1/5
 
-    this.Add(n, aX, this.aAngle); // aX = aAngle or long angle
+    this.Add(n, aX, this.aAngle); //  aX = aAngle or long angle
 
     while (!this.isEmpty(this.aAngle)) {
-      this.Div(n, this.aAngle, iAng_squared, this.aAngle); //aAngle=aAngle/iAng_squared, iAng_squared is iAng*iAng
+      this.Div(n, this.aAngle, iAng_squared, this.aAngle); // aAngle=aAngle/iAng_squared, iAng_squared is iAng*iAng
 
-      //mess+="iAng="+iAng+"; aAngle="+aAngle+"<br>";
+      // mess+="iAng="+iAng+"; aAngle="+aAngle+"<br>";
 
       this.Div(n, this.aAngle, k, this.aDivK); /* aDivK = aAngle/k */
 
@@ -236,15 +230,16 @@ export class PiItemsComponent implements OnInit {
       sign = 1 - sign;
     }
 
-    // this.mess += 'aArctan=' + this.Arctan + '<br>';
+    //  this.mess += 'aArctan=' + this.Arctan + '<br>';
   }
   calculatePiItem() {
     this.newPiItem.id = uuid();
-    this.calcPI(this.newPiItem.digit)
+    this.calcPI(this.newPiItem.digit);
     this.store.dispatch(new AddItemAction(this.newPiItem));
     this.newPiItem = { id: '', value: '', digit: 0, runTime: '' };
   }
   deletePiItem(piItem: PiItem) {
-    this.store.dispatch(new DeleteItemAction(piItem));
+    console.log(piItem);
+    this.store.dispatch(new DeleteItemAction(piItem.id));
   }
 }

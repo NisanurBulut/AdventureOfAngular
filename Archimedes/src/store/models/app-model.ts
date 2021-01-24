@@ -1,5 +1,5 @@
-import { PiItem } from "./pi-item.model";
+import { PiItemsState } from '../reducers/piCalculator.reducer';
 
 export interface AppState {
-    readonly piItems: Array<PiItem>
+    readonly piItems: PiItemsState;
 }

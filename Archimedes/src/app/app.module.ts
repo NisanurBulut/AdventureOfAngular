@@ -8,6 +8,8 @@ import { FormsModule } from '@angular/forms';
 import { PiItemsComponent } from './pi-items/pi-items.component';
 import { PiItemsService } from './pi-items/pi-items.service';
 import { EffectsModule } from '@ngrx/effects';
+import { PiCalculatorEffect } from 'src/store/effects/piCalculator.effect';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,8 +20,9 @@ import { EffectsModule } from '@ngrx/effects';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    HttpClientModule,
     StoreModule.forRoot({ piItems: PiItemReducer }),
-    EffectsModule.forRoot([])
+    EffectsModule.forRoot([PiCalculatorEffect])
   ],
   providers: [PiItemsService],
   bootstrap: [AppComponent]

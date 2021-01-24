@@ -12,38 +12,48 @@ export enum PiCalculatorActionTypes {
     DELETE_ITEM_SUCCESS = '[PiCalculator] Delete Item Success',
     DELETE_ITEM_ERROR = '[PiCalculator] Delete Item Error'
 }
+
 export class LoadPiItemsAction implements Action {
-    readonly type: string = PiCalculatorActionTypes.LOAD_ITEMS;
-    constructor(public payload: Array<PiItem>) { }
+    readonly type = PiCalculatorActionTypes.LOAD_ITEMS;
 }
 export class LoadPiItemsSuccessAction implements Action {
-    readonly type: string = PiCalculatorActionTypes.LOAD_ITEMS_SUCCESS;
+    readonly type = PiCalculatorActionTypes.LOAD_ITEMS_SUCCESS;
     constructor(public payload: Array<PiItem>) { }
 }
 export class LoadPiItemsErrorAction implements Action {
-    readonly type: string = PiCalculatorActionTypes.LOAD_ITEMS_ERROR;
-    constructor(public payload: string) { }
+    readonly type = PiCalculatorActionTypes.LOAD_ITEMS_ERROR;
+    constructor(public payload: Error) { }
 }
 export class AddItemAction implements Action {
     readonly type: string = PiCalculatorActionTypes.ADD_ITEM;
-    constructor(public payload: PiItem) { }
+    constructor(public payload: PiItem) {
+        console.log(payload);
+     }
 }
 export class AddItemSuccessAction implements Action {
     readonly type: string = PiCalculatorActionTypes.ADD_ITEM_SUCCESS;
     constructor(public payload: PiItem) { }
 }
+export class AddItemErrorAction implements Action {
+    readonly type: string = PiCalculatorActionTypes.ADD_ITEM_ERROR;
+    constructor(public payload: string) { }
+}
 export class DeleteItemAction implements Action {
     readonly type: string = PiCalculatorActionTypes.DELETE_ITEM;
-    constructor(public payload: PiItem) { }
+    constructor(public payload: string) { }
 }
 export class DeleteItemSuccessAction implements Action {
     readonly type: string = PiCalculatorActionTypes.DELETE_ITEM_SUCCESS;
     constructor(public payload: string) { }
 }
-
+export class DeleteItemErrorAction implements Action {
+    readonly type: string = PiCalculatorActionTypes.DELETE_ITEM_ERROR;
+    constructor(public payload: string) { }
+}
 
 export type PiItemAction = AddItemAction
     | AddItemSuccessAction
+    | AddItemErrorAction
     | DeleteItemAction
     | DeleteItemSuccessAction
     | LoadPiItemsAction

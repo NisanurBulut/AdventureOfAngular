@@ -13,11 +13,12 @@ export class PiItemsService {
             );
     }
     addPiItem(piItem: PiItem) {
+        console.log(piItem);
         return this._http.post(environment.apiPiItem, piItem)
             .pipe(delay(500));
     }
-    deletePiItem(piItem: PiItem) {
-        return this._http.delete(`${environment.apiPiItem}/${piItem.id}`)
+    deletePiItem(id: string) {
+        return this._http.delete(`${environment.apiPiItem}/${id}`)
             .pipe(delay(500));
     }
 }
