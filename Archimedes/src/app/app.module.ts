@@ -7,6 +7,7 @@ import { PiItemReducer } from '../store/reducers/piCalculator.reducer';
 import { FormsModule } from '@angular/forms';
 import { PiItemsComponent } from './pi-items/pi-items.component';
 import { PiItemsService } from './pi-items/pi-items.service';
+import { EffectsModule } from '@ngrx/effects';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { PiItemsService } from './pi-items/pi-items.service';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    StoreModule.forRoot({ piItems: PiItemReducer })
+    StoreModule.forRoot({ piItems: PiItemReducer }),
+    EffectsModule.forRoot([])
   ],
   providers: [PiItemsService],
   bootstrap: [AppComponent]

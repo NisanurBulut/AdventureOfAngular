@@ -7,7 +7,7 @@ import { PiItem } from 'src/store/models/pi-item.model';
 export class PiItemsService {
     constructor(private _http: HttpClient) { }
     getPiItems() {
-        return this._http.get(environment.apiPiItem)
+        return this._http.get<Array<PiItem>>(environment.apiPiItem)
             .pipe(
                 delay(500)
             );
@@ -18,6 +18,6 @@ export class PiItemsService {
     }
     deletePiItem(piItem: PiItem) {
         return this._http.delete(`${environment.apiPiItem}/${piItem.id}`)
-        .pipe(delay(500));
-     }
+            .pipe(delay(500));
+    }
 }
