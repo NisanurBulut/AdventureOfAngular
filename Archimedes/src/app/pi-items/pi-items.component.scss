@@ -24,15 +24,16 @@
     outline: none;
     padding-left: 4px;
     border: 0px;
-    height: 20px;
+    height: 40px;
   }
 
   form > button {
     border: 0px;
+    font-weight: bold;
     background: #10ac84;
     color: white;
     outline: none;
-
+    width: 40px;
     &:hover {
       background: #006266;
     }

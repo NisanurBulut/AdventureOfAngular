@@ -1,27 +1,6 @@
 # Archimedes
+It is approximately equal to 3.14159. It has been represented by the Greek letter "π" since the mid-18th century, and is spelled out as "pi". It is also referred to as Archimedes' constant.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0.
+Archimedes is a pi calculator. It generates the number pi based on the number of digits.In this project, the use of ngrx library and useeffect has been implemented.
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+![Archimedes](https://github.com/NisanurBulut/AdventureOfAngular/blob/master/Trailers/Trailer_Archimedes.gif)
