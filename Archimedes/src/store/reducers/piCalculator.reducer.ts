@@ -1,11 +1,13 @@
-import { PiItemAction } from "../actions/piCaltulator.actions";
+import { PiItemAction, PiCalculatorActionTypes } from "../actions/piCaltulator.actions";
 import { PiItem } from "../models/pi-item.model";
 
 const initialState: Array<PiItem> = [];
-export function PiItemReducer(state: Array<PiItem>, actions: PiItemAction) {
+export function PiItemReducer(state: Array<PiItem>, action: PiItemAction) {
 
-    switch(actions.type){
+    switch (action.type) {
+        case PiCalculatorActionTypes.ADD_ITEM:
+            return [...state, action.payload];
         default:
             return state;
     }
- }
+}
