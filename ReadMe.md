@@ -15,3 +15,6 @@ It is approximately equal to 3.14159. It has been represented by the Greek lette
 Archimedes is a pi calculator. It generates the number pi based on the number of digits.In this project, the use of ngrx library and useeffect has been implemented.
 
 ![Archimedes](https://github.com/NisanurBulut/AdventureOfAngular/blob/master/Trailers/Trailer_Archimedes.gif)
+
+## Helpfull Websites
+[Youtube-link-State Management With Ngrx] (https://www.youtube.com/playlist?list=PLtKjv92L0ihCX_ZE3xedfaOU2TbvgeulK)
