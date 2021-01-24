@@ -1,0 +1,17 @@
+<div id="wrapper">
+
+  <div id="pi-list">
+    <div id="list">
+      <h2>Pi List</h2>
+      <ul>
+        <li *ngFor="let piItem of piItems$ | async">
+          {{ piItem.value }}
+        </li>
+      </ul>
+    </div>
+  </div>
+  <form (ngSubmit)="calculatePiItem()">
+    <input type="number" [(ngModel)]="newPiItem.digit" placeholder="Item" name="itemDigit"/>
+    <button type="submit" >=</button>
+  </form>
+</div>
