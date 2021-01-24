@@ -1,7 +1,7 @@
 <div id="wrapper">
   <div id="pi-list" [class.loading]="(loading$ | async)" *ngIf="!(error$ | async); else error">
     <div id="list">
-      <h2>Pi List</h2>
+      <h2>Archimedes Pi Calculator</h2>
       <ul *ngIf="(piItems | async); else noItems">
         <li *ngFor="let piItem of piItems | async" (click)="deletePiItem(piItem)">
          <p> {{ piItem.value }}</p>
