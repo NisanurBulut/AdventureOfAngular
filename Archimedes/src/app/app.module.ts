@@ -4,6 +4,7 @@ import { StoreModule } from '@ngrx/store';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PiItemReducer } from '../store/reducers/piCalculator.reducer';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -12,6 +13,7 @@ import { PiItemReducer } from '../store/reducers/piCalculator.reducer';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     StoreModule.forRoot({ piItems: PiItemReducer })
   ],
   providers: [],
