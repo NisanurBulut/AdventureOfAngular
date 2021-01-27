@@ -1,13 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PlanListComponent } from './plan-list/plan-list.component';
+import { PlanItemComponent } from './plan-item/plan-item.component';
+import { MaterialModule } from 'src/shared';
 
 @NgModule({
   declarations: [
-    PlanListComponent
+    PlanListComponent,
+    PlanItemComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    MaterialModule
   ],
   exports: [
     PlanListComponent
