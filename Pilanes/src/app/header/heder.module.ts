@@ -8,22 +8,22 @@ import { ExerciseService } from '../exercise/exercise.service';
 import { HeaderComponent } from './header.component';
 import { ExerciseEffects } from '../exercise';
 import { ExerciseReducer } from '../exercise/store/exercise.reducer';
+import { PlanReducer } from '../plan/store/plan.reducer';
 
 
 
 @NgModule({
   declarations: [
-      HeaderComponent
+    HeaderComponent
   ],
   imports: [
     CommonModule,
     MaterialModule,
-    StoreModule.forRoot({ exerciseItems: ExerciseReducer }),
-    EffectsModule.forRoot([ExerciseEffects])
+    StoreModule.forRoot({ exercises: ExerciseReducer, plans: PlanReducer}),
   ],
   providers: [ExerciseService],
   exports: [
-      HeaderComponent
+    HeaderComponent
   ]
 })
 export class HeaderModule { }
