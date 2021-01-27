@@ -18,11 +18,12 @@ import { ExerciseReducer } from './store/exercise.reducer';
   imports: [
     CommonModule,
     MaterialModule,
-    StoreModule.forRoot({ piItems: ExerciseReducer }),
+    StoreModule.forRoot({ exerciseItems: ExerciseReducer }),
   ],
   providers: [ExerciseService],
   exports: [
-    ExerciseListComponent
+    ExerciseListComponent,
+    ExerciseItemComponent
   ]
 })
 export class ExerciseModule { }

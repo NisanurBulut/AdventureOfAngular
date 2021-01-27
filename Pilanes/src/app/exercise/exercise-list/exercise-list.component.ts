@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Store } from '@ngrx/store';
+import { ExerciseState } from 'src/app/models';
+
 
 @Component({
   selector: 'exercise-list',
@@ -7,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExerciseListComponent implements OnInit {
 
-  constructor() { }
+  constructor(private store: Store<ExerciseState>) { }
 
   ngOnInit(): void {
   }
