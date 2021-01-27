@@ -24,6 +24,21 @@
         "gifPath": "../assets/exercises/exercise_5.gif",
         "name": "",
         "id": 5
-    }
+    },
+    {
+      "gifPath": "../assets/exercises/exercise_6.gif",
+      "name": "",
+      "id": 6
+  },
+  {
+    "gifPath": "../assets/exercises/exercise_7.gif",
+    "name": "",
+    "id": 7
+},
+{
+  "gifPath": "../assets/exercises/exercise_8.gif",
+  "name": "",
+  "id": 8
+}
   ]
 }
