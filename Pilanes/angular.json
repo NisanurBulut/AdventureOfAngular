@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Pilanes"
+    }
+  },
+  "defaultProject": "Pilanes",
+  "cli": {
+    "analytics": false
+  }
 }
