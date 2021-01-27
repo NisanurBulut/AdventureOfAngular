@@ -1,0 +1,10 @@
+{
+    "exercisesList":[
+        {
+            "gifPath":"../assets/exercises/exercise_1"
+        },
+        {
+            "gifPath":"../assets/exercises/exercise_2"
+        }
+    ]
+}
