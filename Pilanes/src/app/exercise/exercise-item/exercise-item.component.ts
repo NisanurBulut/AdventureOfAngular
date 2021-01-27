@@ -2,7 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { MatCheckboxChange } from '@angular/material/checkbox';
 import { Store } from '@ngrx/store';
 import { ExerciseItemModel } from 'src/app/models';
-import { AddExerciseToPlanAction } from '../store/exercise.actions';
+import { AddExerciseToPlanAction, RemoveExerciseFromPlanAction } from '../store/exercise.actions';
 import { ExerciseItemsState } from '../store/exercise.reducer';
 
 @Component({
@@ -21,7 +21,7 @@ export class ExerciseItemComponent implements OnInit {
     if (checkState.checked) {
       this.store.dispatch(new AddExerciseToPlanAction(item));
     } else {
-      console.log('unCheck');
+      this.store.dispatch(new RemoveExerciseFromPlanAction(item));
     }
   }
 }

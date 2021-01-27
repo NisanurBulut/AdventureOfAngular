@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  apiExercise: 'http://localhost:3000/exercises'
+  apiExercise: 'http://localhost:3000/exercises',
+  apiPlan:'http://localhost:3000/plans'
 };
 
 /*

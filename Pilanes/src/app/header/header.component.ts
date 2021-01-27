@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Store } from '@ngrx/store';
+import { ExerciseItemsState } from '../exercise/store/exercise.reducer';
 
 @Component({
   selector: 'app-header',
@@ -7,9 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private store:Store<ExerciseItemsState>) { }
   ngOnInit(): void {
   }
+  makePlan():void{
 
+  }
 }

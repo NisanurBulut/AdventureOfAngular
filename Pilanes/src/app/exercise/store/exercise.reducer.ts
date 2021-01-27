@@ -16,8 +16,10 @@ const initialState: ExerciseItemsState = {
 export function ExerciseReducer(state: ExerciseItemsState = initialState, action: ExerciseItemActions) {
     switch (action.type) {
         case ExerciseActionTypes.ADD_ITEM_TO_PLAN: {
-            console.log(action.payload);
             return { ...state, listForPlan: action.payload, loading: false };
+        }
+        case ExerciseActionTypes.REMOVE_ITEM_FROM_PLAN: {
+            return { ...state, listForPlan: state.listForPlan.filter(a=>a.id!==action.payload.id), loading: false };
         }
         case ExerciseActionTypes.LOAD_ITEMS: {
             return { ...state, loading: true };

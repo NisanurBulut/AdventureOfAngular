@@ -7,6 +7,7 @@ mat-checkbox{
 }
 mat-card {
   cursor: pointer;
+  border-radius: 3px !important;
 }
 ::ng-deep .mat-checkbox .mat-checkbox-frame {
   border-color: #6338B0;

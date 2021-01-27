@@ -7,12 +7,12 @@ import { AppComponent } from './app.component';
 import { MaterialModule, SharedModule } from '../shared';
 import { PlanModule } from './plan';
 import { ExerciseModule } from './exercise';
-import { HeaderComponent } from './header/header.component';
+import { HeaderModule } from './header/heder.module';
+
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HeaderComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
@@ -21,7 +21,8 @@ import { HeaderComponent } from './header/header.component';
     MaterialModule,
     SharedModule,
     ExerciseModule,
-    PlanModule
+    PlanModule,
+    HeaderModule
   ],
   providers: [],
   bootstrap: [AppComponent]
