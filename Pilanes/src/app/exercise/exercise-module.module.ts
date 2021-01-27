@@ -5,6 +5,7 @@ import {
   ExerciseListComponent,
   ExerciseItemComponent
 } from '../exercise';
+import { ExerciseService } from './exercise.service';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import {
     CommonModule,
     MaterialModule
   ],
+  providers: [ExerciseService],
   exports: [
     ExerciseListComponent
   ]

@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MaterialModule } from '../shared';
+import { MaterialModule, SharedModule } from '../shared';
 import { PlanModule } from './plan';
 import { ExerciseModule } from './exercise';
 
@@ -17,6 +17,7 @@ import { ExerciseModule } from './exercise';
     BrowserAnimationsModule,
     AppRoutingModule,
     MaterialModule,
+    SharedModule,
     ExerciseModule,
     PlanModule
   ],
