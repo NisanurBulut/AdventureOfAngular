@@ -17,6 +17,7 @@ import {
     MaterialModule
   ],
   exports: [
+    ExerciseListComponent
   ]
 })
 export class ExerciseModule { }
