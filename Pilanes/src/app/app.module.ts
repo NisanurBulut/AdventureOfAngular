@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MaterialModule } from '../shared';
 import { PlanModule } from './plan';
+import { ExerciseModule } from './exercise';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { PlanModule } from './plan';
     BrowserAnimationsModule,
     AppRoutingModule,
     MaterialModule,
+    ExerciseModule,
     PlanModule
   ],
   providers: [],
