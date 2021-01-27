@@ -1,6 +1,14 @@
 img {
   width: auto;
 }
+mat-checkbox{
+  float: right;
+  color:#6338B0 !important;
+}
 mat-card {
   cursor: pointer;
+}
+::ng-deep .mat-checkbox .mat-checkbox-frame {
+  border-color: #6338B0;
+  background-color: #fff;
 }

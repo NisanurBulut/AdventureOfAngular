@@ -1,4 +1,5 @@
 <mat-card>
+    <mat-checkbox (change)="selectExercise($event,this.exerciseItem)" id="{{this.exerciseItem.id}}"></mat-checkbox>
     <mat-card-content>
         <img mat-card-sm-image src="{{this.exerciseItem.gifPath}}"/>
     </mat-card-content>
