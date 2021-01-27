@@ -1,31 +1,6 @@
 {
   "exercises": [
     {
-      "gifPath": "../assets/exercises/exercise_1.gif",
-      "name": "",
-      "id": 1
-    },
-    {
-      "gifPath": "../assets/exercises/exercise_2.gif",
-      "name": "",
-      "id": 2
-    },
-    {
-        "gifPath": "../assets/exercises/exercise_3.gif",
-        "name": "",
-        "id": 3
-    },
-    {
-        "gifPath": "../assets/exercises/exercise_4.gif",
-        "name": "",
-        "id": 4
-    },
-    {
-        "gifPath": "../assets/exercises/exercise_5.gif",
-        "name": "",
-        "id": 5
-    },
-    {
       "gifPath": "../assets/exercises/exercise_6.gif",
       "name": "",
       "id": 6
