@@ -11,14 +11,13 @@ import { PlanState } from '../plan/store/plan.reducer';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  exerciseItems: Observable<Array<ExerciseItemModel>>;
-  constructor(private storeExercises:Store<ExerciseItemsState>, private storePlans:Store<PlanState>) { }
+  exerciseItems$: Observable<Array<ExerciseItemModel>>;
+  constructor(private storeExercises: Store<ExerciseItemsState>, private storePlans: Store<PlanState>) { }
   ngOnInit(): void {
-    this.exerciseItems = this.storeExercises.select(store => store.listForPlan);
-    console.log(this.exerciseItems)
-
   }
-  makePlan():void{
-
+  makePlan(): void {
+    this.exerciseItems$ = this.storeExercises
+      .select(store => store.listForPlan);
+      console.log(this.exerciseItems$);
   }
 }

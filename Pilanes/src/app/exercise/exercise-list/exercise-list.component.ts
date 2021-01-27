@@ -18,10 +18,11 @@ export class ExerciseListComponent implements OnInit {
   constructor(private store: Store<ExerciseState>) { }
 
   ngOnInit(): void {
-    this.exerciseItems = this.store.select(store => store.exerciseItems.list);
+    this.exerciseItems = this.store.select(store => {
+      return store.exerciseItems.list;
+    });
     this.loading$ = this.store.select(store => store.exerciseItems.loading);
     this.error$ = this.store.select(store => store.exerciseItems.error);
-
     this.store.dispatch(new LoadExercisesAction());
   }
 

@@ -6,8 +6,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MaterialModule, SharedModule } from '../shared';
 import { PlanModule } from './plan';
-import { ExerciseModule } from './exercise';
+import { ExerciseEffects, ExerciseModule } from './exercise';
 import { HeaderModule } from './header/heder.module';
+import { StoreModule } from '@ngrx/store';
+import { EffectsModule } from '@ngrx/effects';
+import { ExerciseReducer } from './exercise/store/exercise.reducer';
+import { PlanReducer } from './plan/store/plan.reducer';
 
 
 @NgModule({
@@ -22,7 +26,9 @@ import { HeaderModule } from './header/heder.module';
     SharedModule,
     ExerciseModule,
     PlanModule,
-    HeaderModule
+    HeaderModule,
+    StoreModule.forRoot({ exerciseItems: ExerciseReducer,  plans: PlanReducer }),
+    EffectsModule.forRoot([ExerciseEffects])
   ],
   providers: [],
   bootstrap: [AppComponent]

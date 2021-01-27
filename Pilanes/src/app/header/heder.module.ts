@@ -3,10 +3,8 @@ import { CommonModule } from '@angular/common';
 import { MaterialModule } from 'src/shared';
 
 import { StoreModule } from '@ngrx/store';
-import { EffectsModule } from '@ngrx/effects';
 import { ExerciseService } from '../exercise/exercise.service';
 import { HeaderComponent } from './header.component';
-import { ExerciseEffects } from '../exercise';
 import { ExerciseReducer } from '../exercise/store/exercise.reducer';
 import { PlanReducer } from '../plan/store/plan.reducer';
 
@@ -18,8 +16,7 @@ import { PlanReducer } from '../plan/store/plan.reducer';
   ],
   imports: [
     CommonModule,
-    MaterialModule,
-    StoreModule.forRoot({ exercises: ExerciseReducer, plans: PlanReducer}),
+    MaterialModule
   ],
   providers: [ExerciseService],
   exports: [

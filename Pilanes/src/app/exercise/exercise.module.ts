@@ -19,9 +19,7 @@ import { ExerciseEffects } from './store/exercise.effects';
   ],
   imports: [
     CommonModule,
-    MaterialModule,
-    StoreModule.forRoot({ exerciseItems: ExerciseReducer }),
-    EffectsModule.forRoot([ExerciseEffects])
+    MaterialModule
   ],
   providers: [ExerciseService],
   exports: [
