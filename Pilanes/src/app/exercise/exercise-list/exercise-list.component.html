@@ -1,26 +1,8 @@
 <mat-grid-list cols="3" rowHeight="3:2">
-  <mat-grid-tile>
-    <exercise-item></exercise-item>
-  </mat-grid-tile>
-  <mat-grid-tile>
-    <exercise-item></exercise-item>
-  </mat-grid-tile>
-  <mat-grid-tile>
-    <exercise-item></exercise-item>
-  </mat-grid-tile>
-  <mat-grid-tile>
-    <exercise-item></exercise-item>
-  </mat-grid-tile>
-  <mat-grid-tile>
-    <exercise-item></exercise-item>
-  </mat-grid-tile>
-  <mat-grid-tile>
-    <exercise-item></exercise-item>
-  </mat-grid-tile>
-  <mat-grid-tile>
-    <exercise-item></exercise-item>
-  </mat-grid-tile>
-  <mat-grid-tile>
-    <exercise-item></exercise-item>
-  </mat-grid-tile>
+  <ng-container *ngFor="let exercise of exerciseItems | async">
+    <mat-grid-tile class="matItem">
+      <exercise-item [exerciseItem]="exercise">
+      </exercise-item>
+    </mat-grid-tile>
+  </ng-container>
 </mat-grid-list>

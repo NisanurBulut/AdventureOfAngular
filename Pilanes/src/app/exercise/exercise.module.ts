@@ -8,6 +8,8 @@ import {
 import { ExerciseService } from './exercise.service';
 import { StoreModule } from '@ngrx/store';
 import { ExerciseReducer } from './store/exercise.reducer';
+import { EffectsModule } from '@ngrx/effects';
+import { ExerciseEffects } from './store/exercise.effects';
 
 
 @NgModule({
@@ -19,6 +21,7 @@ import { ExerciseReducer } from './store/exercise.reducer';
     CommonModule,
     MaterialModule,
     StoreModule.forRoot({ exerciseItems: ExerciseReducer }),
+    EffectsModule.forRoot([ExerciseEffects])
   ],
   providers: [ExerciseService],
   exports: [

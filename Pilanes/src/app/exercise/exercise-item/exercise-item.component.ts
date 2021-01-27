@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Observable, Subject } from 'rxjs';
+import { ExerciseItemModel } from 'src/app/models';
 
 @Component({
   selector: 'exercise-item',
@@ -6,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./exercise-item.component.scss']
 })
 export class ExerciseItemComponent implements OnInit {
+  @Input() exerciseItem : ExerciseItemModel;
 
-  constructor() { }
-
+  constructor() {
+  }
   ngOnInit(): void {
   }
 

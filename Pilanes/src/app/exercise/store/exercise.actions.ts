@@ -8,7 +8,7 @@ export enum ExerciseActionTypes {
 
 export class LoadExercisesAction {
     readonly type = ExerciseActionTypes.LOAD_ITEMS;
-    constructor(public payload: Array<ExerciseItemModel>) { }
+    constructor() { }
 }
 export class LoadExercisesSuccessAction {
     readonly type = ExerciseActionTypes.LOAD_ITEMS_SUCCESS;
