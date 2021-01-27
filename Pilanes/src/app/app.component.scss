@@ -1,15 +1,17 @@
+.main{
+    margin-top: 5%;
+}
 .container{
     width:100%;
     height:100%;
     display: flex;
     justify-content: center;
 }
+
 #mainTabPlan{
-    margin-top: 5%;
     width: 900px;
     height: 1500px;
-}
-
-mat-tab{
-    width: 900px;
+    mat-tab{
+        width: 100%;
+    }
 }

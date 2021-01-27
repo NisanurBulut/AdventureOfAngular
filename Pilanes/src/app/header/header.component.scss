@@ -1,0 +1,14 @@
+.header{
+    display: flex;
+    justify-content: center;
+    mat-button-toggle-group{
+        float: right;
+    }
+}
+.header-card{
+    width: 875px;
+}
+#btnCreatePlan{
+    background-color: #673AB7 !important;
+    color: white;
+}
