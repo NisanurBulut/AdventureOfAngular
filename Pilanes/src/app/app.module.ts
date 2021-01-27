@@ -8,6 +8,7 @@ import { MaterialModule, SharedModule } from '../shared';
 import { PlanModule } from './plan';
 import { ExerciseModule } from './exercise';
 
+
 @NgModule({
   declarations: [
     AppComponent

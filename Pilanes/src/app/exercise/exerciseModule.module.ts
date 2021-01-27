@@ -4,8 +4,10 @@ import { MaterialModule } from 'src/shared';
 import {
   ExerciseListComponent,
   ExerciseItemComponent
-} from '../exercise';
+} from '.';
 import { ExerciseService } from './exercise.service';
+import { StoreModule } from '@ngrx/store';
+import { ExerciseReducer } from './store/exercise.reducer';
 
 
 @NgModule({
@@ -15,7 +17,8 @@ import { ExerciseService } from './exercise.service';
   ],
   imports: [
     CommonModule,
-    MaterialModule
+    MaterialModule,
+    StoreModule.forRoot({ piItems: ExerciseReducer }),
   ],
   providers: [ExerciseService],
   exports: [
