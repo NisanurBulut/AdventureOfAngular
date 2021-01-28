@@ -23,15 +23,15 @@ export function PlanReducer(state: PlanState = initialState, action: PlanActions
         case PlanActionTypes.LOAD_PLANS_FAILURE: {
             return { ...state, error: action.payload, loading: false };
         }
-        // case PlanActionTypes.CREATE_PLAN: {
-        //     return { ...state, list: action.payload, loading: true };
-        // }
-        // case PlanActionTypes.CREATE_PLAN_SUCCESS: {
-        //     return { ...state, list: action.payload, loading: false };
-        // }
-        // case PlanActionTypes.CREATE_PLAN_FAILURE: {
-        //     return { ...state, error: action.payload, loading: false };
-        // }
+        case PlanActionTypes.CREATE_PLAN: {
+            return { ...state, loading: true };
+        }
+        case PlanActionTypes.CREATE_PLAN_SUCCESS: {
+            return { ...state, list: [...state.list, action.payload], loading: false };
+        }
+        case PlanActionTypes.CREATE_PLAN_FAILURE: {
+            return { ...state, error: action.payload, loading: false };
+        }
         default:
             return state;
     }

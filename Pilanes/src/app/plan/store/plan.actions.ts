@@ -17,7 +17,7 @@ export class CreatePlanSuccessAction {
 }
 export class CreatePlanFailureAction {
     readonly type = PlanActionTypes.CREATE_PLAN_FAILURE;
-    constructor(public payload: string) { }
+    constructor(public payload: Error) { }
 }
 
 export class LoadPlansAction {

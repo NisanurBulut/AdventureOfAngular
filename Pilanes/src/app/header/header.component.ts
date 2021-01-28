@@ -2,7 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { Observable, pipe, Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
-import { ExerciseItemModel } from '../models';
+import { ExerciseItemModel, PlanModel } from '../models';
+import { CreatePlanAction } from '../plan/store/plan.actions';
 import { AppState } from '../store/app.reducer';
 
 @Component({
@@ -17,12 +18,17 @@ export class HeaderComponent implements OnInit {
   constructor(private store: Store<AppState>) { }
   ngOnInit(): void {
   }
+  getExercisesForPlan(): void {
+    this.store.select(s => s.exerciseList.listForPlan)
+      .pipe(
+        takeUntil(this._unSubscribeAll)
+      ).subscribe((data: ExerciseItemModel[]) => {
+        this.exercisesforPlan = data;
+      });
+  }
   makePlan(): void {
-    this.store.select(s=>s.exerciseList.listForPlan)
-    .pipe(
-      takeUntil(this._unSubscribeAll)
-    ).subscribe((data:ExerciseItemModel[])=>{
-      this.exercisesforPlan=data;
-    })
+    this.getExercisesForPlan();
+    const newPlan = { name: "Plan", exercises: this.exercisesforPlan } as PlanModel;
+    this.store.dispatch(new CreatePlanAction(newPlan));
   }
 }
