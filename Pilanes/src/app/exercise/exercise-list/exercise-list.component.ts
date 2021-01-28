@@ -1,29 +1,33 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { Observable, Subject } from 'rxjs';
-import { ExerciseItemModel, ExerciseState } from 'src/app/models';
+import { Observable } from 'rxjs';
+import { ExerciseItemModel } from 'src/app/models';
 import { LoadExercisesAction } from '../store/exercise.actions';
-
+import * as fromApp from '../../store/app.reducer';
 
 @Component({
   selector: 'exercise-list',
   templateUrl: './exercise-list.component.html',
   styleUrls: ['./exercise-list.component.scss']
 })
-export class ExerciseListComponent implements OnInit {
+export class ExerciseListComponent implements OnInit, AfterViewInit {
   exerciseItems: Observable<Array<ExerciseItemModel>>;
   loading$: Observable<Boolean>;
   error$: Observable<Error>
 
-  constructor(private store: Store<ExerciseState>) { }
+  constructor(private store: Store<fromApp.AppState>) {
+    this.store.dispatch(new LoadExercisesAction());
+  }
+  ngAfterViewInit(): void {
+    console.log('ngAfterViewInit');
+    this.exerciseItems = this.store.select(store => store.exerciseList.list);
+    this.loading$ = this.store.select(store => store.exerciseList.loading);
+    this.error$ = this.store.select(store => store.exerciseList.error);
+  }
 
   ngOnInit(): void {
-    this.exerciseItems = this.store.select(store => {
-      return store.exerciseItems.list;
-    });
-    this.loading$ = this.store.select(store => store.exerciseItems.loading);
-    this.error$ = this.store.select(store => store.exerciseItems.error);
-    this.store.dispatch(new LoadExercisesAction());
+
+
   }
 
 }

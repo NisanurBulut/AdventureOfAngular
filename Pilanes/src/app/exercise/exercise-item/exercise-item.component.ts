@@ -3,7 +3,7 @@ import { MatCheckboxChange } from '@angular/material/checkbox';
 import { Store } from '@ngrx/store';
 import { ExerciseItemModel } from 'src/app/models';
 import { AddExerciseToPlanAction, RemoveExerciseFromPlanAction } from '../store/exercise.actions';
-import { ExerciseItemsState } from '../store/exercise.reducer';
+import { ExerciseState } from '../store/exercise.reducer';
 
 @Component({
   selector: 'exercise-item',
@@ -13,7 +13,7 @@ import { ExerciseItemsState } from '../store/exercise.reducer';
 export class ExerciseItemComponent implements OnInit {
   @Input() exerciseItem: ExerciseItemModel;
 
-  constructor(private store: Store<ExerciseItemsState>) {
+  constructor(private store: Store<ExerciseState>) {
   }
   ngOnInit(): void {
   }

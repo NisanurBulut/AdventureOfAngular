@@ -16,9 +16,7 @@ import { PlanEffects } from './store/plan.effects';
   ],
   imports: [
     CommonModule,
-    MaterialModule,
-    StoreModule.forRoot({ plans: PlanReducer }),
-    EffectsModule.forRoot([PlanEffects])
+    MaterialModule
   ],
   exports: [
     PlanListComponent

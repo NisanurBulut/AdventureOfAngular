@@ -12,6 +12,7 @@ import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
 import { ExerciseReducer } from './exercise/store/exercise.reducer';
 import { PlanReducer } from './plan/store/plan.reducer';
+import { PlanEffects } from './plan/store/plan.effects';
 
 
 @NgModule({
@@ -27,8 +28,8 @@ import { PlanReducer } from './plan/store/plan.reducer';
     ExerciseModule,
     PlanModule,
     HeaderModule,
-    StoreModule.forRoot({ exerciseItems: ExerciseReducer,  plans: PlanReducer }),
-    EffectsModule.forRoot([ExerciseEffects])
+    StoreModule.forRoot({ exerciseList: ExerciseReducer,  planList: PlanReducer }),
+    EffectsModule.forRoot([ExerciseEffects, PlanEffects])
   ],
   providers: [],
   bootstrap: [AppComponent]

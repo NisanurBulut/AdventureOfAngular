@@ -3,7 +3,7 @@ import { Actions, Effect, ofType } from '@ngrx/effects';
 import { of, Subject } from "rxjs";
 import { catchError, map, mergeMap, takeUntil } from "rxjs/operators";
 import { ExerciseService } from "../exercise.service";
-import { AddExerciseToPlanAction, ExerciseActionTypes, LoadExercisesAction, LoadExercisesFailureAction, LoadExercisesSuccessAction } from "./exercise.actions";
+import { ExerciseActionTypes, LoadExercisesAction, LoadExercisesFailureAction, LoadExercisesSuccessAction } from "./exercise.actions";
 
 @Injectable()
 export class ExerciseEffects {
@@ -19,7 +19,6 @@ export class ExerciseEffects {
           .pipe(
             takeUntil(this._unsubscribeAll),
             map(data => {
-              console.log(data);
               return new LoadExercisesSuccessAction(data)
             }),
             catchError(error => of(new LoadExercisesFailureAction(error)))

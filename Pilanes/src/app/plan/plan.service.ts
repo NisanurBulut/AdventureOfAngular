@@ -15,4 +15,10 @@ export class PlanService {
         return this._http.delete(`${environment.apiPlan}/${id}`)
             .pipe(delay(500));
     }
+    getPlans() {
+        return this._http.get<Array<PlanModel>>(environment.apiPlan)
+            .pipe(
+                delay(500)
+            );
+    }
 }

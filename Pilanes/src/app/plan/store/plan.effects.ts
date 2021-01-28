@@ -2,8 +2,9 @@ import { Injectable } from "@angular/core";
 import { Actions, Effect, ofType } from '@ngrx/effects';
 import { of, Subject } from "rxjs";
 import { catchError, map, mergeMap, takeUntil } from "rxjs/operators";
+import { LoadExercisesFailureAction, LoadExercisesSuccessAction } from "src/app/exercise/store/exercise.actions";
 import { PlanService } from "../plan.service";
-import { CreatePlanAction, CreatePlanFailureAction, CreatePlanSuccessAction, PlanActionTypes } from "./plan.actions";
+import { CreatePlanAction, CreatePlanFailureAction, CreatePlanSuccessAction, LoadPlansAction, LoadPlansFailureAction, LoadPlansSuccessAction, PlanActionTypes } from "./plan.actions";
 
 @Injectable()
 export class PlanEffects {
@@ -22,5 +23,19 @@ export class PlanEffects {
               )
       )
   );
-
+  @Effect() loadPlanList$ = this.actions$
+    .pipe(
+      ofType<LoadPlansAction>(PlanActionTypes.LOAD_PLANS),
+      mergeMap(
+        () => this._planService.getPlans()
+          .pipe(
+            takeUntil(this._unsubscribeAll),
+            map(data => {
+              console.log(data);
+              return new LoadPlansSuccessAction(data)
+            }),
+            catchError(error => of(new LoadPlansFailureAction(error)))
+          )
+      ),
+    )
 }

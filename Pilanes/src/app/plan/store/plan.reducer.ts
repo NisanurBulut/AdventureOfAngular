@@ -14,15 +14,26 @@ const initialState: PlanState = {
 export function PlanReducer(state: PlanState = initialState, action: PlanActions){
     switch (action.type)
     {
-        case PlanActionTypes.CREATE_PLAN: {
-            return { ...state, list: action.payload, loading: true };
+        case PlanActionTypes.LOAD_PLANS: {
+            return { ...state, loading: true };
         }
-        case PlanActionTypes.CREATE_PLAN_SUCCESS: {
+        case PlanActionTypes.LOAD_PLANS_SUCCESS: {
             return { ...state, list: action.payload, loading: false };
         }
-        case PlanActionTypes.CREATE_PLAN_FAILURE: {
+        case PlanActionTypes.LOAD_PLANS_FAILURE: {
             return { ...state, error: action.payload, loading: false };
         }
+        // case PlanActionTypes.CREATE_PLAN: {
+        //     return { ...state, list: action.payload, loading: true };
+        // }
+        // case PlanActionTypes.CREATE_PLAN_SUCCESS: {
+        //     return { ...state, list: action.payload, loading: false };
+        // }
+        // case PlanActionTypes.CREATE_PLAN_FAILURE: {
+        //     return { ...state, error: action.payload, loading: false };
+        // }
+        default:
+            return state;
     }
 
 }
