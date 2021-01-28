@@ -17,4 +17,7 @@ export class PlanItemComponent implements OnInit {
   deletePlan(item: PlanModel) {
     this.store.dispatch(new DeletePlanAction(item));
   }
+  showPlan(item: PlanModel) {
+
+  }
 }

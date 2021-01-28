@@ -21,4 +21,8 @@ export class PlanService {
                 delay(500)
             );
     }
+    getPlan(id: number) {
+        return this._http.get<Array<PlanModel>>(`${environment.apiPlan}/${id}`)
+            .pipe(delay(500));
+    }
 }

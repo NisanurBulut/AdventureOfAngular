@@ -3,12 +3,14 @@ import { PlanActions, PlanActionTypes } from "./plan.actions";
 
 export interface PlanState {
     list: PlanModel[];
+    item: PlanModel;
     loading: boolean;
     error: Error;
 }
 const initialState: PlanState = {
     list: [],
     loading: false,
+    item: null,
     error: null
 };
 export function PlanReducer(state: PlanState = initialState, action: PlanActions) {
@@ -22,6 +24,15 @@ export function PlanReducer(state: PlanState = initialState, action: PlanActions
         case PlanActionTypes.LOAD_PLANS_FAILURE: {
             return { ...state, error: action.payload, loading: false };
         }
+        case PlanActionTypes.LOAD_PLAN: {
+            return { ...state, loading: true };
+        }
+        // case PlanActionTypes.LOAD_PLAN_SUCCESS: {
+        //     return { ...state, item: {...action.payload}, loading: false };
+        // }
+        // case PlanActionTypes.LOAD_PLAN_FAILURE: {
+        //     return { ...state, error: action.payload, loading: false };
+        // }
         case PlanActionTypes.CREATE_PLAN: {
             return { ...state, loading: true };
         }

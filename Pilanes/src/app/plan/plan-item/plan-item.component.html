@@ -2,8 +2,11 @@
   <div class="titleDiv">
     <mat-card-title ></mat-card-title>
     <mat-card-title>
-      <button mat-raised-button (click)="deletePlan(this.planItem)">
+      <button class="btnDeletePlan" mat-raised-button (click)="deletePlan(this.planItem)">
         <i class="material-icons">delete_forever</i>
+      </button>
+      <button class="btnShowPlan" mat-raised-button (click)="showPlan(this.planItem)">
+        <i class="material-icons">visibility</i>
       </button>
     </mat-card-title>
   </div>

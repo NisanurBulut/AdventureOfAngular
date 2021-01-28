@@ -9,6 +9,11 @@ mat-card {
     justify-content: space-between;
 }
 button {
-  background-color: rgb(190, 31, 31);
   color: white;
+}
+.btnDeletePlan{
+  background-color: rgb(190, 31, 31);
+}
+.btnShowPlan{
+  background-color: #7399f7;
 }

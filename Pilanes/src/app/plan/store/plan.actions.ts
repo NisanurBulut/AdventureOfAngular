@@ -1,7 +1,10 @@
 import { PlanModel } from '../../models/plan/plan.model';
 export enum PlanActionTypes {
-    LOAD_PLANS = '[Plan] Load Plan',
+    LOAD_PLAN = '[Plan] Load Plan Item',
+    LOAD_PLAN_FAILURE = '[Plan] Load Plan Failure',
+    LOAD_PLAN_SUCCESS = '[Plan] Load Plan Success',
     FILTER_PLANS = '[Plan] Filter Plan',
+    LOAD_PLANS = '[Plan] Load Plans',
     LOAD_PLANS_SUCCESS = '[Plan] Load Plan Success',
     LOAD_PLANS_FAILURE = '[Plan] Load Plan Failure',
     CREATE_PLAN = '[Plan] Create Plan',
@@ -11,6 +14,22 @@ export enum PlanActionTypes {
     DELETE_PLAN_SUCCESS = '[Plan] DELETE Plan Success',
     DELETE_PLAN_FAILURE = '[Plan] DELETE Plan Failure',
 }
+export class LoadPlanItemAction {
+    readonly type = PlanActionTypes.LOAD_PLAN;
+    constructor() { }
+}
+
+// export class LoadPlanSuccessAction {
+//     readonly type = PlanActionTypes.LOAD_PLAN_SUCCESS;
+//     constructor(public payload: PlanModel) {
+//     }
+// }
+// export class LoadPlanFailureAction {
+//     readonly type = PlanActionTypes.LOAD_PLAN_FAILURE;
+//     constructor(public payload: Error) { }
+// }
+
+
 export class DeletePlanAction {
     readonly type = PlanActionTypes.DELETE_PLAN;
     constructor(public payload: PlanModel) { }
@@ -62,4 +81,5 @@ export type PlanActions = LoadPlansAction |
     DeletePlanAction |
     DeletePlanSuccessAction |
     DeletePlanFailureAction |
-    FilterPlansAction;
+    FilterPlansAction |
+    LoadPlanItemAction;
