@@ -20,6 +20,7 @@ export class HeaderComponent implements OnInit {
   _unSubscribeAll = new Subject<any>();
   constructor(private store: Store<AppState>, @Inject(DOCUMENT) private document: Document) { }
   ngOnInit(): void {
+    this.getActiveTab();
   }
   getExercisesForPlan(): void {
     this.store.select(s => s.exerciseList.listForPlan)
@@ -38,7 +39,6 @@ export class HeaderComponent implements OnInit {
       });
   }
   searchTabItems(searchString: string) {
-      this.getActiveTab();
       if (this.activeTab === 0) {
         if (searchString.length === 0) {
           this.store.dispatch(new LoadPlansAction());

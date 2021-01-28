@@ -8,9 +8,14 @@
 .example-full-width {
     width: 80%;
   }
+.disableButton{
+    background-color: #683ab7a9 !important;
+}
+.activeButton{
+    background-color: #673AB7 !important;
+}
 #btnCreatePlan{
     margin-top: 20px;
-    background-color: #673AB7 !important;
     color: white;
     float: right;
 }

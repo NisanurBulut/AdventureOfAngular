@@ -1,8 +1,21 @@
 <header class="header">
-    <mat-card class="header-card">
-        <mat-form-field class="example-full-width">
-            <input (keyup)="searchTabItems($event.target.value)" matInput placeholder="Search">
-          </mat-form-field>
-          <button mat-button id="btnCreatePlan" color="primary" (click)="makePlan()">Make Plan</button>
-    </mat-card>
+  <mat-card class="header-card">
+    <mat-form-field class="example-full-width">
+      <input
+        (keyup)="searchTabItems($event.target.value)"
+        matInput
+        placeholder="Search"
+      />
+    </mat-form-field>
+    <button
+      [disabled]="activeTab ===0"
+      [ngClass]="activeTab===0 ? 'disableButton' : 'activeButton'"
+      mat-button
+      id="btnCreatePlan"
+      color="primary"
+      (click)="makePlan()"
+    >
+      Make Plan
+    </button>
+  </mat-card>
 </header>

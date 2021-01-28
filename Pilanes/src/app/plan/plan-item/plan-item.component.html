@@ -1,6 +1,6 @@
 <mat-card>
   <div class="titleDiv">
-    <mat-card-title >{{this.planItem.name}}</mat-card-title>
+    <mat-card-title ></mat-card-title>
     <mat-card-title>
       <button mat-raised-button (click)="deletePlan(this.planItem)">
         <i class="material-icons">delete_forever</i>
@@ -9,7 +9,7 @@
   </div>
     <mat-card-content>
       <p>
-        Pilates
+        {{this.planItem.name}}
       </p>
     </mat-card-content>
   </mat-card>
