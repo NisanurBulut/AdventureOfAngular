@@ -1,8 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+import { Component, ElementRef, Inject, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { Observable, pipe, Subject } from 'rxjs';
+import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
-import { ClearExercisesForPlanAction, LoadExercisesAction } from '../exercise/store/exercise.actions';
+import { ClearExercisesForPlanAction } from '../exercise/store/exercise.actions';
 import { ExerciseItemModel, PlanModel } from '../models';
 import { CreatePlanAction } from '../plan/store/plan.actions';
 import { AppState } from '../store/app.reducer';
@@ -13,10 +14,9 @@ import { AppState } from '../store/app.reducer';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-
   exercisesforPlan: Array<ExerciseItemModel>;
   _unSubscribeAll = new Subject<any>();
-  constructor(private store: Store<AppState>) { }
+  constructor(private store: Store<AppState>, @Inject(DOCUMENT) private document: Document) { }
   ngOnInit(): void {
   }
   getExercisesForPlan(): void {
@@ -27,12 +27,14 @@ export class HeaderComponent implements OnInit {
         this.exercisesforPlan = data;
       });
   }
+
   makePlan(): void {
     this.getExercisesForPlan();
     if (Object.entries(this.exercisesforPlan).length > 0) {
       const newPlan = { name: "Plan", exercises: this.exercisesforPlan } as PlanModel;
       this.store.dispatch(new CreatePlanAction(newPlan));
       this.store.dispatch(new ClearExercisesForPlanAction());
+
     }else{
       alert('Seçili plan bulumuyor');
     }

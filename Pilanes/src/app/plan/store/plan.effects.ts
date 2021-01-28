@@ -15,7 +15,7 @@ export class PlanEffects {
   .pipe(
       ofType<DeletePlanAction>(PlanActionTypes.DELETE_PLAN),
       mergeMap(
-          (data) => this._planService.deletePlan(data.payload.id.toString())
+          (data) => this._planService.deletePlan(data.payload.id)
               .pipe(
                   map(() => new DeletePlanSuccessAction(data.payload)),
                   catchError((error) => of(new DeletePlanFailureAction(error)))

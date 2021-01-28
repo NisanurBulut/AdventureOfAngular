@@ -18,6 +18,7 @@ export class ExerciseItemComponent implements OnInit {
   ngOnInit(): void {
   }
   selectExercise(checkState: MatCheckboxChange, item: ExerciseItemModel): void {
+
     if (checkState.checked) {
       this.store.dispatch(new AddExerciseToPlanAction(item));
     } else {

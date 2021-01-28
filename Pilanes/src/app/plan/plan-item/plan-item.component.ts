@@ -15,6 +15,7 @@ export class PlanItemComponent implements OnInit {
   ngOnInit(): void {
   }
   deletePlan(item: PlanModel) {
+    console.log(item);
     this.store.dispatch(new DeletePlanAction(item));
   }
 }

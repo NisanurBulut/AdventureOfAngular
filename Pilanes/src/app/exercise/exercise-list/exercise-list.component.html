@@ -1,6 +1,6 @@
 <mat-grid-list cols="5" rowHeight="5:3">
   <ng-container *ngFor="let exercise of exerciseItems | async">
-    <mat-grid-tile class="matItem">
+    <mat-grid-tile class="matItem" id="exerciseItem">
       <exercise-item [exerciseItem]="exercise">
       </exercise-item>
     </mat-grid-tile>

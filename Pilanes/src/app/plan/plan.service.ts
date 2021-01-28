@@ -11,7 +11,7 @@ export class PlanService {
         return this._http.post(environment.apiPlan, planItem)
             .pipe(delay(500));
     }
-    deletePlan(id: string) {
+    deletePlan(id: number) {
         return this._http.delete(`${environment.apiPlan}/${id}`)
             .pipe(delay(500));
     }
