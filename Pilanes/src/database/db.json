@@ -19,6 +19,65 @@
         }
       ],
       "id": 2
+    },
+    {
+      "name": "Plan",
+      "exercises": [
+        {
+          "gifPath": "../assets/exercises/exercise_6.gif",
+          "name": "",
+          "id": 6
+        },
+        {
+          "gifPath": "../assets/exercises/exercise_7.gif",
+          "name": "",
+          "id": 7
+        },
+        {
+          "gifPath": "../assets/exercises/exercise_8.gif",
+          "name": "",
+          "id": 8
+        }
+      ],
+      "id": 3
+    },
+    {
+      "name": "Plan",
+      "exercises": [
+        {
+          "gifPath": "../assets/exercises/exercise_6.gif",
+          "name": "",
+          "id": 6
+        },
+        {
+          "gifPath": "../assets/exercises/exercise_7.gif",
+          "name": "",
+          "id": 7
+        }
+      ],
+      "id": 4
+    },
+    {
+      "name": "Plan",
+      "exercises": [
+        {
+          "gifPath": "../assets/exercises/exercise_10.gif",
+          "name": "",
+          "id": 10
+        }
+      ],
+      "id": 5
+    },
+    {
+      "name": "Plan",
+      "exercises": [
+        {
+          "gifPath": "../assets/exercises/exercise_33.gif",
+          "name": "",
+          "id": 33
+        }
+      ],
+      "id": 6
     }
   ],
   "exercises": [
@@ -83,6 +142,11 @@
       "id": 17
     },
     {
+      "gifPath": "../assets/exercises/exercise_25.gif",
+      "name": "",
+      "id": 25
+    },
+    {
       "gifPath": "../assets/exercises/exercise_26.gif",
       "name": "",
       "id": 26
@@ -111,6 +175,21 @@
       "gifPath": "../assets/exercises/exercise_31.gif",
       "name": "",
       "id": 31
+    },
+    {
+      "gifPath": "../assets/exercises/exercise_32.gif",
+      "name": "",
+      "id": 32
+    },
+    {
+      "gifPath": "../assets/exercises/exercise_33.gif",
+      "name": "",
+      "id": 33
+    },
+    {
+      "gifPath": "../assets/exercises/exercise_34.gif",
+      "name": "",
+      "id": 34
     }
   ]
 }

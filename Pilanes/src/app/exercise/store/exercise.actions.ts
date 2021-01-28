@@ -4,7 +4,12 @@ export enum ExerciseActionTypes {
     LOAD_ITEMS_SUCCESS = '[Exercise] Load Exercise Items Success',
     LOAD_ITEMS_FAILURE = '[Exercise] Load Exercise Items Failure',
     ADD_ITEM_TO_PLAN = '[Exercise] Add Item To Plan',
+    CLEAR_ITEMS_FOR_PLAN = '[Exercise] Clear Items for Plan',
     REMOVE_ITEM_FROM_PLAN = '[Exercise] Remove Item from Plan'
+}
+export class ClearExercisesForPlanAction {
+    readonly type = ExerciseActionTypes.CLEAR_ITEMS_FOR_PLAN;
+    constructor() { }
 }
 export class AddExerciseToPlanAction {
     readonly type = ExerciseActionTypes.ADD_ITEM_TO_PLAN;
@@ -28,8 +33,10 @@ export class LoadExercisesFailureAction {
     constructor(public payload: Error) { }
 }
 
+
 export type ExerciseItemActions = LoadExercisesAction |
     LoadExercisesFailureAction |
     LoadExercisesSuccessAction |
     AddExerciseToPlanAction |
-    RemoveExerciseFromPlanAction;
+    RemoveExerciseFromPlanAction |
+    ClearExercisesForPlanAction;

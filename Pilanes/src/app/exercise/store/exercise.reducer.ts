@@ -27,7 +27,9 @@ export function ExerciseReducer(state: ExerciseState = initialState, action: Exe
                 loading: false
             };
         }
-
+        case ExerciseActionTypes.CLEAR_ITEMS_FOR_PLAN: {
+            return { ...state, listForPlan: [], loading: false };
+        }
         case ExerciseActionTypes.LOAD_ITEMS: {
             return { ...state, loading: true };
         }
