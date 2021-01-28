@@ -32,6 +32,15 @@ export function PlanReducer(state: PlanState = initialState, action: PlanActions
         case PlanActionTypes.CREATE_PLAN_FAILURE: {
             return { ...state, error: action.payload, loading: false };
         }
+        case PlanActionTypes.DELETE_PLAN: {
+            return { ...state, loading: true };
+        }
+        case PlanActionTypes.DELETE_PLAN_SUCCESS: {
+            return { ...state, list: [...state.list.filter(a=>a.id!==action.payload.id)], loading: false };
+        }
+        case PlanActionTypes.DELETE_PLAN_FAILURE: {
+            return { ...state, error: action.payload, loading: false };
+        }
         default:
             return state;
     }

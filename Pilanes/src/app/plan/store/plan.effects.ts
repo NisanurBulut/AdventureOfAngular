@@ -4,7 +4,7 @@ import { of, Subject } from "rxjs";
 import { catchError, map, mergeMap, takeUntil } from "rxjs/operators";
 import { ClearExercisesForPlanAction, LoadExercisesFailureAction, LoadExercisesSuccessAction } from "src/app/exercise/store/exercise.actions";
 import { PlanService } from "../plan.service";
-import { CreatePlanAction, CreatePlanFailureAction, CreatePlanSuccessAction, LoadPlansAction, LoadPlansFailureAction, LoadPlansSuccessAction, PlanActionTypes } from "./plan.actions";
+import { CreatePlanAction, CreatePlanFailureAction, CreatePlanSuccessAction, DeletePlanAction, DeletePlanFailureAction, DeletePlanSuccessAction, LoadPlansAction, LoadPlansFailureAction, LoadPlansSuccessAction, PlanActionTypes } from "./plan.actions";
 
 @Injectable()
 export class PlanEffects {
@@ -12,6 +12,17 @@ export class PlanEffects {
   constructor(private actions$: Actions, private _planService: PlanService) {
 
   }
+  @Effect() deletePlan$ = this.actions$
+  .pipe(
+      ofType<DeletePlanAction>(PlanActionTypes.DELETE_PLAN),
+      mergeMap(
+          (data) => this._planService.deletePlan(data.payload.id.toString())
+              .pipe(
+                  map(() => new DeletePlanSuccessAction(data.payload)),
+                  catchError((error) => of(new DeletePlanFailureAction(error)))
+              )
+      )
+  );
   @Effect() createPlan$ = this.actions$
   .pipe(
       ofType<CreatePlanAction>(PlanActionTypes.CREATE_PLAN),

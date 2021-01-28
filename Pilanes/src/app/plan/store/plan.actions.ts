@@ -6,6 +6,21 @@ export enum PlanActionTypes {
     CREATE_PLAN = '[Plan] Create Plan',
     CREATE_PLAN_SUCCESS = '[Plan] Create Plan Success',
     CREATE_PLAN_FAILURE = '[Plan] Create Plan Failure',
+    DELETE_PLAN = '[Plan] DELETE Plan',
+    DELETE_PLAN_SUCCESS = '[Plan] DELETE Plan Success',
+    DELETE_PLAN_FAILURE = '[Plan] DELETE Plan Failure',
+}
+export class DeletePlanAction {
+    readonly type = PlanActionTypes.DELETE_PLAN;
+    constructor(public payload: PlanModel) { }
+}
+export class DeletePlanSuccessAction {
+    readonly type = PlanActionTypes.DELETE_PLAN_SUCCESS;
+    constructor(public payload: PlanModel) { }
+}
+export class DeletePlanFailureAction {
+    readonly type = PlanActionTypes.DELETE_PLAN_FAILURE;
+    constructor(public payload: Error) { }
 }
 export class CreatePlanAction {
     readonly type = PlanActionTypes.CREATE_PLAN;
@@ -38,4 +53,7 @@ export type PlanActions = LoadPlansAction |
     LoadPlansSuccessAction |
     CreatePlanAction |
     CreatePlanFailureAction |
-    CreatePlanSuccessAction;
+    CreatePlanSuccessAction |
+    DeletePlanAction |
+    DeletePlanSuccessAction |
+    DeletePlanFailureAction;
