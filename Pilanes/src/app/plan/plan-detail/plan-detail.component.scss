@@ -1,4 +1,9 @@
 .dialog-content-wrapper {
     max-width: 500px;
     min-width: 500px;
+
+}
+::ng-deep li.carousel-slide.ng-star-inserted  {
+    height: 350px!important;
+    min-height: unset!important;
 }

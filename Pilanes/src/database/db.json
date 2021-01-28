@@ -1,31 +1,7 @@
 {
   "plans": [
     {
-      "name": "20210128T141150156Z Plan",
-      "exercises": [
-        {
-          "gifPath": "../assets/exercises/exercise_6.gif",
-          "name": "exercise_6.gif",
-          "checked": false,
-          "id": 6
-        }
-      ],
-      "id": 24
-    },
-    {
-      "name": "20210128T141219406Z Plan",
-      "exercises": [
-        {
-          "gifPath": "../assets/exercises/exercise_6.gif",
-          "name": "exercise_6.gif",
-          "checked": false,
-          "id": 6
-        }
-      ],
-      "id": 25
-    },
-    {
-      "name": "2021 01 28T14 12 53 780Z Plan",
+      "name": "2021 01 28T20 01 46 611Z Plan",
       "exercises": [
         {
           "gifPath": "../assets/exercises/exercise_6.gif",
@@ -34,13 +10,37 @@
           "id": 6
         },
         {
+          "gifPath": "../assets/exercises/exercise_7.gif",
+          "name": "exercise_7.gif",
+          "checked": false,
+          "id": 7
+        },
+        {
+          "gifPath": "../assets/exercises/exercise_8.gif",
+          "name": "exercise_8.gif",
+          "checked": false,
+          "id": 8
+        },
+        {
+          "gifPath": "../assets/exercises/exercise_10.gif",
+          "name": "exercise_10.gif",
+          "checked": false,
+          "id": 10
+        },
+        {
           "gifPath": "../assets/exercises/exercise_11.gif",
           "name": "exercise_11.gif",
           "checked": false,
           "id": 11
+        },
+        {
+          "gifPath": "../assets/exercises/exercise_12.gif",
+          "name": "exercise_12.gif",
+          "checked": false,
+          "id": 12
         }
       ],
-      "id": 26
+      "id": 1
     }
   ],
   "exercises": [

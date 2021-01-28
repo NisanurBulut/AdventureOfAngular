@@ -7,14 +7,13 @@
             <mat-carousel
             timings="250ms ease-in"
             [autoplay]="true"
-            interval="5000"
+            interval="6000"
             color="accent"
-            maxWidth="auto"
             proportion="25"
-            slides="5"
+            slides="planItem.exercises.length"
             [loop]="true"
-            [hideArrows]="false"
-            [hideIndicators]="false"
+            [hideArrows]="true"
+            [hideIndicators]="true"
             [useKeyboard]="true"
             [useMouseWheel]="false"
             orientation="ltr"
@@ -24,7 +23,7 @@
               *ngFor="let slide of this.planItem.exercises; let i = index"
               [image]="slide.gifPath"
               overlayColor="#00000040"
-              [hideOverlay]="false"
+              [hideOverlay]="true"
             ></mat-carousel-slide>
           </mat-carousel>
     </div>
