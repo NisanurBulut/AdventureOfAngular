@@ -27,7 +27,6 @@ export class LoadPlansAction {
 export class LoadPlansSuccessAction {
     readonly type = PlanActionTypes.LOAD_PLANS_SUCCESS;
     constructor(public payload: Array<PlanModel>) {
-        console.log(payload);
     }
 }
 export class LoadPlansFailureAction {

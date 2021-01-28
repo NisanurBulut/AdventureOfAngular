@@ -4,6 +4,7 @@ import { Observable } from 'rxjs';
 import { ExerciseItemModel } from 'src/app/models';
 import { LoadExercisesAction } from '../store/exercise.actions';
 import * as fromApp from '../../store/app.reducer';
+import { takeUntil } from 'rxjs/operators';
 
 @Component({
   selector: 'exercise-list',
@@ -12,6 +13,7 @@ import * as fromApp from '../../store/app.reducer';
 })
 export class ExerciseListComponent implements OnInit {
   exerciseItems: Observable<Array<ExerciseItemModel>>;
+  exercisesForPlan: Observable<Array<ExerciseItemModel>>;
   loading$: Observable<Boolean>;
   error$: Observable<Error>
 
@@ -21,6 +23,13 @@ export class ExerciseListComponent implements OnInit {
   ngOnInit(): void {
     this.store.dispatch(new LoadExercisesAction());
     this.exerciseItems = this.store.select(store => store.exerciseList.list);
+    // this.store
+    //   .select(store => store.exerciseList.listForPlan)
+    //   .subscribe((data) => {
+    //     if (Object.entries(data).length === 0) {
+
+    //     }
+    //   });
     this.loading$ = this.store.select(store => store.exerciseList.loading);
     this.error$ = this.store.select(store => store.exerciseList.error);
   }
