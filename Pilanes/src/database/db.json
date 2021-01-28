@@ -29,54 +29,72 @@
         }
       ],
       "id": 21
+    },
+    {
+      "name": "Thu Jan 28 2021 16:31:41 GMT+0300 (GMT+03:00) Plan",
+      "exercises": [
+        {
+          "gifPath": "../assets/exercises/exercise_6.gif",
+          "name": "",
+          "checked": false,
+          "id": 6
+        },
+        {
+          "gifPath": "../assets/exercises/exercise_7.gif",
+          "name": "",
+          "checked": false,
+          "id": 7
+        }
+      ],
+      "id": 22
     }
   ],
   "exercises": [
     {
       "gifPath": "../assets/exercises/exercise_6.gif",
-      "name": "",
+      "name": "exercise_6.gif",
       "checked": false,
       "id": 6
     },
     {
       "gifPath": "../assets/exercises/exercise_7.gif",
-      "name": "",
+      "name": "exercise_7.gif",
       "checked": false,
       "id": 7
     },
     {
       "gifPath": "../assets/exercises/exercise_8.gif",
-      "name": "",
+      "name": "exercise_8.gif",
       "checked": false,
       "id": 8
     },
     {
       "gifPath": "../assets/exercises/exercise_9.gif",
-      "name": "",
+      "name": "exercise_9.gif",
       "checked": false,
       "id": 9
     },
     {
       "gifPath": "../assets/exercises/exercise_10.gif",
-      "name": "",
+      "name": "exercise_10.gif",
       "checked": false,
       "id": 10
     },
     {
       "gifPath": "../assets/exercises/exercise_11.gif",
-      "name": "",
+      "name": "exercise_11.gif",
       "checked": false,
       "id": 11
     },
     {
       "gifPath": "../assets/exercises/exercise_12.gif",
-      "name": "",
+      "name": "exercise_12.gif",
       "checked": false,
       "id": 12
     },
     {
       "gifPath": "../assets/exercises/exercise_13.gif",
-      "name": "",
+      "name": "exercise_13.gif",
       "checked": false,
       "id": 13
     },

@@ -1,7 +1,7 @@
 <div class="main">
   <app-header></app-header>
   <div class="container">
-    <mat-tab-group mat-align-tabs="start" id="mainTabPlan">
+    <mat-tab-group mat-align-tabs="start" id="mainTabPlan" (selectedTabChange)="onTabChanged($event);">
       <mat-tab label="Plans">
         <plan-list></plan-list>
       </mat-tab>

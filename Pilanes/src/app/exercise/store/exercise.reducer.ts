@@ -42,9 +42,7 @@ export function ExerciseReducer(state: ExerciseState = initialState, action: Exe
         case ExerciseActionTypes.Filter_ITEMS: {
             return {
                 ...state,
-                list: state.list.filter((pr, prIndex) => {
-                    return pr.name === action.payload;
-                }),
+                list: [...state.list.filter(a => a.name.toLocaleLowerCase().indexOf(action.payload) >= 0)],
                 loading: false
             };
         }
