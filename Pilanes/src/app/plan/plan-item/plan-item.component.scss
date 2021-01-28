@@ -1,5 +1,14 @@
-mat-card{
-    background-color: #fff;
-    margin-bottom: 5px;
-    box-shadow: #110120;
+mat-card {
+  background-color: #fff;
+  margin-bottom: 5px;
+  box-shadow: #110120;
+}
+
+.titleDiv{
+    display: flex;
+    justify-content: space-between;
+}
+button {
+  background-color: rgb(190, 31, 31);
+  color: white;
 }

@@ -5,6 +5,8 @@ import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatIconModule } from '@angular/material/icon';
+
 @NgModule({
     declarations: [],
     imports: [
@@ -12,7 +14,8 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
         MatButtonModule,
         MatGridListModule,
         MatButtonToggleModule,
-        MatCheckboxModule
+        MatCheckboxModule,
+        MatIconModule
     ],
     exports: [
         MatTabsModule,
@@ -20,7 +23,8 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
         MatCardModule,
         MatGridListModule,
         MatButtonToggleModule,
-        MatCheckboxModule
+        MatCheckboxModule,
+        MatIconModule
     ]
 })
 export class MaterialModule {
