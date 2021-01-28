@@ -6,6 +6,7 @@ import { MaterialModule } from 'src/shared';
 import { PlanService } from './plan.service';
 import { PlanDetailComponent } from './plan-detail/plan-detail.component';
 import { MatCarouselModule } from '@ngmodule/material-carousel';
+import { MatProgressBarModule  } from '@angular/material/progress-bar';
 @NgModule({
   declarations: [
     PlanListComponent,
@@ -16,6 +17,7 @@ import { MatCarouselModule } from '@ngmodule/material-carousel';
     CommonModule,
     MaterialModule,
     MatCarouselModule.forRoot(),
+    MatProgressBarModule
   ],
   exports: [
     PlanListComponent

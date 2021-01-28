@@ -7,3 +7,6 @@
     height: 350px!important;
     min-height: unset!important;
 }
+::ng-deep button.mat-focus-indicator.mat-icon-button.mat-button-base{
+    float: right!important;
+}
