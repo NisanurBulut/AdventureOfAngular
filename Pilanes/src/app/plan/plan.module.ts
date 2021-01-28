@@ -8,11 +8,13 @@ import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
 import { PlanReducer } from './store/plan.reducer';
 import { PlanEffects } from './store/plan.effects';
+import { PlanDetailComponent } from './plan-detail/plan-detail.component';
 
 @NgModule({
   declarations: [
     PlanListComponent,
-    PlanItemComponent
+    PlanItemComponent,
+    PlanDetailComponent
   ],
   imports: [
     CommonModule,

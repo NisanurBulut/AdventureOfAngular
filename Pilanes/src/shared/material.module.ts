@@ -7,6 +7,8 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
+import {MatDialogModule} from '@angular/material/dialog';
+import {MatToolbarModule} from '@angular/material/toolbar';
 @NgModule({
     declarations: [],
     imports: [
@@ -16,7 +18,9 @@ import { MatInputModule } from '@angular/material/input';
         MatButtonToggleModule,
         MatCheckboxModule,
         MatIconModule,
-        MatInputModule
+        MatInputModule,
+        MatDialogModule,
+        MatToolbarModule
     ],
     exports: [
         MatTabsModule,
@@ -26,7 +30,9 @@ import { MatInputModule } from '@angular/material/input';
         MatButtonToggleModule,
         MatCheckboxModule,
         MatIconModule,
-        MatInputModule
+        MatInputModule,
+        MatDialogModule,
+        MatToolbarModule
     ]
 })
 export class MaterialModule {

@@ -1,0 +1,20 @@
+<div class="dialog-content-wrapper">
+            <button mat-icon-button (click)="this.dialogRef.close(false)"  fxFlex
+            fxLayout="row"
+            fxLayoutAlign="end center">
+                <mat-icon>close</mat-icon>
+            </button>
+    <div *ngFor="let item of (planItem.exercises)">
+        <mat-grid-list cols="2" rowHeight="5:2">
+            <ng-container *ngFor="let exercise of planItem.exercises">
+              <mat-grid-tile class="matItem" id="exerciseItem">
+                <mat-card>
+                    <mat-card-content>
+                        <img mat-card-sm-image src="{{exercise.gifPath}}"/>
+                    </mat-card-content>
+                  </mat-card>
+              </mat-grid-tile>
+            </ng-container>
+          </mat-grid-list>
+    </div>
+    </div>
