@@ -1,3 +1,4 @@
+import { act } from "@ngrx/effects";
 import { PlanModel } from "src/app/models";
 import { PlanActions, PlanActionTypes } from "./plan.actions";
 
@@ -27,12 +28,12 @@ export function PlanReducer(state: PlanState = initialState, action: PlanActions
         case PlanActionTypes.LOAD_PLAN: {
             return { ...state, loading: true };
         }
-        // case PlanActionTypes.LOAD_PLAN_SUCCESS: {
-        //     return { ...state, item: {...action.payload}, loading: false };
-        // }
-        // case PlanActionTypes.LOAD_PLAN_FAILURE: {
-        //     return { ...state, error: action.payload, loading: false };
-        // }
+        case PlanActionTypes.LOAD_PLAN_SUCCESS: {
+            return { ...state, item: action.payload , loadding: false };
+        }
+        case PlanActionTypes.LOAD_PLAN_FAILURE: {
+            return { ...state, error: action.payload, loading: false };
+        }
         case PlanActionTypes.CREATE_PLAN: {
             return { ...state, loading: true };
         }

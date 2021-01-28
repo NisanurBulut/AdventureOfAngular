@@ -2,7 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { PlanModel } from 'src/app/models';
 import * as fromApp from '../../store/app.reducer';
-import { DeletePlanAction } from '../store/plan.actions';
+import { DeletePlanAction, LoadPlanItemAction } from '../store/plan.actions';
 @Component({
   selector: 'plan-item',
   templateUrl: './plan-item.component.html',
@@ -18,6 +18,6 @@ export class PlanItemComponent implements OnInit {
     this.store.dispatch(new DeletePlanAction(item));
   }
   showPlan(item: PlanModel) {
-
+    console.log(this.planItem);
   }
 }
