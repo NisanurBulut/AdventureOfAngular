@@ -4,12 +4,49 @@
       "name": "Plan",
       "exercises": [
         {
-          "gifPath": "../assets/exercises/exercise_33.gif",
+          "gifPath": "../assets/exercises/exercise_6.gif",
           "name": "",
-          "id": 33
+          "id": 6
+        },
+        {
+          "gifPath": "../assets/exercises/exercise_7.gif",
+          "name": "",
+          "id": 7
         }
       ],
-      "id": 6
+      "id": 12
+    },
+    {
+      "name": "Plan",
+      "exercises": [
+        {
+          "gifPath": "../assets/exercises/exercise_6.gif",
+          "name": "",
+          "id": 6
+        },
+        {
+          "gifPath": "../assets/exercises/exercise_7.gif",
+          "name": "",
+          "id": 7
+        },
+        {
+          "gifPath": "../assets/exercises/exercise_13.gif",
+          "name": "",
+          "id": 13
+        }
+      ],
+      "id": 13
+    },
+    {
+      "name": "Plan",
+      "exercises": [
+        {
+          "gifPath": "../assets/exercises/exercise_6.gif",
+          "name": "",
+          "id": 6
+        }
+      ],
+      "id": 14
     }
   ],
   "exercises": [

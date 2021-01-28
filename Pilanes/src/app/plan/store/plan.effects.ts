@@ -2,7 +2,6 @@ import { Injectable } from "@angular/core";
 import { Actions, Effect, ofType } from '@ngrx/effects';
 import { of, Subject } from "rxjs";
 import { catchError, map, mergeMap, takeUntil } from "rxjs/operators";
-import { ClearExercisesForPlanAction, LoadExercisesFailureAction, LoadExercisesSuccessAction } from "src/app/exercise/store/exercise.actions";
 import { PlanService } from "../plan.service";
 import { CreatePlanAction, CreatePlanFailureAction, CreatePlanSuccessAction, DeletePlanAction, DeletePlanFailureAction, DeletePlanSuccessAction, LoadPlansAction, LoadPlansFailureAction, LoadPlansSuccessAction, PlanActionTypes } from "./plan.actions";
 
@@ -23,19 +22,19 @@ export class PlanEffects {
               )
       )
   );
-  @Effect() createPlan$ = this.actions$
+
+  @Effect() addPlan$ = this.actions$
   .pipe(
       ofType<CreatePlanAction>(PlanActionTypes.CREATE_PLAN),
       mergeMap(
           (data) => this._planService.addPlan(data.payload)
               .pipe(
-                  map(() => {
-                    new CreatePlanSuccessAction(data.payload);
-                  }),
+                  map(() => new CreatePlanSuccessAction(data.payload)),
                   catchError((error) => of(new CreatePlanFailureAction(error)))
               )
       )
   );
+
   @Effect() loadPlanList$ = this.actions$
     .pipe(
       ofType<LoadPlansAction>(PlanActionTypes.LOAD_PLANS),
