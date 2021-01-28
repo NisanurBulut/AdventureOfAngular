@@ -11,9 +11,8 @@ const initialState: PlanState = {
     loading: false,
     error: null
 };
-export function PlanReducer(state: PlanState = initialState, action: PlanActions){
-    switch (action.type)
-    {
+export function PlanReducer(state: PlanState = initialState, action: PlanActions) {
+    switch (action.type) {
         case PlanActionTypes.LOAD_PLANS: {
             return { ...state, loading: true };
         }
@@ -36,7 +35,14 @@ export function PlanReducer(state: PlanState = initialState, action: PlanActions
             return { ...state, loading: true };
         }
         case PlanActionTypes.DELETE_PLAN_SUCCESS: {
-            return { ...state, list: [...state.list.filter(a=>a.id!==action.payload.id)], loading: false };
+            return { ...state, list: [...state.list.filter(a => a.id !== action.payload.id)], loading: false };
+        }
+        case PlanActionTypes.FILTER_PLANS: {
+            return {
+                ...state,
+                list: [...state.list.filter(a => a.name.toLocaleLowerCase().indexOf(action.payload) >= 0)],
+                loading: false
+            };
         }
         case PlanActionTypes.DELETE_PLAN_FAILURE: {
             return { ...state, error: action.payload, loading: false };

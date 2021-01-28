@@ -21,7 +21,7 @@ export function ExerciseReducer(state: ExerciseState = initialState, action: Exe
         case ExerciseActionTypes.REMOVE_ITEM_FROM_PLAN: {
             return {
                 ...state,
-                profileList: state.listForPlan.filter((pr, prIndex) => {
+                listForPlan: state.listForPlan.filter((pr, prIndex) => {
                     return pr.id !== action.payload.id;
                 }),
                 loading: false
@@ -38,6 +38,15 @@ export function ExerciseReducer(state: ExerciseState = initialState, action: Exe
         }
         case ExerciseActionTypes.LOAD_ITEMS_FAILURE: {
             return { ...state, error: action.payload, loading: false };
+        }
+        case ExerciseActionTypes.Filter_ITEMS: {
+            return {
+                ...state,
+                list: state.list.filter((pr, prIndex) => {
+                    return pr.name === action.payload;
+                }),
+                loading: false
+            };
         }
         default:
             return state;

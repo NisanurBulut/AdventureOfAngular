@@ -11,6 +11,24 @@
         }
       ],
       "id": 20
+    },
+    {
+      "name": "Thu Jan 28 2021 16:22:46 GMT+0300 (GMT+03:00) Plan",
+      "exercises": [
+        {
+          "gifPath": "../assets/exercises/exercise_7.gif",
+          "name": "",
+          "checked": false,
+          "id": 7
+        },
+        {
+          "gifPath": "../assets/exercises/exercise_6.gif",
+          "name": "",
+          "checked": false,
+          "id": 6
+        }
+      ],
+      "id": 21
     }
   ],
   "exercises": [

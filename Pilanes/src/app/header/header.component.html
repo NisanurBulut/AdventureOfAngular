@@ -1,5 +1,8 @@
 <header class="header">
     <mat-card class="header-card">
-        <button mat-button id="btnCreatePlan" color="primary" (click)="makePlan()">Make Plan</button>
+        <mat-form-field class="example-full-width">
+            <input (keyup)="searchTabItems($event.target.value)" matInput placeholder="Search">
+          </mat-form-field>
+          <button mat-button id="btnCreatePlan" color="primary" (click)="makePlan()">Make Plan</button>
     </mat-card>
 </header>

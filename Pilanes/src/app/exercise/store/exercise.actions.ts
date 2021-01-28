@@ -1,6 +1,7 @@
 import { ExerciseItemModel } from '../../models';
 export enum ExerciseActionTypes {
     LOAD_ITEMS = '[Exercise] Load Exercise Items',
+    Filter_ITEMS = '[Exercise] Filter Exercise Items',
     LOAD_ITEMS_SUCCESS = '[Exercise] Load Exercise Items Success',
     LOAD_ITEMS_FAILURE = '[Exercise] Load Exercise Items Failure',
     ADD_ITEM_TO_PLAN = '[Exercise] Add Item To Plan',
@@ -32,11 +33,15 @@ export class LoadExercisesFailureAction {
     readonly type = ExerciseActionTypes.LOAD_ITEMS_FAILURE;
     constructor(public payload: Error) { }
 }
-
+export class FilterExercisesAction {
+    readonly type = ExerciseActionTypes.Filter_ITEMS;
+    constructor(public payload: string) { }
+}
 
 export type ExerciseItemActions = LoadExercisesAction |
     LoadExercisesFailureAction |
     LoadExercisesSuccessAction |
     AddExerciseToPlanAction |
     RemoveExerciseFromPlanAction |
-    ClearExercisesForPlanAction;
+    ClearExercisesForPlanAction |
+    FilterExercisesAction;
