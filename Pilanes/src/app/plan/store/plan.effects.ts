@@ -31,7 +31,6 @@ export class PlanEffects {
           .pipe(
             takeUntil(this._unsubscribeAll),
             map(data => {
-              console.log(data);
               return new LoadPlansSuccessAction(data)
             }),
             catchError(error => of(new LoadPlansFailureAction(error)))

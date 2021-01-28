@@ -32,7 +32,7 @@ export function ExerciseReducer(state: ExerciseState = initialState, action: Exe
             return { ...state, loading: true };
         }
         case ExerciseActionTypes.LOAD_ITEMS_SUCCESS: {
-            return { ...state, list: [...state.list, ...action.payload], loading: false };
+            return { ...state, list: action.payload, loading: false };
         }
         case ExerciseActionTypes.LOAD_ITEMS_FAILURE: {
             return { ...state, error: action.payload, loading: false };

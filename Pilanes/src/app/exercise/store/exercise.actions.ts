@@ -21,7 +21,6 @@ export class LoadExercisesAction {
 export class LoadExercisesSuccessAction {
     readonly type = ExerciseActionTypes.LOAD_ITEMS_SUCCESS;
     constructor(public payload: Array<ExerciseItemModel>) {
-        console.log(payload);
     }
 }
 export class LoadExercisesFailureAction {

@@ -10,24 +10,19 @@ import * as fromApp from '../../store/app.reducer';
   templateUrl: './exercise-list.component.html',
   styleUrls: ['./exercise-list.component.scss']
 })
-export class ExerciseListComponent implements OnInit, AfterViewInit {
+export class ExerciseListComponent implements OnInit {
   exerciseItems: Observable<Array<ExerciseItemModel>>;
   loading$: Observable<Boolean>;
   error$: Observable<Error>
 
   constructor(private store: Store<fromApp.AppState>) {
-    this.store.dispatch(new LoadExercisesAction());
+
   }
-  ngAfterViewInit(): void {
-    console.log('ngAfterViewInit');
+  ngOnInit(): void {
+    this.store.dispatch(new LoadExercisesAction());
     this.exerciseItems = this.store.select(store => store.exerciseList.list);
     this.loading$ = this.store.select(store => store.exerciseList.loading);
     this.error$ = this.store.select(store => store.exerciseList.error);
-  }
-
-  ngOnInit(): void {
-
-
   }
 
 }
