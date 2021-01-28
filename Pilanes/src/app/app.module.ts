@@ -14,11 +14,13 @@ import { ExerciseReducer } from './exercise/store/exercise.reducer';
 import { PlanReducer } from './plan/store/plan.reducer';
 import { PlanEffects } from './plan/store/plan.effects';
 import { HeaderReducer } from './header/store/header.reducer';
+import { PlanDetailComponent } from './plan-detail/plan-detail.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PlanDetailComponent
   ],
   imports: [
     BrowserModule,
