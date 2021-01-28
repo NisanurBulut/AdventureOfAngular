@@ -1,52 +1,46 @@
 {
   "plans": [
     {
-      "name": "Plan",
+      "name": "20210128T141150156Z Plan",
       "exercises": [
         {
           "gifPath": "../assets/exercises/exercise_6.gif",
-          "name": "",
+          "name": "exercise_6.gif",
           "checked": false,
           "id": 6
         }
       ],
-      "id": 20
+      "id": 24
     },
     {
-      "name": "Thu Jan 28 2021 16:22:46 GMT+0300 (GMT+03:00) Plan",
+      "name": "20210128T141219406Z Plan",
       "exercises": [
         {
-          "gifPath": "../assets/exercises/exercise_7.gif",
-          "name": "",
-          "checked": false,
-          "id": 7
-        },
-        {
           "gifPath": "../assets/exercises/exercise_6.gif",
-          "name": "",
+          "name": "exercise_6.gif",
           "checked": false,
           "id": 6
         }
       ],
-      "id": 21
+      "id": 25
     },
     {
-      "name": "Thu Jan 28 2021 16:31:41 GMT+0300 (GMT+03:00) Plan",
+      "name": "2021 01 28T14 12 53 780Z Plan",
       "exercises": [
         {
           "gifPath": "../assets/exercises/exercise_6.gif",
-          "name": "",
+          "name": "exercise_6.gif",
           "checked": false,
           "id": 6
         },
         {
-          "gifPath": "../assets/exercises/exercise_7.gif",
-          "name": "",
+          "gifPath": "../assets/exercises/exercise_11.gif",
+          "name": "exercise_11.gif",
           "checked": false,
-          "id": 7
+          "id": 11
         }
       ],
-      "id": 22
+      "id": 26
     }
   ],
   "exercises": [

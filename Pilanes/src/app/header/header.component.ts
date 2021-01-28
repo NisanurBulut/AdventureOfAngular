@@ -7,6 +7,7 @@ import { ClearExercisesForPlanAction, FilterExercisesAction, LoadExercisesAction
 import { ExerciseItemModel, PlanModel } from '../models';
 import { CreatePlanAction, FilterPlansAction, LoadPlansAction } from '../plan/store/plan.actions';
 import { AppState } from '../store/app.reducer';
+import { SetActiveAction } from './store/header.actions';
 
 @Component({
   selector: 'app-header',
@@ -57,11 +58,12 @@ export class HeaderComponent implements OnInit {
   makePlan(): void {
     this.getExercisesForPlan();
     if (Object.entries(this.exercisesforPlan).length > 0) {
-      const planName = String(new Date()) + " Plan";
+      console.log(new Date().toISOString());
+      const planName = new Date().toISOString().replace(/[\-\:\.]/g, " ") + " Plan";
       const newPlan = { name: planName, exercises: this.exercisesforPlan } as PlanModel;
       this.store.dispatch(new CreatePlanAction(newPlan));
       this.store.dispatch(new ClearExercisesForPlanAction());
-
+      this.store.dispatch(new SetActiveAction(0));
     } else {
       alert('Seçili plan bulumuyor');
     }
