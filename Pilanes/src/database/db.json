@@ -1,25 +1,19 @@
 {
   "plans": [
     {
-      "name": "2021 01 29T08 30 46 831Z Plan",
+      "name": "2021 01 29T11 37 04 152Z Plan",
       "exercises": [
         {
-          "gifPath": "../assets/exercises/exercise_25.gif",
-          "name": "exercise_25",
+          "gifPath": "../assets/exercises/exercise_27.gif",
+          "name": "exercise_27",
           "checked": false,
-          "id": 25
+          "id": 27
         },
         {
           "gifPath": "../assets/exercises/exercise_26.gif",
           "name": "exercise_26",
           "checked": false,
           "id": 26
-        },
-        {
-          "gifPath": "../assets/exercises/exercise_27.gif",
-          "name": "exercise_27",
-          "checked": false,
-          "id": 27
         }
       ],
       "id": 1

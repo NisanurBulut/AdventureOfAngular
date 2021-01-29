@@ -1,16 +1,21 @@
 <div class="dialog-content-wrapper">
-  <mat-progress-bar
-  class="example-margin"
-  [color]="color"
-  [mode]="mode"
-  [value]="this.counter"
-  [bufferValue]="bufferValue">
-</mat-progress-bar>
-            <button mat-icon-button (click)="this.dialogRef.close(false)"  fxFlex
-            fxLayout="row"
-            fxLayoutAlign="end center">
-                <mat-icon>close</mat-icon>
-            </button>
+ <mat-toolbar>
+   <mat-toolbar-row>
+
+      <mat-progress-bar
+      class="example-margin"
+      [color]="color"
+      [mode]="mode"
+      [value]="this.counter"
+      [bufferValue]="bufferValue">
+    </mat-progress-bar>
+                <button mat-icon-button (click)="this.dialogRef.close(false)"  fxFlex
+                fxLayout="row"
+                fxLayoutAlign="end center">
+                    <mat-icon>close</mat-icon>
+                </button>
+   </mat-toolbar-row>
+ </mat-toolbar>
             <mat-carousel
             timings="250ms ease-in"
             [autoplay]="true"
