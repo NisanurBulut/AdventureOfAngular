@@ -25,6 +25,6 @@ Pilanes data is kept in json file and CRUD operations are done with json-server.
 ![Pilanes](https://github.com/NisanurBulut/AdventureOfAngular/blob/master/Trailers/Trailer_Pilanes.gif)
 
 ## Helpfull Websites
-[Youtube-link-State Management With Ngrx] (https://www.youtube.com/playlist?list=PLtKjv92L0ihCX_ZE3xedfaOU2TbvgeulK)
+[Youtube-link-State Management With Ngrx](https://www.youtube.com/playlist?list=PLtKjv92L0ihCX_ZE3xedfaOU2TbvgeulK)
 [Gif Repository](https://giphy.com/)
 [State Management NgRx](https://ngrx.io/guide/store)
