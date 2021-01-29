@@ -2,26 +2,9 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0.
 
-## Development server
+Ngrx library was used with Pilanes. State management has been made using the concepts of Effect, reducer and Action.Filtering can be done on the lists with ngRx. Exercises are shown with gifs.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Pilanes has two screens, an exercise list and a plan list.Plans are created with the exercise choices made. Plans can be deleted or viewed. When the plan is displayed, the exercises are lined up with the progress bar.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Pilanes data is kept in json file and CRUD operations are done with json-server. Angular-material was used in the project design.
+![Pilanes](https://github.com/NisanurBulut/AdventureOfAngular/blob/master/Trailers/Trailer_Pilanes.gif)
