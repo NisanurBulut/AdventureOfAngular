@@ -21,10 +21,10 @@ export class AppComponent {
       takeUntil(this.unSubscribeAll)
     ).subscribe(data => {
         this.selectedTabIndex = data;
-      })
+      });
   }
   onTabChanged($event) {
     let clickedIndex = $event.index;
-    this.store.dispatch(new SetActiveAction(clickedIndex))
+    this.store.dispatch(new SetActiveAction(clickedIndex));
   }
 }
