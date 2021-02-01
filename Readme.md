@@ -29,7 +29,7 @@ Pilanes data is kept in json file and CRUD operations are done with json-server.
 
 ###### Lenna or Lena is a 512 × 512 pixel standard test image that has been used since 1973, originally cut from a photograph in Playboy magazine's November 1972 issue. Photo by Swedish model Lena Söderberg, taken by Dwight Hooker. Wikipedia
 
-![Lena](https://github.com/NisanurBulut/Lena/blob/master/src/assets/trailer.gif)
+![Lena](https://github.com/NisanurBulut/AdventureOfAngular/blob/master/Trailers/Trailer_lena.gif)
 
 ## Helpfull Websites
 [Youtube-link-State Management With Ngrx](https://www.youtube.com/playlist?list=PLtKjv92L0ihCX_ZE3xedfaOU2TbvgeulK)
