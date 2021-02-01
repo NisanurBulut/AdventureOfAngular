@@ -35,3 +35,4 @@ Pilanes data is kept in json file and CRUD operations are done with json-server.
 [Youtube-link-State Management With Ngrx](https://www.youtube.com/playlist?list=PLtKjv92L0ihCX_ZE3xedfaOU2TbvgeulK)
 [Gif Repository](https://giphy.com/)
 [State Management NgRx](https://ngrx.io/guide/store)
+[Pokemon Api](https://pokeapi.co/)
