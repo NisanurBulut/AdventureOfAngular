@@ -5,3 +5,7 @@ li {display: inline;}
     border: 4px solid #eee;
     box-shadow: #555 1px 8px 1px;
 }
+.btn{
+    outline:none !important;
+    margin-right: 2px;
+}
