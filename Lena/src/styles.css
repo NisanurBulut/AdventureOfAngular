@@ -1,9 +1,10 @@
 body{
     font-family:'Open Sans', sans-serif;
-    background-color:  #efefef;
+    background-image: url('./assets/background.png');
+    background-position: center;
+    background-size: cover;
 }
 .main-container{
     padding-top: 60px;
     color:#333;
-
 }
