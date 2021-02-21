@@ -29,11 +29,11 @@ export class LoadImageSuccessAction implements Action {
 }
 export class LoadImageErrorAction implements Action {
     readonly type: string = GaleryActionTypes.LOAD_IMAGE_ERROR;
-    constructor(public payload: string) { }
+    constructor(public payload: number) { }
 }
-export type GalleryActionTypes = LoadGalleryAction |
-    LoadGalleryErrorAction |
-    LoadGallerySuccessAction |
-    LoadImageAction |
-    LoadImageErrorAction |
-    LoadImageSuccessAction;
+export type GalleryActionTypes= LoadGalleryAction |
+LoadGalleryErrorAction|
+LoadGallerySuccessAction|
+LoadImageAction|
+LoadImageErrorAction|
+LoadImageSuccessAction;
