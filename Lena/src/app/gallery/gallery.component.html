@@ -38,7 +38,7 @@ Characters
   </div>
 
   <ul id="thumbnailList">
-    <li *ngFor="let img of visibleImages | imageFilter: filterBy" style="cursor:pointer;">
+    <li *ngFor="let img of visibleImages | async | imageFilter: filterBy" style="cursor:pointer;">
       <img src="{{ img.url }}" class="tn" width="200" height="160" [routerLink]="['/image', img.id]" />
     </li>
   </ul>
