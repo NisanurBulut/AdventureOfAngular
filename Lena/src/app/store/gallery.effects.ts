@@ -4,13 +4,13 @@ import { of } from 'rxjs';
 import { catchError, map, mergeMap, tap } from 'rxjs/operators';
 import { GalleryService } from '../shared/gallery.service';
 import * as fromGalleryActionTypes from './gallery.actions';
-import { LoadImageAction, LoadImageSuccessAction, LoadImageErrorAction, GaleryActionTypes } from './gallery.actions';
+import { LoadImageAction, LoadImageSuccessAction, LoadImageErrorAction, GalleryActionTypes } from './gallery.actions';
 @Injectable()
 export class GalleryEffect {
     @Effect()
     loadGallery$ = this.actions$
         .pipe(
-            ofType<fromGalleryActionTypes.LoadGalleryAction>(fromGalleryActionTypes.GaleryActionTypes.LOAD_GALLERY),
+            ofType<fromGalleryActionTypes.LoadGalleryAction>(fromGalleryActionTypes.GalleryActionTypes.LOAD_GALLERY),
             mergeMap(
                 () => this.galleryService.getGallery()
                     .pipe(
@@ -23,7 +23,7 @@ export class GalleryEffect {
 
     @Effect() loadImage$ = this.actions$
         .pipe(
-            ofType<LoadImageAction>(GaleryActionTypes.LOAD_IMAGE),
+            ofType<LoadImageAction>(GalleryActionTypes.LOAD_IMAGE),
             mergeMap(
                 (data) => this.galleryService.getImage(data.payload)
                     .pipe(

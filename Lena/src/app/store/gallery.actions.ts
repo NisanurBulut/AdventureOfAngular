@@ -1,6 +1,6 @@
 import { Action } from '@ngrx/store';
 import { Image } from '../shared/image.model';
-export enum GaleryActionTypes {
+export enum GalleryActionTypes {
     LOAD_GALLERY = '[Galery] Load Galery',
     LOAD_GALLERY_SUCCESS = '[Galery] Load Galery Success',
     LOAD_GALLERY_ERROR = '[Galery] Load Galery Error',
@@ -9,27 +9,27 @@ export enum GaleryActionTypes {
     LOAD_IMAGE_ERROR = '[Galery] Load IMAGE Error',
 }
 export class LoadGalleryAction implements Action {
-    readonly type = GaleryActionTypes.LOAD_GALLERY;
+    readonly type = GalleryActionTypes.LOAD_GALLERY;
     constructor() { }
 }
 export class LoadGallerySuccessAction implements Action {
-    readonly type = GaleryActionTypes.LOAD_GALLERY_SUCCESS;
+    readonly type = GalleryActionTypes.LOAD_GALLERY_SUCCESS;
     constructor(public payload: Array<Image>) { }
 }
 export class LoadGalleryErrorAction implements Action {
-    readonly type = GaleryActionTypes.LOAD_GALLERY_ERROR;
+    readonly type = GalleryActionTypes.LOAD_GALLERY_ERROR;
     constructor(public payload: Error) { }
 }
 export class LoadImageAction implements Action {
-    readonly type = GaleryActionTypes.LOAD_IMAGE;
+    readonly type = GalleryActionTypes.LOAD_IMAGE;
     constructor(public payload: number) { }
 }
 export class LoadImageSuccessAction implements Action {
-    readonly type = GaleryActionTypes.LOAD_IMAGE_SUCCESS;
+    readonly type = GalleryActionTypes.LOAD_IMAGE_SUCCESS;
     constructor(public payload: number) { }
 }
 export class LoadImageErrorAction implements Action {
-    readonly type = GaleryActionTypes.LOAD_IMAGE_ERROR;
+    readonly type = GalleryActionTypes.LOAD_IMAGE_ERROR;
     constructor(public payload: number) { }
 }
 export type GalleryActionType = LoadGalleryAction |
