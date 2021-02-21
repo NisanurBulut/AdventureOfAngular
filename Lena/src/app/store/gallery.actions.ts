@@ -10,6 +10,7 @@ export enum GaleryActionTypes {
 }
 export class LoadGalleryAction implements Action {
     readonly type = GaleryActionTypes.LOAD_GALLERY;
+    constructor() { }
 }
 export class LoadGallerySuccessAction implements Action {
     readonly type = GaleryActionTypes.LOAD_GALLERY_SUCCESS;
@@ -20,20 +21,20 @@ export class LoadGalleryErrorAction implements Action {
     constructor(public payload: Error) { }
 }
 export class LoadImageAction implements Action {
-    readonly type: string = GaleryActionTypes.LOAD_IMAGE;
-    constructor(public payload: string) { }
-}
-export class LoadImageSuccessAction implements Action {
-    readonly type: string = GaleryActionTypes.LOAD_IMAGE_SUCCESS;
-    constructor(public payload: string) { }
-}
-export class LoadImageErrorAction implements Action {
-    readonly type: string = GaleryActionTypes.LOAD_IMAGE_ERROR;
+    readonly type = GaleryActionTypes.LOAD_IMAGE;
     constructor(public payload: number) { }
 }
-export type GalleryActionTypes= LoadGalleryAction |
-LoadGalleryErrorAction|
-LoadGallerySuccessAction|
-LoadImageAction|
-LoadImageErrorAction|
-LoadImageSuccessAction;
+export class LoadImageSuccessAction implements Action {
+    readonly type = GaleryActionTypes.LOAD_IMAGE_SUCCESS;
+    constructor(public payload: number) { }
+}
+export class LoadImageErrorAction implements Action {
+    readonly type = GaleryActionTypes.LOAD_IMAGE_ERROR;
+    constructor(public payload: number) { }
+}
+export type GalleryActionType = LoadGalleryAction |
+    LoadGalleryErrorAction |
+    LoadGallerySuccessAction |
+    LoadImageAction |
+    LoadImageErrorAction |
+    LoadImageSuccessAction;
