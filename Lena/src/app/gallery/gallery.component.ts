@@ -1,5 +1,9 @@
+import { ThrowStmt } from '@angular/compiler';
 import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
-import { ImageService } from '../shared/image.service';
+import { Store } from '@ngrx/store';
+import { Observable } from 'rxjs';
+import { AppState } from '../shared/app.reducer';
+import { Image } from '../shared/image.model';
 
 @Component({
   selector: 'app-gallery',
@@ -8,12 +12,12 @@ import { ImageService } from '../shared/image.service';
 })
 export class GalleryComponent implements OnInit, OnChanges {
   @Input() filterBy?: string = 'all';
-  visibleImages: any[] = [];
-  constructor(private imageService: ImageService) {
-    this.visibleImages = imageService.getImages();
+  visibleImages: Observable<Array<Image>>;
+  constructor(private store: Store<AppState>) {
+    this.visibleImages = this.store.select(s => s.gallery.list);
   }
   ngOnChanges(changes: SimpleChanges): void {
-    this.visibleImages = this.imageService.getImages();
+
   }
 
   ngOnInit() {
