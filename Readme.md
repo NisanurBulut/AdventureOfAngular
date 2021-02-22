@@ -30,8 +30,16 @@ Pilanes data is kept in json file and CRUD operations are done with json-server.
 ![Pilanes](https://github.com/NisanurBulut/AdventureOfAngular/blob/master/Trailers/Trailer_Pilanes.gif)
 
 # 5 Lena
-![Lena](https://github.com/NisanurBulut/AdventureOfAngular/blob/master/Lena/src/assets/lena.png)
-###### Lenna or Lena is a 512 × 512 pixel standard test image that has been used since 1973, originally cut from a photograph in Playboy magazine's November 1972 issue. Photo by Swedish model Lena Söderberg, taken by Dwight Hooker. Wikipedia
+<table>
+  <tr>
+    <td> 
+      ![Lena](https://github.com/NisanurBulut/AdventureOfAngular/blob/master/Lena/src/assets/lena.png)
+      </td>
+     <td>  
+       ###### Lenna or Lena is a 512 × 512 pixel standard test image that has been used since 1973, originally cut from a photograph in Playboy magazine's November 1972 issue. Photo by Swedish model Lena Söderberg, taken by Dwight Hooker. Wikipedia      
+    </td>
+  </tr>
+</table>
 With the Lena work, the use of pipes and redux patterns were practiced.
 ![Lena](https://github.com/NisanurBulut/AdventureOfAngular/blob/master/Trailers/Trailer_Lena.gif)
 
