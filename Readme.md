@@ -40,3 +40,4 @@ With the Lena work, the use of pipes and redux patterns were practiced.
 [Gif Repository](https://giphy.com/)
 [State Management NgRx](https://ngrx.io/guide/store)
 [Pokemon Api](https://pokeapi.co/)
+[Fixer-Api](https://fixer.io/)
