@@ -36,6 +36,18 @@
         "infoLink": "http://books.google.com.tr/books?id=AYhzSgAACAAJ&dq=harry+potter&hl=&source=gbs_api"
       },
       "id": 3
+    },
+    {
+      "profileName": "UugDAAAAMBAJ",
+      "bookItem": {
+        "id": "UugDAAAAMBAJ",
+        "title": "Pratiyogita Darpan",
+        "description": "Pratiyogita Darpan (monthly magazine) is India's largest read General Knowledge and Current Affairs Magazine. Pratiyogita Darpan (English monthly magazine) is known for quality content on General Knowledge and Current Affairs. Topics ranging from national and international news/ issues, personality development, interviews of examination toppers, articles/ write-up on topics like career, economy, history, public administration, geography, polity, social, environment, scientific, legal etc, solved papers of various examinations, Essay and debate contest, Quiz and knowledge testing features are covered every month in this magazine.",
+        "imageLink": "http://books.google.com/books/content?id=UugDAAAAMBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "authors": "",
+        "infoLink": "http://books.google.com.tr/books?id=UugDAAAAMBAJ&dq=harry+potter&hl=&source=gbs_api"
+      },
+      "id": 4
     }
   ]
 }
