@@ -1,10 +1,10 @@
 <article class="book-element" (click)="addToProfile(bookItem)">
-    <div class="col-1">
-        <h3>{{bookItem.title}}</h3>
-        <p class="info">{{bookItem.description | slice: 0:150}}</p>
-    </div>
     <div class="col-2">
-        <div class="author">{{bookItem.authors}}</div>
-        <img src="{{bookItem.imageLink}}" />
+        <img src="{{bookItem.imageLink}}" style="width: 160px;" />
+    </div>
+    <div class="col-1">
+        <h4>{{bookItem.title}}</h4>
+        <h5>{{bookItem.authors}}</h5>
+        <p class="info">{{bookItem.description | slice: 0:150}}</p>
     </div>
 </article>
