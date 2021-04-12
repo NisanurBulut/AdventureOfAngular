@@ -3,15 +3,17 @@
 <article
   #profile
   class="profile"
-  *ngFor="let profile of (profileList | async).profileList; let i=index"
+  *ngFor="let profile of (profileList | async).profileList; let i = index"
   (click)="onLoadProfile(profile)"
 >
-  <h4>{{ profile.bookItem.title }}</h4>
   <div class="profile-content">
-    <p>{{ profile.bookItem.authors }}</p>
-    <br />
-    <p style="font-style: italic">{{ profile.bookItem.publisher }}</p>
     <img src="{{ profile.bookItem.imageLink }}" />
+    <div class="description">
+     <ul>
+      <li>{{ profile.bookItem.authors }}</li>
+      <li>{{ profile.bookItem.publisher }}</li>
+     </ul>
+    </div>
   </div>
-  <span (click)="onDeleteProfile($event, profile)" class="delete">❌</span>
+  <span (click)="onDeleteProfile($event, profile)" class="delete">X</span>
 </article>

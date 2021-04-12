@@ -1,6 +1,6 @@
 .some-page-wrapper {
   margin: 15px;
-  width: 60%;
+  width: 100%;
 }
 
 .row {
@@ -19,17 +19,11 @@
 
 .profile-column {
   position: relative;
-  height: 100%;
-  width: 100%;
-
   display: flex;
   justify-content: center;
 }
 
 .book-column {
-
-  height: 100%;
-  width: 100%;
   display: flex;
   justify-content: center;
 }

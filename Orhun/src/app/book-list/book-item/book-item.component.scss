@@ -1,11 +1,11 @@
 .col-1 {
   width: 60%;
-  margin: 10px 10px 10px  10px;
+  margin: 10px 10px 10px  0px;
 }
 
 .col-2 {
   width: 40%;
-  margin: 10px 10 10px 10px;
+  display: flex;
 }
 .col-1 h3 {
   font-size: 22px;
@@ -14,11 +14,11 @@
 
 .book-element {
   display: flex;
-  width: 100%;
+  width: 500px;
   margin: 10px 10px 10px 10px;
   box-shadow: 3px 3px 10px #fff;
   border-radius: 5px;
-  background-color: #61729c;
+  background-color: #413c69;
   color: white;
   cursor: pointer;
 }

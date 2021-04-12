@@ -1,3 +1,30 @@
 {
-  "profiles": []
+  "profiles": [
+    {
+      "profileName": "TLaODwAAQBAJ",
+      "bookItem": {
+        "id": "TLaODwAAQBAJ",
+        "title": "J. K. Rowling",
+        "description": "A new series of empowering biographies featuring modern women in the world of work. When Joanne Rowling was a young woman, she found herself down and out of luck. But, she had a best-selling idea and a tenacious spirit. If only she could find someone who wanted to publish her book... Discover how J. K. Rowling became a best-selling author and publishing sensation in this true story of her life. Then, learn 10 key lessons from her work you can apply to your own life.",
+        "imageLink": "http://books.google.com/books/content?id=TLaODwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "authors": "Caroline Moss",
+        "infoLink": "http://books.google.com.tr/books?id=TLaODwAAQBAJ&dq=jk&hl=&source=gbs_api",
+        "publisher": "Frances Lincoln Children's Books"
+      },
+      "id": 2
+    },
+    {
+      "profileName": "Qc6nDwAAQBAJ",
+      "bookItem": {
+        "id": "Qc6nDwAAQBAJ",
+        "title": "Be Bold, Baby: J.K. Rowling",
+        "description": "Introduce your little ones to bold women like J.K. Rowling and important values like imagination, always being yourself, and being a good friend with this board book series! Celebrate J. K. Rowling's most motivational and powerful moments, with quotes from the literary genius responsible for the creation of Harry Potter and vibrant illustrations by Alison Oliver (Moon; BabyLit series.) Be imaginative. Be a friend. Be you. Each book ends with a mirror! Look for the companion volumes, Be Bold, Baby: Michelle Obama; Be Bold Baby: Oprah Winfrey; and Be Bold Baby: Sonia Sotomayor.",
+        "imageLink": "http://books.google.com/books/content?id=Qc6nDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "authors": "Alison Oliver",
+        "infoLink": "http://books.google.com.tr/books?id=Qc6nDwAAQBAJ&dq=jk&hl=&source=gbs_api",
+        "publisher": "HMH Books For Young Readers"
+      },
+      "id": 3
+    }
+  ]
 }
