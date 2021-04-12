@@ -1,3 +1,41 @@
 {
-  "profiles": []
+  "profiles": [
+    {
+      "profileName": "aN0PEAAAQBAJ",
+      "bookItem": {
+        "id": "aN0PEAAAQBAJ",
+        "title": "Harry Potter Sticker Art Puzzles",
+        "description": "Harry Potter fans of all ages will enjoy these fifteen sticker-puzzle challenges! Follow Harry, Hermione, Ron, and your favorite wizards through the halls of Hogwarts and learn what it takes to be a hero. Each sticker puzzle spread features a signature trait a wizard must have: courage, cleverness, loyalty, resilience, and more. The fifteen puzzles feature more than 100 stickers each to create memorable scenes from the Harry Potter films. Fans of all ages will relive the magic of the films as they complete each puzzle.",
+        "imageLink": "http://books.google.com/books/content?id=aN0PEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "authors": "Editors of Thunder Bay Press",
+        "infoLink": "http://books.google.com.tr/books?id=aN0PEAAAQBAJ&dq=harry+potter&hl=&source=gbs_api",
+        "publisher": "Thunder Bay Press"
+      },
+      "id": 1
+    },
+    {
+      "profileName": "RATozQEACAAJ",
+      "bookItem": {
+        "id": "RATozQEACAAJ",
+        "title": "Scary Symbolism in Harry Potter",
+        "description": "J.K.Rowling created a beautiful, vast magical fantasy world, which we all enjoy and wish it would never end. And the answer to the question that we are all dying to know is: Where did she get these ideas from? How did she come up with the world of Harry Potter? She already gave some answers in her interviews and the official Harry Potter portal Wizarding World. But she never gave away much, because, first of all, it is her 'trade secret'. Secondly, it would take too much time if she explained everything. And lastly, we are indeed more than capable to decode messages ourselves. Why do we believe in magic? Why do we like fantasy? Why do we want to believe that people in fairy tales are real? These are fundamental and philosophical questions that sooner or later must be answered. Psychologists, philosophers might provide their own answers. However, we, true fans of Harry Potter, can perfectly interpret images posed throughout the books by our favorite author on our own.",
+        "imageLink": "http://books.google.com/books/content?id=RATozQEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "authors": "Elaina Lewis",
+        "infoLink": "http://books.google.com.tr/books?id=RATozQEACAAJ&dq=harry+potter&hl=&source=gbs_api"
+      },
+      "id": 2
+    },
+    {
+      "profileName": "AYhzSgAACAAJ",
+      "bookItem": {
+        "id": "AYhzSgAACAAJ",
+        "title": "Harry Potter ve felsefe taşı",
+        "description": "Rescued from the outrageous neglect of his aunt and uncle, a young boy with a great destiny proves his worth while attending Hogwarts School for Wizards and Witches.",
+        "imageLink": "http://books.google.com/books/content?id=AYhzSgAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "authors": "J. K. Rowling,Ülkü Tamer",
+        "infoLink": "http://books.google.com.tr/books?id=AYhzSgAACAAJ&dq=harry+potter&hl=&source=gbs_api"
+      },
+      "id": 3
+    }
+  ]
 }
