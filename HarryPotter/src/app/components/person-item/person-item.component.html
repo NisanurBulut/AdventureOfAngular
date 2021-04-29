@@ -1,4 +1,4 @@
-<div class="bg-gradient-to-t from-black mt-20 via-pink-900 to-pink-700
+<div class="bg-gradient-to-t from-black mt-20 via-green-900 to-green-700
 h-72 w-28 md:w-96 md:rounded-3xl rounded-full shadow-md relative flex flex-col items-center
 justify-between md:items-start py-5 md:p-5 transition-all duration-150">
   <!-- IMG PROFILE -->
@@ -6,10 +6,15 @@ justify-between md:items-start py-5 md:p-5 transition-all duration-150">
   src="{{personItem.image}}" alt="{{personItem.name}}" />
 
   <!-- TEXTS -->
-  <div class="transform -rotate-90 md:rotate-0 align-middle text-2xl font-semibold text-gray-200 text-center m-auto md:m-0 md:mt-8">{{personItem.name}}</div>
+  <div class="transform -rotate-90 md:rotate-0 align-middle text-2xl
+  font-semibold text-gray-200 text-center m-auto md:m-0 md:mt-8">{{personItem.name}}/{{personItem.dateOfBirth}}</div>
   <ul class="text-lg text-gray-300 font-light">
-    <li>🍙 Otaku, Over 9.000</li>
-    <li>🍕 Lover, Ñam ñam jejeje</li>
-    <li>❤ NY</li>
+    <li>Actor: {{personItem.actor}}</li>
+    <li>Patronus: {{personItem.patronus}}</li>
+    <li>Ancestry: {{personItem.ancestry}}</li>
+    <li>House:{{personItem.house}}</li>
+    <li>Wand: {{personItem.wand.core}}</li>
+    <li>Eye Colour:{{personItem.eyeColour}}</li>
+    <li>Hair Colour:{{personItem.hairColour}}</li>
   </ul>
 </div>
