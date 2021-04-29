@@ -14,4 +14,7 @@ export class AppService {
   getStudents(): Observable<IPersonType[]> {
     return this._http.get<IPersonType[]>(environment.url_students).pipe();
   }
+  getStaff(): Observable<IPersonType[]> {
+    return this._http.get<IPersonType[]>(environment.url_staff).pipe();
+  }
 }
