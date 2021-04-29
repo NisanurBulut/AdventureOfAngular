@@ -9,6 +9,7 @@ import { CharactersComponent } from './components/characters/characters.componen
 import { CommonModule } from '@angular/common';
 import { StudentsComponent } from './components/students/students.component';
 import { AppService } from './app.service';
+import { PersonItemComponent } from './components/person-item/person-item.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { AppService } from './app.service';
     SidebarComponent,
     ContentComponent,
     CharactersComponent,
-    StudentsComponent
+    StudentsComponent,
+    PersonItemComponent
   ],
   imports: [
     CommonModule,
