@@ -1,0 +1,5 @@
+#main {
+  display: grid;
+  grid-template-columns: 6rem auto;
+  /* Or grid-template-columns: config('width.24') auto; */
+}
