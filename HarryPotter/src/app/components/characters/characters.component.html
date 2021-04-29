@@ -1,7 +1,6 @@
 
 <div class="grid grid-cols-2 gap-4 justify-center">
-  <app-person-item></app-person-item>
-  <app-person-item></app-person-item>
-  <app-person-item></app-person-item>
-  <app-person-item></app-person-item>
+  <div *ngFor="let characterItem of characters">
+    <app-person-item [item]="characterItem"></app-person-item>
+  </div>
 </div>

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AppService } from 'src/app/app.service';
+import { IPersonType } from 'src/app/models/personItem.model';
 
 @Component({
   selector: 'app-characters',
@@ -7,11 +8,11 @@ import { AppService } from 'src/app/app.service';
   styleUrls: ['./characters.component.css']
 })
 export class CharactersComponent implements OnInit {
-
+  characters:Array<IPersonType>=[];
   constructor(private appService:AppService) {
     this.appService.getCharacters()
       .subscribe(data => {
-         console.log(data);
+         this.characters=data;
       });
   }
 
