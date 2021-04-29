@@ -8,6 +8,7 @@ import { ContentComponent } from './content/content.component';
 import { CharactersComponent } from './components/characters/characters.component';
 import { CommonModule } from '@angular/common';
 import { StudentsComponent } from './components/students/students.component';
+import { AppService } from './app.service';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,7 @@ import { StudentsComponent } from './components/students/students.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [AppService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
