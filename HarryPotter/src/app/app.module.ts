@@ -10,6 +10,7 @@ import { CommonModule } from '@angular/common';
 import { StudentsComponent } from './components/students/students.component';
 import { AppService } from './app.service';
 import { PersonItemComponent } from './components/person-item/person-item.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { PersonItemComponent } from './components/person-item/person-item.compon
     CommonModule,
     RouterModule,
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
   ],
   providers: [AppService],
   bootstrap: [AppComponent]
