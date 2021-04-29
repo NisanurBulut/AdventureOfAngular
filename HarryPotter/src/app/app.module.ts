@@ -6,8 +6,8 @@ import { AppComponent } from './app.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { ContentComponent } from './content/content.component';
 import { CharactersComponent } from './components/characters/characters.component';
-import { CharacterComponent } from './components/character/character.component';
 import { CommonModule } from '@angular/common';
+import { StudentsComponent } from './components/students/students.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +15,7 @@ import { CommonModule } from '@angular/common';
     SidebarComponent,
     ContentComponent,
     CharactersComponent,
-    CharacterComponent
+    StudentsComponent
   ],
   imports: [
     CommonModule,
