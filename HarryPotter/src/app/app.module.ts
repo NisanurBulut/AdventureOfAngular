@@ -11,6 +11,7 @@ import { StudentsComponent } from './components/students/students.component';
 import { AppService } from './app.service';
 import { PersonItemComponent } from './components/person-item/person-item.component';
 import { HttpClientModule } from '@angular/common/http';
+import { StaffComponent } from './components/staff/staff.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { HttpClientModule } from '@angular/common/http';
     ContentComponent,
     CharactersComponent,
     StudentsComponent,
-    PersonItemComponent
+    PersonItemComponent,
+    StaffComponent
   ],
   imports: [
     CommonModule,

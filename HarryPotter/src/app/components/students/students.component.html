@@ -1,1 +1,6 @@
-<p>students works!</p>
+
+<div class="grid grid-cols-2 gap-4 justify-center">
+  <div *ngFor="let studentItem of students">
+    <app-person-item [item]="studentItem"></app-person-item>
+  </div>
+</div>
