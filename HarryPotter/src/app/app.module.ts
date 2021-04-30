@@ -14,6 +14,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { StaffComponent } from './components/staff/staff.component';
 import { BooksComponent } from './components/books/books.component';
 import { BookComponent } from './components/book/book.component';
+import { FilmsComponent } from './components/films/films.component';
+import { HousesComponent } from './components/houses/houses.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { BookComponent } from './components/book/book.component';
     PersonItemComponent,
     StaffComponent,
     BooksComponent,
-    BookComponent
+    BookComponent,
+    FilmsComponent,
+    HousesComponent
   ],
   imports: [
     CommonModule,

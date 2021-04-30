@@ -1,13 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CharactersComponent } from './components';
-import { StaffComponent } from './components/staff/staff.component';
-import { StudentsComponent } from './components/students/students.component';
+import { CharactersComponent, BooksComponent, StaffComponent,StudentsComponent, HousesComponent, FilmsComponent } from './components';
+
 
 const routes: Routes = [
   { path: 'characters', component: CharactersComponent },
   { path: 'students', component: StudentsComponent },
   { path: 'staff', component: StaffComponent },
+  { path: 'houses', component: HousesComponent },
+  { path: 'books', component: BooksComponent },
+  { path: 'films', component: FilmsComponent },
   { path: '**', component: CharactersComponent }
 ];
 
