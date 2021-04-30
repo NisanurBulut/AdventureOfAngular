@@ -1,0 +1,24 @@
+@import url('../node_modules/tailwindcss/base.css');
+@import url('../node_modules/tailwindcss/components.css');
+@import url('../node_modules/tailwindcss/utilities.css');
+
+body {
+	background: url('./assets/background.jpg') no-repeat;
+	background-size: cover;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+  font-family: 'Harry Potter', sans-serif;
+}
+
+.container {
+  width: 75rem;
+  max-height: 50rem;
+  height: 50rem;
+  overflow-y: scroll;
+	box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+	border-radius: 5px;
+	background-color: rgba(255, 255, 255, .15);
+	backdrop-filter: blur(5px);
+}

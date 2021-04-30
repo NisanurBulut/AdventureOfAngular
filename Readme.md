@@ -42,6 +42,11 @@ With the Lena work, the use of pipes and redux patterns were practiced.
 
 ![Lena](https://github.com/NisanurBulut/AdventureOfAngular/blob/master/Trailers/Trailer_Lena.gif)
 
+# 6 Harry Potter
+
+<img align="left" width="100" height="100" src="https://github.com/NisanurBulut/AdventureOfAngular/blob/master/HarryPotter/src/assets/logo.png"><p>The tailswincss library is used on the HarryPotter data with Angular FrameWork. The Harry Potter app lists Harry Potter movies, books, characters, hogwarts school clubs and employee information. The tailwindcss card component is used for listing. A separate card has been designed for each listing process. [For Harry Potter data](https://github.com/NisanurBulut/AdventureOfAngular/blob/dev-harrypotter/HarryPotter/src/data/db.json) </p>
+![Lena](https://github.com/NisanurBulut/AdventureOfAngular/blob/master/Trailers/Trailer_HarryPotter.gif)
+
 ## Helpfull Websites
 [Youtube-link-State Management With Ngrx](https://www.youtube.com/playlist?list=PLtKjv92L0ihCX_ZE3xedfaOU2TbvgeulK)
 [Gif Repository](https://giphy.com/)

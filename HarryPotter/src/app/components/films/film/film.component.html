@@ -1,0 +1,16 @@
+<!-- component -->
+<div class="max-w-md w-full lg:flex p-10">
+  <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
+  style="background-image: url('{{filmItem.image}}')" title="Woman holding a mug">
+  </div>
+  <div class="border-r border-b border-l border-grey-light lg:border-l-0 lg:border-t lg:border-grey-light bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+    <div class="mb-10">
+      <div class="text-black font-bold text-xl mb-2">{{filmItem.name}}</div>
+     <div class="text-grey-darker text-base mt-8">
+      <p>📅 {{filmItem.date}}</p><br>
+      <p>🎶 {{filmItem.composer}}</p><br>
+      <p>📹 {{filmItem.director}}</p><br>
+     </div>
+    </div>
+  </div>
+</div>
