@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { IPersonType, IHouseType, IBookType } from './models';
+import { IPersonType, IHouseType, IBookType, IFilmType } from './models';
 import { environment } from 'src/environments/environment';
 
 @Injectable({
@@ -23,5 +23,8 @@ export class AppService {
   }
   getBooks(): Observable<IBookType[]> {
     return this._http.get<IBookType[]>(environment.url_books).pipe();
+  }
+  getFilms(): Observable<IFilmType[]> {
+    return this._http.get<IFilmType[]>(environment.url_films).pipe();
   }
 }

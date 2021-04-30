@@ -10,6 +10,7 @@ export const environment = {
   url_staff:"http://localhost:3000/all?hogwartsStaff=true",
   url_houses:"http://localhost:3000/houses",
   url_books:"http://localhost:3000/books",
+  url_films:"http://localhost:3000/films",
 
 };
 
