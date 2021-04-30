@@ -3,22 +3,25 @@
       <img src="{{houseItem.image}}"
       alt="{{houseItem.name}}" style="width: 350px;height:350px;" class="object-cover object-center rounded-lg shadow-md">
    <div class="relative px-4 -mt-16  ">
-     <div class="p-6 rounded-lg shadow-lg">
+     <div class="bg-gray-200 p-6 rounded-lg shadow-lg">
       <div class="flex items-baseline">
-        <span class="bg-{{houseItem.color}}-600 text-white text-md px-2 pt-2 text-center inline-block rounded-full
+        <span class="bg-{{houseItem.color}}-600 text-center text-sm text-white text-md px-2 py-2 inline-block
+        rounded-full
         uppercase font-semibold tracking-wide">
           {{houseItem.founder}}
         </span>
       </div>
-      <h4 class="mt-1 text-lg font-semibold uppercase leading-tight truncate">{{houseItem.name}}</h4>
+      <!--      -->
+
     <div class="mt-1">
-     👻 <span class="text-gray-600 text-sm">{{houseItem.ghost}}</span><br>
-     🪑 <span class="text-gray-600 text-sm">{{houseItem.commonRoom}}</span><br>
-    👮 <span class="text-gray-600 text-sm">{{houseItem.head}}</span><br>
-    🎨 <span class="text-gray-600 text-sm">{{houseItem.houseColor}}</span>
+     👻 <span class="text-gray-600 text-md">{{houseItem.ghost}}</span><br>
+     🪑 <span class="text-gray-600 text-md">{{houseItem.commonRoom}}</span><br>
+    👮 <span class="text-gray-600 text-md">{{houseItem.head}}</span><br>
+    🎨 <span class="text-gray-600 text-md">{{houseItem.houseColor}}</span>
 
     </div>
     <div class="mt-4">
+      <h4 class="mt-2 uppercase text-lg font-semibold leading-tight ">{{houseItem.name}}</h4>
       <div class="ml-2 text-gray-600 uppercase text-xs font-semibold tracking-wider">
         {{houseItem.traits}} &bull; {{houseItem.animal}}
        </div>
