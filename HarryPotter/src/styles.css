@@ -13,7 +13,9 @@ body {
 
 .container {
 	width: 100rem;
-	height: 50rem;
+  max-height: 50rem;
+  height: 50rem;
+  overflow-y: scroll;
 	box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
 	border-radius: 5px;
 	background-color: rgba(255, 255, 255, .15);
