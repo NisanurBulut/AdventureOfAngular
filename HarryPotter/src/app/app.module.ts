@@ -12,7 +12,6 @@ import { AppService } from './app.service';
 import { PersonItemComponent } from './components/person-item/person-item.component';
 import { HttpClientModule } from '@angular/common/http';
 import { StaffComponent } from './components/staff/staff.component';
-import { PaginationComponent } from './components/pagination/pagination.component';
 
 @NgModule({
   declarations: [
@@ -22,8 +21,7 @@ import { PaginationComponent } from './components/pagination/pagination.componen
     CharactersComponent,
     StudentsComponent,
     PersonItemComponent,
-    StaffComponent,
-    PaginationComponent
+    StaffComponent
   ],
   imports: [
     CommonModule,
