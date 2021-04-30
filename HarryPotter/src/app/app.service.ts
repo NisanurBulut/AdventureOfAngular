@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { IPersonType } from './models/personItem.model';
+import { IPersonType, IHouseType } from './models';
 import { environment } from 'src/environments/environment';
-import { IHouseType } from './models/houses.model';
+
 @Injectable({
   providedIn: 'root',
 })
