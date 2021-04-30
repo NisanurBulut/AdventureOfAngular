@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { IPersonType } from './models/personItem.model';
 import { environment } from 'src/environments/environment';
+import { IHouseType } from './models/houses.model';
 @Injectable({
   providedIn: 'root',
 })
@@ -16,5 +17,8 @@ export class AppService {
   }
   getStaff(): Observable<IPersonType[]> {
     return this._http.get<IPersonType[]>(environment.url_staff).pipe();
+  }
+  getHouses(): Observable<IHouseType[]> {
+    return this._http.get<IHouseType[]>(environment.url_houses).pipe();
   }
 }

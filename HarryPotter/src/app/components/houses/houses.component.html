@@ -1,7 +1,6 @@
 
 <div class="grid grid-cols-2 gap-56 justify-center">
-  <div *ngFor="let characterItem of [1,2,3,4,5]">
-    <app-house></app-house>
-    <app-house></app-house>
+  <div *ngFor="let houseItem of houses">
+    <app-house [item]="houseItem"></app-house>
   </div>
 </div>

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { IHouseType } from 'src/app/models/houses.model';
 
 @Component({
   selector: 'app-house',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./house.component.css']
 })
 export class HouseComponent implements OnInit {
-
+  @Input('item') houseItem!: IHouseType;
   constructor() { }
 
   ngOnInit(): void {

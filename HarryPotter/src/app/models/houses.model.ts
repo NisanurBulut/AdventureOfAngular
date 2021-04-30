@@ -1,4 +1,4 @@
-export interface IHouse {
+export interface IHouseType {
   Founder: string;
   HouseColor: string;
   Animal: string;
@@ -6,4 +6,5 @@ export interface IHouse {
   Head: string;
   Ghost: string;
   CommonRoom: string;
+  Name:string;
 }
