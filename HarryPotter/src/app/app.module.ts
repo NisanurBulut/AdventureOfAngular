@@ -16,6 +16,7 @@ import { BooksComponent } from './components/books/books.component';
 import { BookComponent } from './components/book/book.component';
 import { FilmsComponent } from './components/films/films.component';
 import { HousesComponent } from './components/houses/houses.component';
+import { HouseComponent } from './components/houses/house/house.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { HousesComponent } from './components/houses/houses.component';
     BooksComponent,
     BookComponent,
     FilmsComponent,
-    HousesComponent
+    HousesComponent,
+    HouseComponent
   ],
   imports: [
     CommonModule,
