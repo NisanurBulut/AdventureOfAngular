@@ -554,7 +554,6 @@
   "houses": [
     {
       "name": "Gryffindor",
-      "color":"red",
       "founder": "Godric Gryffindor",
       "houseColor": "Scarlet and gold",
       "animal": "Lion",
@@ -573,13 +572,11 @@
       "head": "Pomona Sprout (? - before 2017)",
       "ghost": "Fat Friar",
       "commonRoom": "Hufflepuff Basement",
-      "color":"yellow",
       "image":"https://i.pinimg.com/originals/8f/0c/8d/8f0c8d13613ae7533fbabec3ad4046f2.jpg"
     },
     {
       "name": "Ravenclaw",
       "founder": "Rowena Ravenclaw",
-      "color":"blue",
       "houseColor": "Blue and bronze",
       "animal": "Eagle",
       "traits": "Wise",
@@ -590,7 +587,6 @@
     },
     {
       "name": "Slytherin",
-      "color":"green",
       "founder": "Salazar Slytherin",
       "houseColor": "Green and silver",
       "animal": "Snake",
