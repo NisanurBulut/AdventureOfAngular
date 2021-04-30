@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AppService } from 'src/app/app.service';
-import { IHouseType } from 'src/app/models/houses.model';
+import { IHouseType } from 'src/app/models';
 
 @Component({
   selector: 'app-houses',

@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { IHouseType } from 'src/app/models/houses.model';
+import { IHouseType } from 'src/app/models';
 
 @Component({
   selector: 'app-house',
