@@ -11,12 +11,14 @@ import { StudentsComponent } from './components/students/students.component';
 import { AppService } from './app.service';
 import { PersonItemComponent } from './components/person-item/person-item.component';
 import { HttpClientModule } from '@angular/common/http';
-import { StaffComponent } from './components/staff/staff.component';
-import { BooksComponent } from './components/books/books.component';
-import { BookComponent } from './components/book/book.component';
-import { FilmsComponent } from './components/films/films.component';
-import { HousesComponent } from './components/houses/houses.component';
-import { HouseComponent } from './components/houses/house/house.component';
+import {
+  StaffComponent,
+  BooksComponent,
+  BookComponent,
+  FilmsComponent,
+  HousesComponent,
+  HouseComponent,
+} from './components';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,7 @@ import { HouseComponent } from './components/houses/house/house.component';
     BookComponent,
     FilmsComponent,
     HousesComponent,
-    HouseComponent
+    HouseComponent,
   ],
   imports: [
     CommonModule,
@@ -41,6 +43,6 @@ import { HouseComponent } from './components/houses/house/house.component';
     HttpClientModule,
   ],
   providers: [AppService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
