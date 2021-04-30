@@ -554,6 +554,7 @@
   "houses": [
     {
       "name": "Gryffindor",
+      "color":"red",
       "founder": "Godric Gryffindor",
       "houseColor": "Scarlet and gold",
       "animal": "Lion",
@@ -572,21 +573,24 @@
       "head": "Pomona Sprout (? - before 2017)",
       "ghost": "Fat Friar",
       "commonRoom": "Hufflepuff Basement",
-      "image":"https://static.wikia.nocookie.net/harrypotter/images/d/da/Hufflepuff_House_Crest_old.jpg/revision/latest/scale-to-width-down/160?cb=20160729145653"
+      "color":"yellow",
+      "image":"https://i.pinimg.com/originals/8f/0c/8d/8f0c8d13613ae7533fbabec3ad4046f2.jpg"
     },
     {
       "name": "Ravenclaw",
       "founder": "Rowena Ravenclaw",
+      "color":"blue",
       "houseColor": "Blue and bronze",
       "animal": "Eagle",
       "traits": "Wise",
       "head": "Filius Flitwick",
       "ghost": "Grey Lady",
       "commonRoom": "Ravenclaw Tower",
-      "image":"https://static.wikia.nocookie.net/harrypotter/images/7/77/Ravenclaw_House_Crest.jpg/revision/latest/scale-to-width-down/160?cb=20160729145945"
+      "image":"https://cdn.shopify.com/s/files/1/1696/4305/products/Item21247HP_jpg.jpg?v=1571301198"
     },
     {
       "name": "Slytherin",
+      "color":"green",
       "founder": "Salazar Slytherin",
       "houseColor": "Green and silver",
       "animal": "Snake",
@@ -594,7 +598,7 @@
       "head": "Severus Snape (? - 1997)",
       "ghost": "Bloody Baron",
       "commonRoom": "Slytherin Dungeon",
-      "image":"https://i.pinimg.com/474x/29/dd/fe/29ddfebdd1544568d66fb5e7c92c2847.jpg"
+      "image":"https://i.pinimg.com/originals/de/d8/7e/ded87e4b3dad3327988511af87724206.jpg"
     }
   ],
   "books": [

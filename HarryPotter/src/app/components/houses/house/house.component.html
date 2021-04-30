@@ -1,27 +1,26 @@
 <div class="wrapper antialiased text-gray-900 m-10">
   <div>
-      <img src="https://i.pinimg.com/736x/f5/6d/e9/f56de96c4707221991e73421f1688934.jpg"
-      alt="{{houseItem.Name}}" class="w-full object-cover object-center rounded-lg shadow-md">
+      <img src="{{houseItem.image}}"
+      alt="{{houseItem.name}}" style="width: 350px;height:350px;" class="object-cover object-center rounded-lg shadow-md">
    <div class="relative px-4 -mt-16  ">
      <div class="bg-white p-6 rounded-lg shadow-lg">
       <div class="flex items-baseline">
-        <span class="bg-teal-200 text-teal-800 text-xs px-2 inline-block rounded-full  uppercase font-semibold tracking-wide">
-          New
+        <span class="bg-{{houseItem.color}}-600 text-white text-md px-2 inline-block rounded-full  uppercase font-semibold tracking-wide">
+          {{houseItem.founder}}
         </span>
-        <div class="ml-2 text-gray-600 uppercase text-xs font-semibold tracking-wider">
-      2 baths  &bull; 3 rooms
-    </div>
       </div>
-
-      <h4 class="mt-1 text-xl font-semibold uppercase leading-tight truncate">A random Title</h4>
-
+      <h4 class="mt-1 text-lg font-semibold uppercase leading-tight truncate">{{houseItem.name}}</h4>
     <div class="mt-1">
-      $1800
-      <span class="text-gray-600 text-sm">   /wk</span>
+     👻 <span class="text-gray-600 text-sm">{{houseItem.ghost}}</span><br>
+     🪑 <span class="text-gray-600 text-sm">{{houseItem.commonRoom}}</span><br>
+    👮 <span class="text-gray-600 text-sm">{{houseItem.head}}</span><br>
+    🎨 <span class="text-gray-600 text-sm">{{houseItem.houseColor}}</span>
+
     </div>
     <div class="mt-4">
-      <span class="text-teal-600 text-md font-semibold">4/5 ratings </span>
-      <span class="text-sm text-gray-600">(based on 234 ratings)</span>
+      <div class="ml-2 text-gray-600 uppercase text-xs font-semibold tracking-wider">
+        {{houseItem.traits}} &bull; {{houseItem.animal}}
+       </div>
     </div>
     </div>
    </div>

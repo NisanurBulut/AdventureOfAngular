@@ -1,10 +1,12 @@
 export interface IHouseType {
-  Founder: string;
-  HouseColor: string;
-  Animal: string;
-  Traits: string;
-  Head: string;
-  Ghost: string;
-  CommonRoom: string;
-  Name:string;
+  founder: string;
+  houseColor: string;
+  animal: string;
+  traits: string;
+  head: string;
+  ghost: string;
+  commonRoom: string;
+  name: string;
+  image: string;
+  color:string;
 }
