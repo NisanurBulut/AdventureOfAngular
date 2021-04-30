@@ -19,6 +19,7 @@ import {
   HousesComponent,
   HouseComponent,
 } from './components';
+import { FilmComponent } from './components/films/film/film.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import {
     FilmsComponent,
     HousesComponent,
     HouseComponent,
+    FilmComponent,
   ],
   imports: [
     CommonModule,

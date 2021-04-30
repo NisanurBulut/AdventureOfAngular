@@ -1,1 +1,5 @@
-<p>films works!</p>
+<div class="grid grid-cols-2 gap-4 justify-center">
+  <div *ngFor="let filmItem of films">
+    <app-film [item]="filmItem"></app-film>
+  </div>
+</div>
