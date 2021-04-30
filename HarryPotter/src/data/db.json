@@ -609,14 +609,14 @@
     { "name": "Harry Potter and the Cursed Child - Parts One and Two", "year": 2016, "author": "J. K. Rowling","summary":"The official playscript of the original West End production of Harry Potter and the Cursed Child. It was always difficult being Harry Potter and it isn’t much easier now that he is an overworked employee of the Ministry of Magic, a husband, and father of three school-age children. While Harry grapples with a past that refuses to stay where it belongs, his youngest son Albus must struggle with the weight of a family legacy he never wanted. As past and present fuse ominously, both father and son learn the uncomfortable truth: sometimes, darkness comes from unexpected places.","image":"https://images-na.ssl-images-amazon.com/images/I/51NRPISnBuL._SY291_BO1,204,203,200_QL40_ML2_.jpg" }
   ],
   "films": [
-    {"name":"Philosopher's/Sorcerer's Stone", "director":"Chris Columbus", "year":"28 May 2002","image":"https://static.wikia.nocookie.net/harrypotter/images/f/f7/SS_DVD.jpg","composer":"John Williams"},
-    {"name":"Chamber of Secrets", "director":"Chris Columbus", "year":"11 April 2003","image":"https://static.wikia.nocookie.net/harrypotter/images/2/2f/COS_DVD.jpg","composer":"John Williams"},
-    {"name":"Prisoner of Azkaban", "director":"Chris Columbus", "year":"23 Nov, 2004","image":"https://static.wikia.nocookie.net/harrypotter/images/8/8f/POA_DVD.jpg","composer":"John Williams"},
-    {"name":"Goblet of Fire", "director":"Mike Newell", "year":"7 March 2006","image":"https://static.wikia.nocookie.net/harrypotter/images/8/86/GOF_DVD.jpg","composer":"Patrick Doyle"},
-    {"name":"Order of the Phoenix", "director":"David Yates", "year":"11 Dec, 2007","image":"https://static.wikia.nocookie.net/harrypotter/images/b/b9/OOTP_DVD.jpg","composer":"Nicholas Hooper"},
-    {"name":"Half-Blood Prince", "director":"David Yates", "year":"8 Dec, 2009","image":"https://static.wikia.nocookie.net/harrypotter/images/a/ad/HBP_DVD.jpg", "composer":"Nicholas Hooper"},
-    {"name":"Deathly Hallows: Part 1", "director":"David Yates", "year":"15 April 2011",
+    {"name":"Philosopher's/Sorcerer's Stone", "director":"Chris Columbus", "date":"28 May 2002","image":"https://static.wikia.nocookie.net/harrypotter/images/f/f7/SS_DVD.jpg","composer":"John Williams"},
+    {"name":"Chamber of Secrets", "director":"Chris Columbus", "date":"11 April 2003","image":"https://static.wikia.nocookie.net/harrypotter/images/2/2f/COS_DVD.jpg","composer":"John Williams"},
+    {"name":"Prisoner of Azkaban", "director":"Chris Columbus", "date":"23 Nov, 2004","image":"https://static.wikia.nocookie.net/harrypotter/images/8/8f/POA_DVD.jpg","composer":"John Williams"},
+    {"name":"Goblet of Fire", "director":"Mike Newell", "date":"7 March 2006","image":"https://static.wikia.nocookie.net/harrypotter/images/8/86/GOF_DVD.jpg","composer":"Patrick Doyle"},
+    {"name":"Order of the Phoenix", "director":"David Yates", "date":"11 Dec, 2007","image":"https://static.wikia.nocookie.net/harrypotter/images/b/b9/OOTP_DVD.jpg","composer":"Nicholas Hooper"},
+    {"name":"Half-Blood Prince", "director":"David Yates", "date":"8 Dec, 2009","image":"https://static.wikia.nocookie.net/harrypotter/images/a/ad/HBP_DVD.jpg", "composer":"Nicholas Hooper"},
+    {"name":"Deathly Hallows: Part 1", "director":"David Yates", "date":"15 April 2011",
       "image":"https://static.wikia.nocookie.net/harrypotter/images/9/99/Normal_DVDbluray_HP7.jpg","composer":"Alexandre Desplat"},
-    {"name":"Deathly Hallows: Part 2", "director":"David Yates", "year":"11 Nov, 2011","image":"https://static.wikia.nocookie.net/harrypotter/images/e/e6/HP7_P2_DVD.jpg","composer":"Alexandre Desplat"}
+    {"name":"Deathly Hallows: Part 2", "director":"David Yates", "date":"11 Nov, 2011","image":"https://static.wikia.nocookie.net/harrypotter/images/e/e6/HP7_P2_DVD.jpg","composer":"Alexandre Desplat"}
   ]
 }
