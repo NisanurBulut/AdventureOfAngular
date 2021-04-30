@@ -4,10 +4,10 @@
 
 export const environment = {
   production: false,
-  base_url:"http://hp-api.herokuapp.com/api",
-  url_characters:"http://hp-api.herokuapp.com/api/characters",
-  url_students:"http://hp-api.herokuapp.com/api/characters/students",
-  url_staff:"http://hp-api.herokuapp.com/api/characters/staff",
+  base_url:"http://localhost:3000",
+  url_characters:"http://localhost:3000/all",
+  url_students:"http://localhost:3000/all?hogwartsStudent=true",
+  url_staff:"http://localhost:3000/all?hogwartsStaff=true",
 };
 
 /*
