@@ -560,7 +560,8 @@
       "traits": "Brave",
       "head": "Minerva McGonagall (? - 1998)",
       "ghost": "Nearly Headless Nick",
-      "commonRoom": "Gryffindor Tower"
+      "commonRoom": "Gryffindor Tower",
+      "image":"https://static.wikia.nocookie.net/harrypotter/images/e/ee/Gryffindor_Crest-0.jpg/revision/latest/scale-to-width-down/200?cb=20160729145529"
     },
     {
       "name": "Hufflepuff",
@@ -570,7 +571,8 @@
       "traits": "Loyal",
       "head": "Pomona Sprout (? - before 2017)",
       "ghost": "Fat Friar",
-      "commonRoom": "Hufflepuff Basement"
+      "commonRoom": "Hufflepuff Basement",
+      "image":"https://static.wikia.nocookie.net/harrypotter/images/d/da/Hufflepuff_House_Crest_old.jpg/revision/latest/scale-to-width-down/160?cb=20160729145653"
     },
     {
       "name": "Ravenclaw",
@@ -580,7 +582,8 @@
       "traits": "Wise",
       "head": "Filius Flitwick",
       "ghost": "Grey Lady",
-      "commonRoom": "Ravenclaw Tower"
+      "commonRoom": "Ravenclaw Tower",
+      "image":"https://static.wikia.nocookie.net/harrypotter/images/7/77/Ravenclaw_House_Crest.jpg/revision/latest/scale-to-width-down/160?cb=20160729145945"
     },
     {
       "name": "Slytherin",
@@ -590,7 +593,8 @@
       "traits": "Cunning",
       "head": "Severus Snape (? - 1997)",
       "ghost": "Bloody Baron",
-      "commonRoom": "Slytherin Dungeon"
+      "commonRoom": "Slytherin Dungeon",
+      "image":"https://static.wikia.nocookie.net/harrypotter/images/7/71/Slytherin_crest_old.jpg/revision/latest/scale-to-width-down/200?cb=20160729150848"
     }
   ],
   "books": [
