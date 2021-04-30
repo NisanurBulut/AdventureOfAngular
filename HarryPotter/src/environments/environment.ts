@@ -9,6 +9,7 @@ export const environment = {
   url_students:"http://localhost:3000/all?hogwartsStudent=true",
   url_staff:"http://localhost:3000/all?hogwartsStaff=true",
   url_houses:"http://localhost:3000/houses",
+  url_books:"http://localhost:3000/books",
 
 };
 

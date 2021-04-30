@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { IPersonType, IHouseType } from './models';
+import { IPersonType, IHouseType, IBookType } from './models';
 import { environment } from 'src/environments/environment';
 
 @Injectable({
@@ -20,5 +20,8 @@ export class AppService {
   }
   getHouses(): Observable<IHouseType[]> {
     return this._http.get<IHouseType[]>(environment.url_houses).pipe();
+  }
+  getBooks(): Observable<IBookType[]> {
+    return this._http.get<IBookType[]>(environment.url_books).pipe();
   }
 }
