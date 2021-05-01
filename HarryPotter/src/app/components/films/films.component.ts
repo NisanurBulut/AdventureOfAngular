@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { AppService } from 'src/app/app.service';
 import { IFilmType } from 'src/app/models';
+import { takeUntil } from 'rxjs/operators';
+import { Subject } from 'rxjs';
 
 @Component({
   selector: 'app-films',
@@ -9,8 +11,13 @@ import { IFilmType } from 'src/app/models';
 })
 export class FilmsComponent implements OnInit {
   films: Array<IFilmType> = [];
+  unSubscribeAll = new Subject<any>();
   constructor(private appService: AppService) {
-    this.appService.getFilms().subscribe((data) => (this.films = data));
+    this.appService.getFilms()
+    .pipe(
+      takeUntil(this.unSubscribeAll)
+    )
+    .subscribe((data) => (this.films = data));
   }
 
   ngOnInit(): void {}
